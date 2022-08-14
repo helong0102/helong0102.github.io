@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://helong0102.github.io/sitemap.xml
