@@ -34,5 +34,14 @@
       <description>自动化脚本的使用 docker命令介绍 attach Attach to a running container # 当前 shell 下 attach 连接指定运行镜像 build Build an image from a Dockerfile # 通过 Dockerfile 定制镜像 commit Create a new image from a container changes # 提交当前容器为</description>
     </item>
     
+    <item>
+      <title>shell语法</title>
+      <link>http://helong0102.github.io/post/shell%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Sun, 14 Aug 2022 01:37:56 +1456</pubDate>
+      
+      <guid>http://helong0102.github.io/post/shell%E8%AF%AD%E6%B3%95/</guid>
+      <description>shell 语法 概论 shell 是一个用C语言编写的程序，它是用户使用Linux的桥梁。 shell既是一种命令语言，又是一种程序设计语言。 shell是指一种应用</description>
+    </item>
+    
   </channel>
 </rss>
