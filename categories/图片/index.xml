@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>图片 on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/%E5%9B%BE%E7%89%87/</link>
+    <description>Recent content in 图片 on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Aug 2022 01:37:56 +1150</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E5%9B%BE%E7%89%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>图片测试</title>
+      <link>http://helong0102.github.io/post/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Sun, 14 Aug 2022 01:37:56 +1150</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/</guid>
+      <description>图片显示测试</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>oyente on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/oyente/</link>
+    <description>Recent content in oyente on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Aug 2022 01:37:56 +1150</lastBuildDate><atom:link href="http://helong0102.github.io/categories/oyente/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker中使用oyente批量测试脚本</title>
+      <link>http://helong0102.github.io/post/docker%E4%B8%AD%E4%BD%BF%E7%94%A8oyente%E6%89%B9%E9%87%8F%E6%B5%8B%E8%AF%95%E8%84%9A%E6%9C%AC/</link>
+      <pubDate>Sun, 14 Aug 2022 01:37:56 +1150</pubDate>
+      
+      <guid>http://helong0102.github.io/post/docker%E4%B8%AD%E4%BD%BF%E7%94%A8oyente%E6%89%B9%E9%87%8F%E6%B5%8B%E8%AF%95%E8%84%9A%E6%9C%AC/</guid>
+      <description>自动化脚本的使用 docker命令介绍 attach Attach to a running container # 当前 shell 下 attach 连接指定运行镜像 build Build an image from a Dockerfile # 通过 Dockerfile 定制镜像 commit Create a new image from a container changes # 提交当前容器为</description>
+    </item>
+    
+  </channel>
+</rss>
