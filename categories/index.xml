@@ -61,5 +61,32 @@
       <description></description>
     </item>
     
+    <item>
+      <title>linux</title>
+      <link>http://helong0102.github.io/categories/linux/</link>
+      <pubDate>Sun, 14 Aug 2022 01:37:56 +2200</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>管道</title>
+      <link>http://helong0102.github.io/categories/%E7%AE%A1%E9%81%93/</link>
+      <pubDate>Sun, 14 Aug 2022 01:37:56 +2200</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/%E7%AE%A1%E9%81%93/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>环境变量</title>
+      <link>http://helong0102.github.io/categories/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</link>
+      <pubDate>Sun, 14 Aug 2022 01:37:56 +2200</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

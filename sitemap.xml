@@ -93,6 +93,34 @@
   </url>
   
   <url>
+    <loc>http://helong0102.github.io/categories/linux/</loc>
+    <lastmod>2022-08-14T01:37:56+22:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/categories/%E7%AE%A1%E9%81%93/</loc>
+    <lastmod>2022-08-14T01:37:56+22:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/post/%E7%AE%A1%E9%81%93%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2022-08-14T01:37:56+22:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/categories/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</loc>
+    <lastmod>2022-08-14T01:37:56+22:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://helong0102.github.io/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

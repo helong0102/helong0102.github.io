@@ -43,5 +43,14 @@
       <description>shell 语法 概论 shell 是一个用C语言编写的程序，它是用户使用Linux的桥梁。 shell既是一种命令语言，又是一种程序设计语言。 shell是指一种应用</description>
     </item>
     
+    <item>
+      <title>管道&amp;环境变量&amp;常用命令</title>
+      <link>http://helong0102.github.io/post/%E7%AE%A1%E9%81%93%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 14 Aug 2022 01:37:56 +2200</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E7%AE%A1%E9%81%93%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>管道&amp;amp;环境变量&amp;amp;常用命令 管道 概念 管道类似于文件重定向，可以将前一个命令的 stdout 重定向到下一个命令的 stdin。 要点 管道命令仅处理</description>
+    </item>
+    
   </channel>
 </rss>
