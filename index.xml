@@ -6,7 +6,7 @@
     <description>Recent content on 墨初博客！</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Aug 2022 01:37:56 +0940</lastBuildDate><atom:link href="http://helong0102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Aug 2022 01:37:56 +1000</lastBuildDate><atom:link href="http://helong0102.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于</title>
       <link>http://helong0102.github.io/about/</link>
@@ -14,6 +14,15 @@
       
       <guid>http://helong0102.github.io/about/</guid>
       <description>关于 本博客要用于学习笔记&amp;amp;科研记录。 我是谁 一个从事以太坊智能合约漏洞分析研究的研究僧。喜欢运动、美食、coding。 目前使用或者学习</description>
+    </item>
+    
+    <item>
+      <title>vim教程</title>
+      <link>http://helong0102.github.io/post/vim%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Mon, 15 Aug 2022 01:37:56 +1000</pubDate>
+      
+      <guid>http://helong0102.github.io/post/vim%E6%95%99%E7%A8%8B/</guid>
+      <description>Vim 教程 功能 命令行模式下的文本编辑器。 根据文件扩展名自动判别编程语言。支持代码缩进、代码高亮等功能。 使用方式: vim filename 1. 如果已有该文件，则打开它。</description>
     </item>
     
     <item>
