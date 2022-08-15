@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>快速排序 on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/</link>
+    <description>Recent content in 快速排序 on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Aug 2022 01:37:56 +2200</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>快速排序</title>
+      <link>http://helong0102.github.io/post/quicksort/</link>
+      <pubDate>Mon, 15 Aug 2022 01:37:56 +2200</pubDate>
+      
+      <guid>http://helong0102.github.io/post/quicksort/</guid>
+      <description>快速排序&amp;mdash;基于分治 基本思想 l x r |------------------------------------------| 确定分界点：q[l],q[(l+r)/2],q[r],随机 调整区间： ``` ≤x ≥x l x r |--------------------|----------------------| (重要)</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mergeSort on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/mergesort/</link>
+    <description>Recent content in mergeSort on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Aug 2022 01:37:56 +2250</lastBuildDate><atom:link href="http://helong0102.github.io/categories/mergesort/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>归并排序</title>
+      <link>http://helong0102.github.io/post/mergesort/</link>
+      <pubDate>Mon, 15 Aug 2022 01:37:56 +2250</pubDate>
+      
+      <guid>http://helong0102.github.io/post/mergesort/</guid>
+      <description>归并排序&amp;mdash;基于分治 基本思想 1 2 3 left mid right |---------------------------------------------|---------------------------------------------| 确定分界点 mid = ( l + r ) / 2。 递归排序left, right。 归并&amp;mdash;-把两个有</description>
+    </item>
+    
+  </channel>
+</rss>

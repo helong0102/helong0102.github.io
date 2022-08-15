@@ -26,6 +26,24 @@
     </item>
     
     <item>
+      <title>快速排序</title>
+      <link>http://helong0102.github.io/post/quicksort/</link>
+      <pubDate>Mon, 15 Aug 2022 01:37:56 +2200</pubDate>
+      
+      <guid>http://helong0102.github.io/post/quicksort/</guid>
+      <description>快速排序&amp;mdash;基于分治 基本思想 l x r |------------------------------------------| 确定分界点：q[l],q[(l+r)/2],q[r],随机 调整区间： ``` ≤x ≥x l x r |--------------------|----------------------| (重要)</description>
+    </item>
+    
+    <item>
+      <title>归并排序</title>
+      <link>http://helong0102.github.io/post/mergesort/</link>
+      <pubDate>Mon, 15 Aug 2022 01:37:56 +2250</pubDate>
+      
+      <guid>http://helong0102.github.io/post/mergesort/</guid>
+      <description>归并排序&amp;mdash;基于分治 基本思想 1 2 3 left mid right |---------------------------------------------|---------------------------------------------| 确定分界点 mid = ( l + r ) / 2。 递归排序left, right。 归并&amp;mdash;-把两个有</description>
+    </item>
+    
+    <item>
       <title>Vandal工具批量处理合约代码</title>
       <link>http://helong0102.github.io/post/vandal%E5%B7%A5%E5%85%B7%E6%89%B9%E9%87%8F%E5%A4%84%E7%90%86%E5%90%88%E7%BA%A6%E4%BB%A3%E7%A0%81/</link>
       <pubDate>Sun, 14 Aug 2022 01:37:56 +0940</pubDate>

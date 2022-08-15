@@ -44,6 +44,48 @@
   </url>
   
   <url>
+    <loc>http://helong0102.github.io/categories/%E5%88%86%E6%B2%BB/</loc>
+    <lastmod>2022-08-15T01:37:56+22:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/categories/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/</loc>
+    <lastmod>2022-08-15T01:37:56+22:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/post/quicksort/</loc>
+    <lastmod>2022-08-15T01:37:56+22:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/categories/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2022-08-15T01:37:56+22:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/categories/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/</loc>
+    <lastmod>2022-08-15T01:37:56+22:50</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/post/mergesort/</loc>
+    <lastmod>2022-08-15T01:37:56+22:50</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://helong0102.github.io/categories/vandal/</loc>
     <lastmod>2022-08-14T01:37:56+09:40</lastmod>
     <changefreq>weekly</changefreq>
