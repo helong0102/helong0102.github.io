@@ -6,7 +6,34 @@
     <description>Recent content in Categories on 墨初博客！</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Aug 2022 01:37:56 +1000</lastBuildDate><atom:link href="http://helong0102.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Aug 2022 01:37:56 +1000</lastBuildDate><atom:link href="http://helong0102.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>浮点数二分</title>
+      <link>http://helong0102.github.io/categories/%E6%B5%AE%E7%82%B9%E6%95%B0%E4%BA%8C%E5%88%86/</link>
+      <pubDate>Tue, 16 Aug 2022 01:37:56 +1000</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/%E6%B5%AE%E7%82%B9%E6%95%B0%E4%BA%8C%E5%88%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>算法</title>
+      <link>http://helong0102.github.io/categories/%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Tue, 16 Aug 2022 01:37:56 +1000</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/%E7%AE%97%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>整数二分</title>
+      <link>http://helong0102.github.io/categories/%E6%95%B4%E6%95%B0%E4%BA%8C%E5%88%86/</link>
+      <pubDate>Tue, 16 Aug 2022 01:37:56 +1000</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/%E6%95%B4%E6%95%B0%E4%BA%8C%E5%88%86/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>vim</title>
       <link>http://helong0102.github.io/categories/vim/</link>
@@ -31,15 +58,6 @@
       <pubDate>Mon, 15 Aug 2022 01:37:56 +2200</pubDate>
       
       <guid>http://helong0102.github.io/categories/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>算法</title>
-      <link>http://helong0102.github.io/categories/%E7%AE%97%E6%B3%95/</link>
-      <pubDate>Mon, 15 Aug 2022 01:37:56 +2200</pubDate>
-      
-      <guid>http://helong0102.github.io/categories/%E7%AE%97%E6%B3%95/</guid>
       <description></description>
     </item>
     
