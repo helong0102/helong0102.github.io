@@ -31,7 +31,7 @@
       <pubDate>Mon, 15 Aug 2022 01:37:56 +2200</pubDate>
       
       <guid>http://helong0102.github.io/post/quicksort/</guid>
-      <description>快速排序&amp;mdash;基于分治 基本思想 l x r |------------------------------------------| 确定分界点：q[l],q[(l+r)/2],q[r],随机 调整区间： ``` ≤x ≥x l x r |--------------------|----------------------| (重要)</description>
+      <description>快速排序&amp;mdash;基于分治 基本思想 l x r |------------------------------------------| 确定分界点：q[l],q[(l+r)/2],q[r],随机 调整区间： 1 2 3 ≤x ≥x l x r |--------------------|----------------------| 递归</description>
     </item>
     
     <item>
