@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>高精度</title>
+      <link>http://helong0102.github.io/post/%E9%AB%98%E7%B2%BE%E5%BA%A6/</link>
+      <pubDate>Tue, 16 Aug 2022 01:37:56 +2200</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E9%AB%98%E7%B2%BE%E5%BA%A6/</guid>
+      <description>高精度 应用场景(常见) 实现思路 大整数存储方式（C++） 计算过程 加法计算过程 减法计算过程 乘法计算过程 除法计算过程 代码模板 加法模板 1 2 3 4 5 6 7</description>
+    </item>
+    
+    <item>
       <title>vim教程</title>
       <link>http://helong0102.github.io/post/vim%E6%95%99%E7%A8%8B/</link>
       <pubDate>Mon, 15 Aug 2022 01:37:56 +1000</pubDate>

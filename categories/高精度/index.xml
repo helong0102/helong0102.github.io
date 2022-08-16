@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>高精度 on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/%E9%AB%98%E7%B2%BE%E5%BA%A6/</link>
+    <description>Recent content in 高精度 on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Aug 2022 01:37:56 +2200</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E9%AB%98%E7%B2%BE%E5%BA%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>高精度</title>
+      <link>http://helong0102.github.io/post/%E9%AB%98%E7%B2%BE%E5%BA%A6/</link>
+      <pubDate>Tue, 16 Aug 2022 01:37:56 +2200</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E9%AB%98%E7%B2%BE%E5%BA%A6/</guid>
+      <description>高精度 应用场景(常见) 实现思路 大整数存储方式（C++） 计算过程 加法计算过程 减法计算过程 乘法计算过程 除法计算过程 代码模板 加法模板 1 2 3 4 5 6 7</description>
+    </item>
+    
+  </channel>
+</rss>
