@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>字符串 on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
+    <description>Recent content in 字符串 on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Aug 2022 01:37:56 +1100</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E5%AD%97%E7%AC%A6%E4%B8%B2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python数据序列--String</title>
+      <link>http://helong0102.github.io/post/pythonstring/</link>
+      <pubDate>Wed, 17 Aug 2022 01:37:56 +1100</pubDate>
+      
+      <guid>http://helong0102.github.io/post/pythonstring/</guid>
+      <description>Python数据序列&amp;ndash;String 一、字符串 1、字符串的定义 字符串是 Python 中最常用的数据类型, 一般使用引号来创建字符串。创建字符串只</description>
+    </item>
+    
+  </channel>
+</rss>

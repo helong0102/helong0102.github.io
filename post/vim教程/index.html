@@ -49,7 +49,7 @@
 <meta itemprop="name" content="vim教程">
 <meta itemprop="description" content="Vim 教程 功能 命令行模式下的文本编辑器。 根据文件扩展名自动判别编程语言。支持代码缩进、代码高亮等功能。 使用方式: vim filename 1. 如果已有该文件，则打开它。"><meta itemprop="datePublished" content="2022-08-15T01:37:56+10:00" />
 <meta itemprop="dateModified" content="2022-08-15T01:37:56+10:00" />
-<meta itemprop="wordCount" content="1170">
+<meta itemprop="wordCount" content="1231">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="vim教程"/>
 <meta name="twitter:description" content="Vim 教程 功能 命令行模式下的文本编辑器。 根据文件扩展名自动判别编程语言。支持代码缩进、代码高亮等功能。 使用方式: vim filename 1. 如果已有该文件，则打开它。"/>
@@ -216,6 +216,9 @@
 <li><code>:1,$s/word1/word2/g</code>: 将全文的<code>word1</code>替换为<code>word2</code></li>
 <li><code>:1,$s/word1/word2/gc</code>:将全文的<code>word1</code>替换为<code>word2</code>,且在替换前<strong>要求用户确认</strong>。</li>
 </ol>
+<blockquote>
+<p>注：如果是替换路径可以用#代理/，例如：<code>:1,$s#media#/img/hugo/04-python_string#gc</code></p>
+</blockquote>
 <h3 id="文本操作">文本操作</h3>
 <blockquote>
 <p>（可搭配<code>数字+&lt;Enter&gt;/&lt;Space&gt;、0、G、$</code> 等使用，达到预期组合效果）</p>

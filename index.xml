@@ -6,7 +6,7 @@
     <description>Recent content on 墨初博客！</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Aug 2022 01:37:56 +1000</lastBuildDate><atom:link href="http://helong0102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Aug 2022 01:37:56 +1100</lastBuildDate><atom:link href="http://helong0102.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于</title>
       <link>http://helong0102.github.io/about/</link>
@@ -14,6 +14,15 @@
       
       <guid>http://helong0102.github.io/about/</guid>
       <description>关于 本博客要用于学习笔记&amp;amp;科研记录。 我是谁 一个从事以太坊智能合约漏洞分析研究的研究僧。喜欢运动、美食、coding。 目前使用或者学习</description>
+    </item>
+    
+    <item>
+      <title>Python数据序列--String</title>
+      <link>http://helong0102.github.io/post/pythonstring/</link>
+      <pubDate>Wed, 17 Aug 2022 01:37:56 +1100</pubDate>
+      
+      <guid>http://helong0102.github.io/post/pythonstring/</guid>
+      <description>Python数据序列&amp;ndash;String 一、字符串 1、字符串的定义 字符串是 Python 中最常用的数据类型, 一般使用引号来创建字符串。创建字符串只</description>
     </item>
     
     <item>
