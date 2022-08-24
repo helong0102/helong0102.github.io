@@ -10,41 +10,55 @@
   
   <url>
     <loc>http://helong0102.github.io/categories/</loc>
-    <lastmod>2022-08-17T01:37:56+11:40</lastmod>
+    <lastmod>2022-08-24T01:37:56+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/categories/list/</loc>
+    <lastmod>2022-08-24T01:37:56+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://helong0102.github.io/post/</loc>
-    <lastmod>2022-08-17T01:37:56+11:40</lastmod>
+    <lastmod>2022-08-24T01:37:56+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://helong0102.github.io/categories/python/</loc>
-    <lastmod>2022-08-17T01:37:56+11:40</lastmod>
+    <lastmod>2022-08-24T01:37:56+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://helong0102.github.io/post/pythonstring/</loc>
-    <lastmod>2022-08-17T01:37:56+11:40</lastmod>
+    <loc>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-list/</loc>
+    <lastmod>2022-08-24T01:37:56+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://helong0102.github.io/</loc>
-    <lastmod>2022-08-17T01:37:56+11:40</lastmod>
+    <lastmod>2022-08-24T01:37:56+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://helong0102.github.io/categories/%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2022-08-24T01:37:56+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/post/pythonstring/</loc>
     <lastmod>2022-08-17T01:37:56+11:40</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

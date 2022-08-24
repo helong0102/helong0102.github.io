@@ -6,14 +6,23 @@
     <description>Recent content in 语法 on 墨初博客！</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Aug 2022 01:37:56 +1100</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E8%AF%AD%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Aug 2022 01:37:56 +1000</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E8%AF%AD%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Python数据序列--String</title>
+      <title>python数据序列-list</title>
+      <link>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-list/</link>
+      <pubDate>Wed, 24 Aug 2022 01:37:56 +1000</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-list/</guid>
+      <description>python数据序列-list 一、列表及其应用场景 在Python中，我们把存储数据序列的数据类型称之为列表。但是在其他的编程语言中，如Jav</description>
+    </item>
+    
+    <item>
+      <title>python数据序列-string</title>
       <link>http://helong0102.github.io/post/pythonstring/</link>
       <pubDate>Wed, 17 Aug 2022 01:37:56 +1100</pubDate>
       
       <guid>http://helong0102.github.io/post/pythonstring/</guid>
-      <description>Python数据序列&amp;ndash;String 一、字符串 1、字符串的定义 字符串是 Python 中最常用的数据类型, 一般使用引号来创建字符串。创建字符串只</description>
+      <description>python数据序列-string 一、字符串 1、字符串的定义 字符串是 Python 中最常用的数据类型, 一般使用引号来创建字符串。创建字符串只要为变量分配</description>
     </item>
     
     <item>
