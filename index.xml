@@ -6,7 +6,7 @@
     <description>Recent content on 墨初博客！</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Aug 2022 01:37:56 +1000</lastBuildDate><atom:link href="http://helong0102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Aug 2022 01:37:56 +1800</lastBuildDate><atom:link href="http://helong0102.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于</title>
       <link>http://helong0102.github.io/about/</link>
@@ -14,6 +14,15 @@
       
       <guid>http://helong0102.github.io/about/</guid>
       <description>关于 本博客要用于学习笔记&amp;amp;科研记录。 我是谁 一个从事以太坊智能合约漏洞分析研究的研究僧。喜欢运动、美食、coding。 目前使用或者学习</description>
+    </item>
+    
+    <item>
+      <title>双指针算法</title>
+      <link>http://helong0102.github.io/post/%E5%8F%8C%E6%8C%87%E9%92%88%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Thu, 25 Aug 2022 01:37:56 +1800</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E5%8F%8C%E6%8C%87%E9%92%88%E7%AE%97%E6%B3%95/</guid>
+      <description>双指针算法 基本思想 双指针算法的类型 双指针指向两个序列-类似于归并排序 双指针指向同一个序列-类似于快排 核心思想 算法模板 双指针算法的通用模板 示例</description>
     </item>
     
     <item>

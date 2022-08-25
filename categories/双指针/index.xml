@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>双指针 on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/%E5%8F%8C%E6%8C%87%E9%92%88/</link>
+    <description>Recent content in 双指针 on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Aug 2022 01:37:56 +1800</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E5%8F%8C%E6%8C%87%E9%92%88/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>双指针算法</title>
+      <link>http://helong0102.github.io/post/%E5%8F%8C%E6%8C%87%E9%92%88%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Thu, 25 Aug 2022 01:37:56 +1800</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E5%8F%8C%E6%8C%87%E9%92%88%E7%AE%97%E6%B3%95/</guid>
+      <description>双指针算法 基本思想 双指针算法的类型 双指针指向两个序列-类似于归并排序 双指针指向同一个序列-类似于快排 核心思想 算法模板 双指针算法的通用模板 示例</description>
+    </item>
+    
+  </channel>
+</rss>
