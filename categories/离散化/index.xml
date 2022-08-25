@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>离散化 on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/%E7%A6%BB%E6%95%A3%E5%8C%96/</link>
+    <description>Recent content in 离散化 on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Aug 2022 01:37:56 +2030</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E7%A6%BB%E6%95%A3%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>离散化</title>
+      <link>http://helong0102.github.io/post/%E7%A6%BB%E6%95%A3%E5%8C%96/</link>
+      <pubDate>Thu, 25 Aug 2022 01:37:56 +2030</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E7%A6%BB%E6%95%A3%E5%8C%96/</guid>
+      <description>离散化 的基本思想 算法模板 离散化的模板 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 vector&amp;lt;int&amp;gt; alls; // 存储所有待离散化的值 sort(alls.begin(), alls.end()); // 将所有值排序 // 其中unique(all</description>
+    </item>
+    
+  </channel>
+</rss>
