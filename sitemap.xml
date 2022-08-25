@@ -51,6 +51,20 @@
   </url>
   
   <url>
+    <loc>http://helong0102.github.io/categories/%E4%BD%8D%E8%BF%90%E7%AE%97/</loc>
+    <lastmod>2022-08-25T01:37:56+20:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/post/%E4%BD%8D%E8%BF%90%E7%AE%97/</loc>
+    <lastmod>2022-08-25T01:37:56+20:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://helong0102.github.io/categories/list/</loc>
     <lastmod>2022-08-24T01:37:56+11:00</lastmod>
     <changefreq>weekly</changefreq>
