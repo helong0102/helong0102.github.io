@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>区间合并 on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6/</link>
+    <description>Recent content in 区间合并 on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Aug 2022 01:37:56 +2230</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>区间合并</title>
+      <link>http://helong0102.github.io/post/%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6/</link>
+      <pubDate>Thu, 25 Aug 2022 01:37:56 +2230</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6/</guid>
+      <description>区间合并 的基本思想 示例运用 给定 n 个区间 [li,ri]，要求合并所有有交集的区间。 注意如果在端点处相交，也算有交集。 输出合并完成后的区间个数。</description>
+    </item>
+    
+  </channel>
+</rss>
