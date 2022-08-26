@@ -49,7 +49,7 @@
 <meta itemprop="name" content="位运算">
 <meta itemprop="description" content="位运算 获取二进制的个位 1 2 3 4 5 6 7 8 9 10 11 12 13 14 // 代码示例（输出每位【10进制转二进制】） #include &lt;iostream&gt; using namespace std; int main() { int n = 10; // 1010 for (int k = 3; k &gt;= 0; k--) printf(&#34;%d&#34;,n"><meta itemprop="datePublished" content="2022-08-25T01:37:56+19:30" />
 <meta itemprop="dateModified" content="2022-08-25T01:37:56+20:30" />
-<meta itemprop="wordCount" content="382">
+<meta itemprop="wordCount" content="359">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="位运算"/>
 <meta name="twitter:description" content="位运算 获取二进制的个位 1 2 3 4 5 6 7 8 9 10 11 12 13 14 // 代码示例（输出每位【10进制转二进制】） #include &lt;iostream&gt; using namespace std; int main() { int n = 10; // 1010 for (int k = 3; k &gt;= 0; k--) printf(&#34;%d&#34;,n"/>
@@ -204,15 +204,15 @@ x = 10100000000 , lowbit(x) = 100000000</p>
 <h3 id="实现">实现</h3>
 <p><img src="/img/hugo/08-bit/1661427921648.jpg" alt="lowbit的实现"></p>
 <h3 id="应用">应用</h3>
-<p>给定一个长度为 nn 的数列，请你求出数列中每个数的二进制表示中 11 的个数。</p>
+<p>给定一个长度为 n 的数列，请你求出数列中每个数的二进制表示中 1 的个数。</p>
 <h4 id="输入格式">输入格式</h4>
-<p>第一行包含整数 nn。</p>
-<p>第二行包含 nn 个整数，表示整个数列。</p>
+<p>第一行包含整数 n。</p>
+<p>第二行包含 n 个整数，表示整个数列。</p>
 <h4 id="输出格式">输出格式</h4>
-<p>共一行，包含 nn 个整数，其中的第 ii 个数表示数列中的第 ii 个数的二进制表示中 11 的个数。</p>
+<p>共一行，包含 n个整数，其中的第 i 个数表示数列中的第 i 个数的二进制表示中 1 的个数。</p>
 <h4 id="数据范围">数据范围</h4>
-<p>1≤n≤1000001≤n≤100000,
-0≤数列中元素的值≤1090≤数列中元素的值≤109</p>
+<p>1≤n≤100000,
+0≤数列中元素的值≤10e9</p>
 <h4 id="输入样例">输入样例：</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
