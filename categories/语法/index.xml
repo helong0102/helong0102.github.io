@@ -6,7 +6,16 @@
     <description>Recent content in 语法 on 墨初博客！</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Aug 2022 01:37:56 +1000</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E8%AF%AD%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Aug 2022 01:37:56 +1100</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E8%AF%AD%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python数据序列-元组</title>
+      <link>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%85%83%E7%BB%84/</link>
+      <pubDate>Fri, 26 Aug 2022 01:37:56 +1100</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%85%83%E7%BB%84/</guid>
+      <description>python数据序列-元组 一、元组的定义与使用 1、为什么需要元组 如果想要存储多个数据，但是这些数据是不能修改的数据，可以使用**元组，元组可</description>
+    </item>
+    
     <item>
       <title>python数据序列-list</title>
       <link>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-list/</link>
