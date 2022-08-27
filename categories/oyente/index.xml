@@ -6,7 +6,16 @@
     <description>Recent content in oyente on 墨初博客！</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Aug 2022 01:37:56 +1150</lastBuildDate><atom:link href="http://helong0102.github.io/categories/oyente/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Aug 2022 01:37:56 +0800</lastBuildDate><atom:link href="http://helong0102.github.io/categories/oyente/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>oyente工具安装</title>
+      <link>http://helong0102.github.io/post/oyente%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +0800</pubDate>
+      
+      <guid>http://helong0102.github.io/post/oyente%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/</guid>
+      <description>oyente工具安装 注意 ① python 的版本要大于 3.5，如果同时有 python2 和 python3，所有命令使用 python3 和 pip3。 ② Oyente 目前只支持 0.4.19 以下的 solidity 版本，最好的</description>
+    </item>
+    
     <item>
       <title>docker中使用oyente批量测试脚本</title>
       <link>http://helong0102.github.io/post/docker%E4%B8%AD%E4%BD%BF%E7%94%A8oyente%E6%89%B9%E9%87%8F%E6%B5%8B%E8%AF%95%E8%84%9A%E6%9C%AC/</link>
