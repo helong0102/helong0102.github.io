@@ -52,20 +52,48 @@
   
   <url>
     <loc>http://helong0102.github.io/categories/python/</loc>
-    <lastmod>2022-08-26T01:37:56+11:30</lastmod>
+    <lastmod>2022-08-27T01:37:56+13:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%85%83%E7%BB%84/</loc>
-    <lastmod>2022-08-26T01:37:56+11:30</lastmod>
+    <loc>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E9%9B%86%E5%90%88/</loc>
+    <lastmod>2022-08-27T01:37:56+13:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/categories/%E9%9B%86%E5%90%88/</loc>
+    <lastmod>2022-08-27T01:37:56+13:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://helong0102.github.io/categories/%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2022-08-27T01:37:56+13:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%85%AC%E7%94%A8%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2022-08-27T01:37:56+14:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2022-08-27T01:37:56+14:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%85%83%E7%BB%84/</loc>
     <lastmod>2022-08-26T01:37:56+11:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

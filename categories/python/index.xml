@@ -6,7 +6,25 @@
     <description>Recent content in python on 墨初博客！</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Aug 2022 01:37:56 +1100</lastBuildDate><atom:link href="http://helong0102.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Aug 2022 01:37:56 +1200</lastBuildDate><atom:link href="http://helong0102.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python数据序列-集合</title>
+      <link>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E9%9B%86%E5%90%88/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +1200</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E9%9B%86%E5%90%88/</guid>
+      <description>python数据序列集合——求交集、并集、差集 1、什么是集合 集合（set）是一个无序的不重复元素序列。 ① 天生去重 ② 无序 2、集合的定义 在pyt</description>
+    </item>
+    
+    <item>
+      <title>python数据序列-公共方法</title>
+      <link>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%85%AC%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +1357</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%85%AC%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <description>python数据序列-公共方法 1、什么是公共方法 所谓的公共方法就是支持大部分数据序列。 2、常见公共方法1 运算符 描述 支持的容器类型 + 合并 字符串</description>
+    </item>
+    
     <item>
       <title>python数据序列-元组</title>
       <link>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%85%83%E7%BB%84/</link>
