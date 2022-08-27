@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>异常 on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/%E5%BC%82%E5%B8%B8/</link>
+    <description>Recent content in 异常 on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Aug 2022 01:37:56 +1650</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E5%BC%82%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python异常</title>
+      <link>http://helong0102.github.io/post/python%E5%BC%82%E5%B8%B8/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +1650</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E5%BC%82%E5%B8%B8/</guid>
+      <description>python异常 一、Python异常 1、什么是异常 当检测到一个错误时，解释器就无法继续执行了，反而出现了一些错误的提示，这就是所谓的&amp;quo</description>
+    </item>
+    
+  </channel>
+</rss>

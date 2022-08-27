@@ -122,12 +122,11 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/quicksort/">快速排序</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/%E7%A6%BB%E6%95%A3%E5%8C%96/">离散化</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2022-08-15 </span>
+      <span class="post-time"> 2022-08-25 </span>
       <div class="post-category">
-          <a href="/categories/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/"> 快速排序 </a>
-          <a href="/categories/%E5%88%86%E6%B2%BB/"> 分治 </a>
+          <a href="/categories/%E7%A6%BB%E6%95%A3%E5%8C%96/"> 离散化 </a>
           <a href="/categories/%E7%AE%97%E6%B3%95/"> 算法 </a>
           </div>
     </div>
@@ -135,22 +134,21 @@
   
   <div class="post-content">
     <div class="post-summary">
-      快速排序&mdash;基于分治 基本思想 l x r |------------------------------------------| 确定分界点：q[l],q[(l+r)/2],q[r],随机 调整区间： 1 2 3 ≤x ≥x l x r |--------------------|----------------------| 递归
+      离散化 的基本思想 算法模板 离散化的模板 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 vector&lt;int&gt; alls; // 存储所有待离散化的值 sort(alls.begin(), alls.end()); // 将所有值排序 // 其中unique(all
     </div>
     <div class="read-more">
-      <a href="/post/quicksort/" class="read-more-link">阅读更多</a>
+      <a href="/post/%E7%A6%BB%E6%95%A3%E5%8C%96/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/mergesort/">归并排序</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6/">区间合并</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2022-08-15 </span>
+      <span class="post-time"> 2022-08-25 </span>
       <div class="post-category">
-          <a href="/categories/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"> 归并排序 </a>
-          <a href="/categories/%E5%88%86%E6%B2%BB/"> 分治 </a>
+          <a href="/categories/%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6/"> 区间合并 </a>
           <a href="/categories/%E7%AE%97%E6%B3%95/"> 算法 </a>
           </div>
     </div>
@@ -158,67 +156,22 @@
   
   <div class="post-content">
     <div class="post-summary">
-      归并排序&mdash;基于分治 基本思想 1 2 3 left mid right |---------------------------------------------|---------------------------------------------| 确定分界点 mid = ( l + r ) / 2。 递归排序left, right。 归并&mdash;-把两个有
+      区间合并 的基本思想 示例运用 给定 n 个区间 [li,ri]，要求合并所有有交集的区间。 注意如果在端点处相交，也算有交集。 输出合并完成后的区间个数。
     </div>
     <div class="read-more">
-      <a href="/post/mergesort/" class="read-more-link">阅读更多</a>
+      <a href="/post/%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/vandal%E5%B7%A5%E5%85%B7%E6%89%B9%E9%87%8F%E5%A4%84%E7%90%86%E5%90%88%E7%BA%A6%E4%BB%A3%E7%A0%81/">Vandal工具批量处理合约代码</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%88%97%E8%A1%A8/">python数据序列-列表</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2022-08-14 </span>
+      <span class="post-time"> 2022-08-24 </span>
       <div class="post-category">
-          <a href="/categories/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/"> 智能合约 </a>
-          <a href="/categories/%E5%B7%A5%E5%85%B7/"> 工具 </a>
-          <a href="/categories/vandal/"> Vandal </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      扫描文件：sol文件版本号 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 #!/usr/bin/python # -*- coding: utf-8 -*- # solc.py def scan(fileName): # 打开文件 f = open(fileName, &#39;r&#39;) # 读取文件 lines = f.readlines() for line in lines: if (&#34;pragma&#34; in line): index = line.find(&#34;.&#34;) return line[index
-    </div>
-    <div class="read-more">
-      <a href="/post/vandal%E5%B7%A5%E5%85%B7%E6%89%B9%E9%87%8F%E5%A4%84%E7%90%86%E5%90%88%E7%BA%A6%E4%BB%A3%E7%A0%81/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/docker%E4%B8%AD%E4%BD%BF%E7%94%A8oyente%E6%89%B9%E9%87%8F%E6%B5%8B%E8%AF%95%E8%84%9A%E6%9C%AC/">docker中使用oyente批量测试脚本</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-08-14 </span>
-      <div class="post-category">
-          <a href="/categories/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/"> 智能合约 </a>
-          <a href="/categories/%E5%B7%A5%E5%85%B7/"> 工具 </a>
-          <a href="/categories/oyente/"> oyente </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      自动化脚本的使用 docker命令介绍 attach Attach to a running container # 当前 shell 下 attach 连接指定运行镜像 build Build an image from a Dockerfile # 通过 Dockerfile 定制镜像 commit Create a new image from a container changes # 提交当前容器为
-    </div>
-    <div class="read-more">
-      <a href="/post/docker%E4%B8%AD%E4%BD%BF%E7%94%A8oyente%E6%89%B9%E9%87%8F%E6%B5%8B%E8%AF%95%E8%84%9A%E6%9C%AC/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/shell%E8%AF%AD%E6%B3%95/">shell语法</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-08-14 </span>
-      <div class="post-category">
-          <a href="/categories/shell/"> shell </a>
+          <a href="/categories/python/"> python </a>
+          <a href="/categories/list/"> list </a>
           <a href="/categories/%E8%AF%AD%E6%B3%95/"> 语法 </a>
           </div>
     </div>
@@ -226,10 +179,56 @@
   
   <div class="post-content">
     <div class="post-summary">
-      shell 语法 概论 shell 是一个用C语言编写的程序，它是用户使用Linux的桥梁。 shell既是一种命令语言，又是一种程序设计语言。 shell是指一种应用
+      python数据序列-列表 一、列表及其应用场景 在Python中，我们把存储数据序列的数据类型称之为列表。但是在其他的编程语言中，如Java、
     </div>
     <div class="read-more">
-      <a href="/post/shell%E8%AF%AD%E6%B3%95/" class="read-more-link">阅读更多</a>
+      <a href="/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%88%97%E8%A1%A8/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E5%89%8D%E7%BC%80%E5%92%8C%E5%B7%AE%E5%88%86/">前缀和&amp;差分</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-08-24 </span>
+      <div class="post-category">
+          <a href="/categories/%E5%89%8D%E7%BC%80%E5%92%8C/"> 前缀和 </a>
+          <a href="/categories/%E5%B7%AE%E5%88%86/"> 差分 </a>
+          <a href="/categories/%E7%AE%97%E6%B3%95/"> 算法 </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      前缀和&amp;差分 前缀和 基本思想 一维前缀和 注：其中S0 = 0的目的是为了计算的统一性，例如：求区间[1, x]的和，可以将表达式写为Sx - S0
+    </div>
+    <div class="read-more">
+      <a href="/post/%E5%89%8D%E7%BC%80%E5%92%8C%E5%B7%AE%E5%88%86/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%AD%97%E7%AC%A6%E4%B8%B2/">python数据序列-字符串</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-08-17 </span>
+      <div class="post-category">
+          <a href="/categories/python/"> python </a>
+          <a href="/categories/%E5%AD%97%E7%AC%A6%E4%B8%B2/"> 字符串 </a>
+          <a href="/categories/%E8%AF%AD%E6%B3%95/"> 语法 </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      python数据序列-字符串 一、字符串 1、字符串的定义 字符串是 Python 中最常用的数据类型, 一般使用引号来创建字符串。创建字符串只要为变量分配一个值
+    </div>
+    <div class="read-more">
+      <a href="/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>

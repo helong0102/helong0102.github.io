@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>模块&amp;包 on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/%E6%A8%A1%E5%9D%97%E5%8C%85/</link>
+    <description>Recent content in 模块&amp;包 on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Aug 2022 01:37:56 +1705</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E6%A8%A1%E5%9D%97%E5%8C%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python模块&amp;包</title>
+      <link>http://helong0102.github.io/post/python%E6%A8%A1%E5%9D%97%E5%8C%85/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +1705</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E6%A8%A1%E5%9D%97%E5%8C%85/</guid>
+      <description>python模块、包 一、Python内置模块 1、什么是Python模块 Python 模块(Module)，是一个Python 文件，以 .py 结尾，包含了 Python 对象</description>
+    </item>
+    
+  </channel>
+</rss>

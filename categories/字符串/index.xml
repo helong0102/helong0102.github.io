@@ -8,12 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Aug 2022 01:37:56 +1100</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E5%AD%97%E7%AC%A6%E4%B8%B2/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>python数据序列-string</title>
-      <link>http://helong0102.github.io/post/pythonstring/</link>
+      <title>python数据序列-字符串</title>
+      <link>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
       <pubDate>Wed, 17 Aug 2022 01:37:56 +1100</pubDate>
       
-      <guid>http://helong0102.github.io/post/pythonstring/</guid>
-      <description>python数据序列-string 一、字符串 1、字符串的定义 字符串是 Python 中最常用的数据类型, 一般使用引号来创建字符串。创建字符串只要为变量分配</description>
+      <guid>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
+      <description>python数据序列-字符串 一、字符串 1、字符串的定义 字符串是 Python 中最常用的数据类型, 一般使用引号来创建字符串。创建字符串只要为变量分配一个值</description>
     </item>
     
   </channel>

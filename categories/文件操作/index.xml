@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>文件操作 on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/</link>
+    <description>Recent content in 文件操作 on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Aug 2022 01:37:56 +1600</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python-文件操作</title>
+      <link>http://helong0102.github.io/post/python-%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +1600</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python-%E6%96%87%E4%BB%B6/</guid>
+      <description>python-文件操作 一、文件的基本操作 1、文件操作三步走 ① 打开文件 ② 读写文件 ③ 关闭文件 2、open函数打开文件 在Python，使用open</description>
+    </item>
+    
+  </channel>
+</rss>
