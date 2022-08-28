@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>链表与邻接表 on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/%E9%93%BE%E8%A1%A8%E4%B8%8E%E9%82%BB%E6%8E%A5%E8%A1%A8/</link>
+    <description>Recent content in 链表与邻接表 on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Aug 2022 01:37:56 +2000</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E9%93%BE%E8%A1%A8%E4%B8%8E%E9%82%BB%E6%8E%A5%E8%A1%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>链表与邻接表</title>
+      <link>http://helong0102.github.io/post/%E9%93%BE%E8%A1%A8%E4%B8%8E%E9%82%BB%E6%8E%A5%E8%A1%A8/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +2000</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E9%93%BE%E8%A1%A8%E4%B8%8E%E9%82%BB%E6%8E%A5%E8%A1%A8/</guid>
+      <description>链表与邻接表 单链表 单链表中应用最多的是邻接表，邻接表多用于存储图和树。 表示说明： e[N]:表示某个点的值是多少· ne[N]:表示某个点指针（</description>
+    </item>
+    
+  </channel>
+</rss>
