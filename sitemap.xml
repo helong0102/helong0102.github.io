@@ -10,14 +10,42 @@
   
   <url>
     <loc>http://helong0102.github.io/categories/</loc>
-    <lastmod>2022-08-29T01:37:56+10:00</lastmod>
+    <lastmod>2022-08-30T01:37:56+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://helong0102.github.io/post/</loc>
-    <lastmod>2022-08-29T01:37:56+10:00</lastmod>
+    <lastmod>2022-08-30T01:37:56+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/categories/%E5%A0%86/</loc>
+    <lastmod>2022-08-30T01:37:56+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/post/%E5%A0%86/</loc>
+    <lastmod>2022-08-30T01:37:56+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/</loc>
+    <lastmod>2022-08-30T01:37:56+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/categories/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2022-08-30T01:37:56+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -45,20 +73,6 @@
   
   <url>
     <loc>http://helong0102.github.io/post/%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
-    <lastmod>2022-08-29T01:37:56+10:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://helong0102.github.io/</loc>
-    <lastmod>2022-08-29T01:37:56+10:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://helong0102.github.io/categories/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2022-08-29T01:37:56+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

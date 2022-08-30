@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>堆 on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/%E5%A0%86/</link>
+    <description>Recent content in 堆 on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Aug 2022 01:37:56 +0800</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E5%A0%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>堆</title>
+      <link>http://helong0102.github.io/post/%E5%A0%86/</link>
+      <pubDate>Tue, 30 Aug 2022 01:37:56 +0800</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E5%A0%86/</guid>
+      <description>堆 堆的作用 插入一个数 heap[ ++ size] = x; up(size); 求 集合当中的最小值。heap[1] 删除最小值。 heap[1] = heap[size]; size --; down(1); 删除任意一个元素。heap[k] = heap[size]; size --; down(k); up(k); 修改任</description>
+    </item>
+    
+  </channel>
+</rss>

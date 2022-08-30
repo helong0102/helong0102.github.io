@@ -6,7 +6,7 @@
     <description>Recent content on 墨初博客！</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Aug 2022 01:37:56 +1000</lastBuildDate><atom:link href="http://helong0102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Aug 2022 01:37:56 +0800</lastBuildDate><atom:link href="http://helong0102.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于</title>
       <link>http://helong0102.github.io/about/</link>
@@ -14,6 +14,15 @@
       
       <guid>http://helong0102.github.io/about/</guid>
       <description>关于 本博客要用于学习笔记&amp;amp;科研记录。 我是谁 一个从事以太坊智能合约漏洞分析研究的研究僧。喜欢运动、美食、coding。 目前使用或者学习</description>
+    </item>
+    
+    <item>
+      <title>堆</title>
+      <link>http://helong0102.github.io/post/%E5%A0%86/</link>
+      <pubDate>Tue, 30 Aug 2022 01:37:56 +0800</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E5%A0%86/</guid>
+      <description>堆 堆的作用 插入一个数 heap[ ++ size] = x; up(size); 求 集合当中的最小值。heap[1] 删除最小值。 heap[1] = heap[size]; size --; down(1); 删除任意一个元素。heap[k] = heap[size]; size --; down(k); up(k); 修改任</description>
     </item>
     
     <item>
