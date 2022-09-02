@@ -6,7 +6,7 @@
     <description>Recent content on 墨初博客！</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Sep 2022 01:37:56 +0900</lastBuildDate><atom:link href="http://helong0102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Sep 2022 01:37:56 +0900</lastBuildDate><atom:link href="http://helong0102.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于</title>
       <link>http://helong0102.github.io/about/</link>
@@ -14,6 +14,15 @@
       
       <guid>http://helong0102.github.io/about/</guid>
       <description>关于 本博客要用于学习笔记&amp;amp;科研记录。 我是谁 一个从事以太坊智能合约漏洞分析研究的研究僧。喜欢运动、美食、coding。 目前使用或者学习</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; STL</title>
+      <link>http://helong0102.github.io/post/c&#43;&#43;stl/</link>
+      <pubDate>Fri, 02 Sep 2022 01:37:56 +0900</pubDate>
+      
+      <guid>http://helong0102.github.io/post/c&#43;&#43;stl/</guid>
+      <description>STL vector, 变长数组，倍增的思想 1 2 3 4 5 6 7 8 size() 返回元素个数 empty() 返回是否为空 clear() 清空 front()/back() 返回第一个数/最后一个数 push_back() / pop_back() 向vector插入一个数/ 把vec</description>
     </item>
     
     <item>
