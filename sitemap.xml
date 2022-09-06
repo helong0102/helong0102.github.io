@@ -10,7 +10,35 @@
   
   <url>
     <loc>http://helong0102.github.io/categories/</loc>
-    <lastmod>2022-09-05T01:37:56+09:00</lastmod>
+    <lastmod>2022-09-06T01:37:56+19:01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/post/</loc>
+    <lastmod>2022-09-06T01:37:56+19:01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/categories/souffle/</loc>
+    <lastmod>2022-09-06T01:37:56+19:01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/post/souffle%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2022-09-06T01:37:56+19:01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://helong0102.github.io/</loc>
+    <lastmod>2022-09-06T01:37:56+19:01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -23,21 +51,7 @@
   </url>
   
   <url>
-    <loc>http://helong0102.github.io/post/</loc>
-    <lastmod>2022-09-05T01:37:56+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://helong0102.github.io/post/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%B8%80/</loc>
-    <lastmod>2022-09-05T01:37:56+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://helong0102.github.io/</loc>
     <lastmod>2022-09-05T01:37:56+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

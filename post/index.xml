@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 墨初博客！</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Sep 2022 01:37:56 +2000</lastBuildDate><atom:link href="http://helong0102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Sep 2022 01:37:56 +1900</lastBuildDate><atom:link href="http://helong0102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>souffle 语法</title>
+      <link>http://helong0102.github.io/post/souffle%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Tue, 06 Sep 2022 01:37:56 +1900</pubDate>
+      
+      <guid>http://helong0102.github.io/post/souffle%E8%AF%AD%E6%B3%95/</guid>
+      <description>souffle 语法 概述: souffle 中的主要语言元素是关系声明（relations）、事实(facts)、规则（rurle）、指令(instruction)。 关系</description>
+    </item>
+    
     <item>
       <title>动态规划（一）</title>
       <link>http://helong0102.github.io/post/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%B8%80/</link>
