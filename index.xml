@@ -6,7 +6,7 @@
     <description>Recent content on 墨初博客！</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Sep 2022 01:37:56 +1900</lastBuildDate><atom:link href="http://helong0102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Sep 2022 01:37:56 +0900</lastBuildDate><atom:link href="http://helong0102.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于</title>
       <link>http://helong0102.github.io/about/</link>
@@ -14,6 +14,15 @@
       
       <guid>http://helong0102.github.io/about/</guid>
       <description>关于 本博客要用于学习笔记&amp;amp;科研记录。 我是谁 一个从事以太坊智能合约漏洞分析研究的研究僧。喜欢运动、美食、coding。 目前使用或者学习</description>
+    </item>
+    
+    <item>
+      <title>Python 单例模式</title>
+      <link>http://helong0102.github.io/post/python%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Tue, 13 Sep 2022 01:37:56 +0900</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
+      <description>python 单例模式 单例模式实现介绍 使用类名() 创建对象时，Python解释首先会调用__new()__方法为对象分配空间。 __new__是一个由ob</description>
     </item>
     
     <item>

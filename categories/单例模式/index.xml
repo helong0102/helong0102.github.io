@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>单例模式 on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</link>
+    <description>Recent content in 单例模式 on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Sep 2022 01:37:56 +0900</lastBuildDate><atom:link href="http://helong0102.github.io/categories/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python 单例模式</title>
+      <link>http://helong0102.github.io/post/python%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Tue, 13 Sep 2022 01:37:56 +0900</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
+      <description>python 单例模式 单例模式实现介绍 使用类名() 创建对象时，Python解释首先会调用__new()__方法为对象分配空间。 __new__是一个由ob</description>
+    </item>
+    
+  </channel>
+</rss>
