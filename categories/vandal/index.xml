@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vandal on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/vandal/</link>
+    <description>Recent content in Vandal on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Aug 2022 01:37:56 +0940</lastBuildDate><atom:link href="http://helong0102.github.io/categories/vandal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vandal工具批量处理合约代码</title>
+      <link>http://helong0102.github.io/post/vandal%E5%B7%A5%E5%85%B7%E6%89%B9%E9%87%8F%E5%A4%84%E7%90%86%E5%90%88%E7%BA%A6%E4%BB%A3%E7%A0%81/</link>
+      <pubDate>Sun, 14 Aug 2022 01:37:56 +0940</pubDate>
+      
+      <guid>http://helong0102.github.io/post/vandal%E5%B7%A5%E5%85%B7%E6%89%B9%E9%87%8F%E5%A4%84%E7%90%86%E5%90%88%E7%BA%A6%E4%BB%A3%E7%A0%81/</guid>
+      <description>扫描文件：sol文件版本号 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 #!/usr/bin/python # -*- coding: utf-8 -*- # solc.py def scan(fileName): # 打开文件 f = open(fileName, &amp;#39;r&amp;#39;) # 读取文件 lines = f.readlines() for line in lines: if (&amp;#34;pragma&amp;#34; in line): index = line.find(&amp;#34;.&amp;#34;) return line[index</description>
+    </item>
+    
+  </channel>
+</rss>

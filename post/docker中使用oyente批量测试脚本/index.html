@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>docker中使用oyente批量测试脚本 - 墨初博客！</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="墨初" /><meta name="description" content="自动化脚本的使用 docker命令介绍 attach Attach to a running container # 当前 shell 下 attach 连接指定运行镜像 build Build an image from a Dockerfile # 通过 Dockerfile 定制镜像 commit Create a new image from a container changes # 提交当前容器为" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.101.0 with theme even" />
+
+
+<link rel="canonical" href="http://helong0102.github.io/post/docker%E4%B8%AD%E4%BD%BF%E7%94%A8oyente%E6%89%B9%E9%87%8F%E6%B5%8B%E8%AF%95%E8%84%9A%E6%9C%AC/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="docker中使用oyente批量测试脚本" />
+<meta property="og:description" content="自动化脚本的使用 docker命令介绍 attach Attach to a running container # 当前 shell 下 attach 连接指定运行镜像 build Build an image from a Dockerfile # 通过 Dockerfile 定制镜像 commit Create a new image from a container changes # 提交当前容器为" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://helong0102.github.io/post/docker%E4%B8%AD%E4%BD%BF%E7%94%A8oyente%E6%89%B9%E9%87%8F%E6%B5%8B%E8%AF%95%E8%84%9A%E6%9C%AC/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-08-14T01:37:56+11:50" />
+<meta property="article:modified_time" content="2022-08-14T01:37:56+11:50" />
+
+<meta itemprop="name" content="docker中使用oyente批量测试脚本">
+<meta itemprop="description" content="自动化脚本的使用 docker命令介绍 attach Attach to a running container # 当前 shell 下 attach 连接指定运行镜像 build Build an image from a Dockerfile # 通过 Dockerfile 定制镜像 commit Create a new image from a container changes # 提交当前容器为"><meta itemprop="datePublished" content="2022-08-14T01:37:56+11:50" />
+<meta itemprop="dateModified" content="2022-08-14T01:37:56+11:50" />
+<meta itemprop="wordCount" content="910">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="docker中使用oyente批量测试脚本"/>
+<meta name="twitter:description" content="自动化脚本的使用 docker命令介绍 attach Attach to a running container # 当前 shell 下 attach 连接指定运行镜像 build Build an image from a Dockerfile # 通过 Dockerfile 定制镜像 commit Create a new image from a container changes # 提交当前容器为"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Long He&#39;s blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">时间轴</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Long He&#39;s blog</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">时间轴</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">docker中使用oyente批量测试脚本</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-08-14 </span>
+        <div class="post-category">
+            <a href="/categories/docker/"> docker </a>
+            </div>
+          <span class="more-meta"> 约 910 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#自动化脚本的使用">自动化脚本的使用</a>
+      <ul>
+        <li><a href="#docker命令介绍">docker命令介绍</a></li>
+        <li><a href="#以文件挂载的形式运行容器">以文件挂载的形式运行容器</a></li>
+        <li><a href="#批量测试文件脚本">批量测试文件脚本</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="自动化脚本的使用">自动化脚本的使用</h1>
+<h2 id="docker命令介绍">docker命令介绍</h2>
+<p><img src="/img/hugo/01-oyente-tool/01.jpg" alt="Docker Commands Diagram">
+attach    Attach to a running container                 # 当前 shell 下 attach 连接指定运行镜像</p>
+<p>build     Build an image from a Dockerfile              # 通过 Dockerfile 定制镜像</p>
+<p>commit    Create a new image from a container changes   # 提交当前容器为新的镜像</p>
+<p>cp        Copy files/folders from the containers filesystem to the host path   #从容器中拷贝指定文件或者目录到宿主机中</p>
+<p>create    Create a new container                        # 创建一个新的容器，同 run，但不启动容器</p>
+<p>diff      Inspect changes on a container&rsquo;s filesystem   # 查看 docker 容器变化</p>
+<p>events    Get real time events from the server          # 从 docker 服务获取容器实时事件</p>
+<p>exec      Run a command in an existing container        # 在已存在的容器上运行命令</p>
+<p>export    Stream the contents of a container as a tar archive   # 导出容器的内容流作为一个 tar 归档文件[对应 import ]</p>
+<p>history   Show the history of an image                  # 展示一个镜像形成历史</p>
+<p>images    List images                                   # 列出系统当前镜像</p>
+<p>import    Create a new filesystem image from the contents of a tarball # 从tar包中的内容创建一个新的文件系统映像[对应export]</p>
+<p>info      Display system-wide information               # 显示系统相关信息</p>
+<p>inspect   Return low-level information on a container   # 查看容器详细信息</p>
+<p>kill      Kill a running container                      # kill 指定 docker 容器</p>
+<p>load      Load an image from a tar archive              # 从一个 tar 包中加载一个镜像[对应 save]</p>
+<p>login     Register or Login to the docker registry server    # 注册或者登陆一个 docker 源服务器</p>
+<p>logout    Log out from a Docker registry server          # 从当前 Docker registry 退出</p>
+<p>logs      Fetch the logs of a container                 # 输出当前容器日志信息</p>
+<p>port      Lookup the public-facing port which is NAT-ed to PRIVATE_PORT    # 查看映射端口对应的容器内部源端口</p>
+<p>pause     Pause all processes within a container        # 暂停容器</p>
+<p>ps        List containers                               # 列出容器列表</p>
+<p>pull      Pull an image or a repository from the docker registry server   # 从docker镜像源服务器拉取指定镜像或者库镜像</p>
+<p>push      Push an image or a repository to the docker registry server    # 推送指定镜像或者库镜像至docker源服务器</p>
+<p>restart   Restart a running container                   # 重启运行的容器</p>
+<p>rm        Remove one or more containers                 # 移除一个或者多个容器</p>
+<p>rmi       Remove one or more images       # 移除一个或多个镜像[无容器使用该镜像才可删除，否则需删除相关容器才可继续或 -f 强制删除]</p>
+<p>run       Run a command in a new container              # 创建一个新的容器并运行一个命令</p>
+<p>save      Save an image to a tar archive                # 保存一个镜像为一个 tar 包[对应 load]</p>
+<p>search    Search for an image on the Docker Hub         # 在 docker hub 中搜索镜像</p>
+<p>start     Start a stopped containers                    # 启动容器</p>
+<p>stop      Stop a running containers                     # 停止容器</p>
+<p>tag       Tag an image into a repository                # 给源中镜像打标签</p>
+<p>top       Lookup the running processes of a container   # 查看容器中运行的进程信息</p>
+<p>unpause   Unpause a paused container                    # 取消暂停容器</p>
+<p>version   Show the docker version information           # 查看 docker 版本号</p>
+<p>wait      Block until a container stops, then print its exit code   # 截取容器停止时的退出状态值</p>
+<h2 id="以文件挂载的形式运行容器">以文件挂载的形式运行容器</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">docker run -it --privileged<span class="o">=</span><span class="nb">true</span> -v /home/helong/oyente/tmp:/oyente/contract --name oyente luongnguyen/oyente
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>-it : 以交互的方式打开伪终端
+&ndash;privileged=true: 打开的伪终端具有真正的管理员权限
+-v:文件的挂载目录
+&ndash;name: 重命名</p>
+<h2 id="批量测试文件脚本">批量测试文件脚本</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">suffx</span><span class="o">=</span><span class="s2">&#34;sol&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">newsuffx</span><span class="o">=</span><span class="s2">&#34;txt&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">exeFile</span><span class="o">=</span><span class="s2">&#34;../oyente/oyente.py&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">dir</span><span class="o">=</span><span class="k">$(</span><span class="nb">eval</span> <span class="nb">pwd</span><span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">resDir</span><span class="o">=</span><span class="s2">&#34;./res/&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> file in <span class="k">$(</span>ls <span class="nv">$dir</span> <span class="p">|</span> grep .<span class="si">${</span><span class="nv">suffx</span><span class="si">}</span><span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">resName</span><span class="o">=</span><span class="k">$(</span>ls <span class="si">${</span><span class="nv">file</span><span class="si">}</span> <span class="p">|</span> cut -d. -f1<span class="k">)</span>
+</span></span><span class="line"><span class="cl">	python <span class="si">${</span><span class="nv">exeFile</span><span class="si">}</span> -s <span class="nv">$file</span> 2&gt;&gt;<span class="si">${</span><span class="nv">resDir</span><span class="si">}${</span><span class="nv">resName</span><span class="si">}</span>.<span class="si">${</span><span class="nv">newsuffx</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;OK&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">墨初</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-08-14
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/vandal%E5%B7%A5%E5%85%B7%E6%89%B9%E9%87%8F%E5%A4%84%E7%90%86%E5%90%88%E7%BA%A6%E4%BB%A3%E7%A0%81/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Vandal工具批量处理合约代码</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/shell%E8%AF%AD%E6%B3%95/">
+            <span class="next-text nav-default">shell语法</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/longhe-lh" class="iconfont icon-github" title="github"></a>
+  <a href="http://helong0102.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2022 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>Long He</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

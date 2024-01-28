@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Vandal工具批量处理合约代码 - 墨初博客！</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="墨初" /><meta name="description" content="扫描文件：sol文件版本号 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 #!/usr/bin/python # -*- coding: utf-8 -*- # solc.py def scan(fileName): # 打开文件 f = open(fileName, &amp;#39;r&amp;#39;) # 读取文件 lines = f.readlines() for line in lines: if (&amp;#34;pragma&amp;#34; in line): index = line.find(&amp;#34;.&amp;#34;) return line[index" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.101.0 with theme even" />
+
+
+<link rel="canonical" href="http://helong0102.github.io/post/vandal%E5%B7%A5%E5%85%B7%E6%89%B9%E9%87%8F%E5%A4%84%E7%90%86%E5%90%88%E7%BA%A6%E4%BB%A3%E7%A0%81/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Vandal工具批量处理合约代码" />
+<meta property="og:description" content="扫描文件：sol文件版本号 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 #!/usr/bin/python # -*- coding: utf-8 -*- # solc.py def scan(fileName): # 打开文件 f = open(fileName, &#39;r&#39;) # 读取文件 lines = f.readlines() for line in lines: if (&#34;pragma&#34; in line): index = line.find(&#34;.&#34;) return line[index" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://helong0102.github.io/post/vandal%E5%B7%A5%E5%85%B7%E6%89%B9%E9%87%8F%E5%A4%84%E7%90%86%E5%90%88%E7%BA%A6%E4%BB%A3%E7%A0%81/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-08-14T01:37:56+09:40" />
+<meta property="article:modified_time" content="2022-08-14T01:37:56+09:40" />
+
+<meta itemprop="name" content="Vandal工具批量处理合约代码">
+<meta itemprop="description" content="扫描文件：sol文件版本号 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 #!/usr/bin/python # -*- coding: utf-8 -*- # solc.py def scan(fileName): # 打开文件 f = open(fileName, &#39;r&#39;) # 读取文件 lines = f.readlines() for line in lines: if (&#34;pragma&#34; in line): index = line.find(&#34;.&#34;) return line[index"><meta itemprop="datePublished" content="2022-08-14T01:37:56+09:40" />
+<meta itemprop="dateModified" content="2022-08-14T01:37:56+09:40" />
+<meta itemprop="wordCount" content="339">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vandal工具批量处理合约代码"/>
+<meta name="twitter:description" content="扫描文件：sol文件版本号 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 #!/usr/bin/python # -*- coding: utf-8 -*- # solc.py def scan(fileName): # 打开文件 f = open(fileName, &#39;r&#39;) # 读取文件 lines = f.readlines() for line in lines: if (&#34;pragma&#34; in line): index = line.find(&#34;.&#34;) return line[index"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Long He&#39;s blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">时间轴</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Long He&#39;s blog</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">时间轴</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Vandal工具批量处理合约代码</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-08-14 </span>
+        <div class="post-category">
+            <a href="/categories/vandal/"> Vandal </a>
+            </div>
+          <span class="more-meta"> 约 339 字 </span>
+          <span class="more-meta"> 预计阅读 1 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#扫描文件sol文件版本号">扫描文件：sol文件版本号</a></li>
+    <li><a href="#批量编译文件到指定目录">批量编译文件到指定目录</a></li>
+    <li><a href="#批量修改文件名后缀">批量修改文件名后缀</a></li>
+    <li><a href="#批量测试文件位于vandaltools目录下">批量测试文件（位于/vandal/tools目录下）</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="扫描文件sol文件版本号">扫描文件：sol文件版本号</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="ch">#!/usr/bin/python</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># -*- coding: utf-8 -*-</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># solc.py</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">scan</span><span class="p">(</span><span class="n">fileName</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 打开文件</span>
+</span></span><span class="line"><span class="cl">    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">fileName</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 读取文件</span>
+</span></span><span class="line"><span class="cl">    <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="s2">&#34;pragma&#34;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">index</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&#34;.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">line</span><span class="p">[</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">  <span class="n">scan</span><span class="p">()</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="批量编译文件到指定目录">批量编译文件到指定目录</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">suffix</span><span class="o">=</span><span class="s2">&#34;sol&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">dir</span><span class="o">=</span><span class="k">$(</span><span class="nb">eval</span> <span class="nb">pwd</span><span class="k">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> file in <span class="k">$(</span>ls <span class="nv">$dir</span> <span class="p">|</span> grep .<span class="si">${</span><span class="nv">suffix</span><span class="si">}</span><span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">checkresult</span><span class="o">=</span><span class="sb">`</span>python -c <span class="s2">&#34;import solc; print solc.scan(&#39;</span><span class="nv">$file</span><span class="s2">&#39;)&#34;</span><span class="sb">`</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="nv">$checkresult</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># 切换solc版本</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="o">[</span> <span class="nv">$checkresult</span> -eq <span class="m">4</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl">    	<span class="k">then</span>
+</span></span><span class="line"><span class="cl">       		solc-select use 0.4.26
+</span></span><span class="line"><span class="cl">		<span class="nb">echo</span> <span class="s2">&#34;change solc version 0.4.26&#34;</span>
+</span></span><span class="line"><span class="cl">    	<span class="k">fi</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="o">[</span> <span class="nv">$checkresult</span> -eq <span class="m">5</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl">    	<span class="k">then</span>
+</span></span><span class="line"><span class="cl">       		solc-select use 0.5.17
+</span></span><span class="line"><span class="cl">		<span class="nb">echo</span> <span class="s2">&#34;change solc version 0.5.17&#34;</span>
+</span></span><span class="line"><span class="cl">    	<span class="k">fi</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="o">[</span> <span class="nv">$checkresult</span> -eq <span class="m">6</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl">    	<span class="k">then</span>
+</span></span><span class="line"><span class="cl">       		solc-select use 0.6.12
+</span></span><span class="line"><span class="cl">		<span class="nb">echo</span> <span class="s2">&#34;change solc version 0.6.12&#34;</span>
+</span></span><span class="line"><span class="cl">    	<span class="k">fi</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="o">[</span> <span class="nv">$checkresult</span> -eq <span class="m">7</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl">    	<span class="k">then</span>
+</span></span><span class="line"><span class="cl">       		solc-select use 0.7.6
+</span></span><span class="line"><span class="cl">		<span class="nb">echo</span> <span class="s2">&#34;change solc version 0.7.6&#34;</span>
+</span></span><span class="line"><span class="cl">    	<span class="k">fi</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="o">[</span> <span class="nv">$checkresult</span> -eq <span class="m">8</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl">    	<span class="k">then</span>
+</span></span><span class="line"><span class="cl">       		solc-select use 0.8.16
+</span></span><span class="line"><span class="cl">		<span class="nb">echo</span> <span class="s2">&#34;change solc version 0.8.16&#34;</span>
+</span></span><span class="line"><span class="cl">    	<span class="k">fi</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># 执行solc 编译</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># solc --bin -o `outputDirPath` ${file}</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># solc --bin -o `outputDirPath` `./*.sol`</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;ok&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="批量修改文件名后缀">批量修改文件名后缀</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">oldsuffix</span><span class="o">=</span><span class="s2">&#34;bin&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">newsuffix</span><span class="o">=</span><span class="s2">&#34;hex&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">dir</span><span class="o">=</span><span class="k">$(</span><span class="nb">eval</span> <span class="nb">pwd</span><span class="k">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> file in <span class="k">$(</span>ls <span class="nv">$dir</span> <span class="p">|</span> grep .<span class="si">${</span><span class="nv">oldsuffix</span><span class="si">}</span><span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">name</span><span class="o">=</span><span class="k">$(</span>ls <span class="si">${</span><span class="nv">file</span><span class="si">}</span> <span class="p">|</span> cut -d. -f1<span class="k">)</span>
+</span></span><span class="line"><span class="cl">        mv <span class="nv">$file</span> <span class="si">${</span><span class="nv">name</span><span class="si">}</span>.<span class="si">${</span><span class="nv">newsuffix</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;ok&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="批量测试文件位于vandaltools目录下">批量测试文件（位于/vandal/tools目录下）</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">bulk_analyser/analyse.py -d ../examples ../datalog/demo_analyse.dl
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">墨初</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-08-14
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/mergesort/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">归并排序</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/docker%E4%B8%AD%E4%BD%BF%E7%94%A8oyente%E6%89%B9%E9%87%8F%E6%B5%8B%E8%AF%95%E8%84%9A%E6%9C%AC/">
+            <span class="next-text nav-default">docker中使用oyente批量测试脚本</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/longhe-lh" class="iconfont icon-github" title="github"></a>
+  <a href="http://helong0102.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2022 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>Long He</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

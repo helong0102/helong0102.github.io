@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/python/</link>
+    <description>Recent content in python on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Sep 2022 01:37:56 +0900</lastBuildDate><atom:link href="http://helong0102.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python 单例模式</title>
+      <link>http://helong0102.github.io/post/python%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Tue, 13 Sep 2022 01:37:56 +0900</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
+      <description>python 单例模式 单例模式实现介绍 使用类名() 创建对象时，Python解释首先会调用__new()__方法为对象分配空间。 __new__是一个由ob</description>
+    </item>
+    
+    <item>
+      <title>python数据序列-集合</title>
+      <link>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E9%9B%86%E5%90%88/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +1200</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E9%9B%86%E5%90%88/</guid>
+      <description>python数据序列集合——求交集、并集、差集 1、什么是集合 集合（set）是一个无序的不重复元素序列。 ① 天生去重 ② 无序 2、集合的定义 在pyt</description>
+    </item>
+    
+    <item>
+      <title>python数据序列-公共方法</title>
+      <link>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%85%AC%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +1357</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%85%AC%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <description>python数据序列-公共方法 1、什么是公共方法 所谓的公共方法就是支持大部分数据序列。 2、常见公共方法1 运算符 描述 支持的容器类型 + 合并 字符串</description>
+    </item>
+    
+    <item>
+      <title>python数据类型转换&amp;运算符与if结构</title>
+      <link>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8Eif%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +1400</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8Eif%E7%BB%93%E6%9E%84/</guid>
+      <description>python数据类型转换&amp;amp;运算符与if结构 一、Python数据类型转换 1、Python数据类型的转换方法 函数 说明 int(x [,base ]) 将x转换为一个</description>
+    </item>
+    
+    <item>
+      <title>python注释&amp;变量&amp;数据类型&amp;输入输出</title>
+      <link>http://helong0102.github.io/post/python%E6%B3%A8%E9%87%8A%E5%8F%98%E9%87%8F%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +1400</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E6%B3%A8%E9%87%8A%E5%8F%98%E9%87%8F%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</guid>
+      <description>python注释&amp;amp;变量&amp;amp;数据类型&amp;amp;输入输出 一、Python注释 1、Python注释的基本语法 ☆ 单行注释 单行注释，以&amp;</description>
+    </item>
+    
+    <item>
+      <title>python中的循环结构</title>
+      <link>http://helong0102.github.io/post/python%E4%B8%AD%E7%9A%84%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +1500</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E4%B8%AD%E7%9A%84%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/</guid>
+      <description>python中的循环结构 一、Python中循环 1、循环的种类 在Python中，循环一共分为两大类：while循环与for循环 思考问题：whi</description>
+    </item>
+    
+    <item>
+      <title>python中的函数</title>
+      <link>http://helong0102.github.io/post/python%E4%B8%AD%E7%9A%84%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +1530</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E4%B8%AD%E7%9A%84%E5%87%BD%E6%95%B0/</guid>
+      <description>python中的函数 一、Python中函数的作用与使用步骤 1、函数的定义 基本语法： 1 2 3 4 def 函数名称([参数1, 参数2, ...]): 函数体 ... [return 返回值]</description>
+    </item>
+    
+    <item>
+      <title>python-文件操作</title>
+      <link>http://helong0102.github.io/post/python-%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +1600</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python-%E6%96%87%E4%BB%B6/</guid>
+      <description>python-文件操作 一、文件的基本操作 1、文件操作三步走 ① 打开文件 ② 读写文件 ③ 关闭文件 2、open函数打开文件 在Python，使用open</description>
+    </item>
+    
+    <item>
+      <title>python面向对象</title>
+      <link>http://helong0102.github.io/post/python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +1620</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</guid>
+      <description>python面向对象 一、面向对象的基本概念 1、面向对象中两个比较重要概念 ☆ 对象 对象，object，现实业务逻辑的一个动作实体就对应着OOP编</description>
+    </item>
+    
+    <item>
+      <title>python异常</title>
+      <link>http://helong0102.github.io/post/python%E5%BC%82%E5%B8%B8/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +1650</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E5%BC%82%E5%B8%B8/</guid>
+      <description>python异常 一、Python异常 1、什么是异常 当检测到一个错误时，解释器就无法继续执行了，反而出现了一些错误的提示，这就是所谓的&amp;quo</description>
+    </item>
+    
+    <item>
+      <title>python模块&amp;包</title>
+      <link>http://helong0102.github.io/post/python%E6%A8%A1%E5%9D%97%E5%8C%85/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +1705</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E6%A8%A1%E5%9D%97%E5%8C%85/</guid>
+      <description>python模块、包 一、Python内置模块 1、什么是Python模块 Python 模块(Module)，是一个Python 文件，以 .py 结尾，包含了 Python 对象</description>
+    </item>
+    
+    <item>
+      <title>python数据序列-元组</title>
+      <link>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%85%83%E7%BB%84/</link>
+      <pubDate>Fri, 26 Aug 2022 01:37:56 +1100</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%85%83%E7%BB%84/</guid>
+      <description>python数据序列-元组 一、元组的定义与使用 1、为什么需要元组 如果想要存储多个数据，但是这些数据是不能修改的数据，可以使用元组，元组可以存</description>
+    </item>
+    
+    <item>
+      <title>python数据序列-字典</title>
+      <link>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%AD%97%E5%85%B8/</link>
+      <pubDate>Fri, 26 Aug 2022 01:37:56 +1140</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%AD%97%E5%85%B8/</guid>
+      <description>python数据序列-字典 1、为什么需要字典 如果要存储一个人的信息，姓名：Tom，年龄：20周岁，性别：男，如何快速存储。 1 person = [&amp;#39;Tom&amp;#39;, &amp;#39;20&amp;#39;, &amp;#39</description>
+    </item>
+    
+    <item>
+      <title>python数据序列-列表</title>
+      <link>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%88%97%E8%A1%A8/</link>
+      <pubDate>Wed, 24 Aug 2022 01:37:56 +1000</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%88%97%E8%A1%A8/</guid>
+      <description>python数据序列-列表 一、列表及其应用场景 在Python中，我们把存储数据序列的数据类型称之为列表。但是在其他的编程语言中，如Java、</description>
+    </item>
+    
+    <item>
+      <title>python数据序列-字符串</title>
+      <link>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
+      <pubDate>Wed, 17 Aug 2022 01:37:56 +1100</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
+      <description>python数据序列-字符串 一、字符串 1、字符串的定义 字符串是 Python 中最常用的数据类型, 一般使用引号来创建字符串。创建字符串只要为变量分配一个值</description>
+    </item>
+    
+  </channel>
+</rss>

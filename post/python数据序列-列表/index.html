@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>python数据序列-列表 - 墨初博客！</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="墨初" /><meta name="description" content="python数据序列-列表 一、列表及其应用场景 在Python中，我们把存储数据序列的数据类型称之为列表。但是在其他的编程语言中，如Java、" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.101.0 with theme even" />
+
+
+<link rel="canonical" href="http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%88%97%E8%A1%A8/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="python数据序列-列表" />
+<meta property="og:description" content="python数据序列-列表 一、列表及其应用场景 在Python中，我们把存储数据序列的数据类型称之为列表。但是在其他的编程语言中，如Java、" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%88%97%E8%A1%A8/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-08-24T01:37:56+10:00" />
+<meta property="article:modified_time" content="2022-08-24T01:37:56+11:00" />
+
+<meta itemprop="name" content="python数据序列-列表">
+<meta itemprop="description" content="python数据序列-列表 一、列表及其应用场景 在Python中，我们把存储数据序列的数据类型称之为列表。但是在其他的编程语言中，如Java、"><meta itemprop="datePublished" content="2022-08-24T01:37:56+10:00" />
+<meta itemprop="dateModified" content="2022-08-24T01:37:56+11:00" />
+<meta itemprop="wordCount" content="2555">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="python数据序列-列表"/>
+<meta name="twitter:description" content="python数据序列-列表 一、列表及其应用场景 在Python中，我们把存储数据序列的数据类型称之为列表。但是在其他的编程语言中，如Java、"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Long He&#39;s blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">时间轴</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Long He&#39;s blog</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">时间轴</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">python数据序列-列表</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-08-24 </span>
+        <div class="post-category">
+            <a href="/categories/python/"> python </a>
+            </div>
+          <span class="more-meta"> 约 2555 字 </span>
+          <span class="more-meta"> 预计阅读 6 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#python数据序列-列表">python数据序列-列表</a>
+      <ul>
+        <li><a href="#一列表及其应用场景">一、列表及其应用场景</a>
+          <ul>
+            <li><a href="#1列表的定义">1、列表的定义</a></li>
+            <li><a href="#2列表的相关操作">2、列表的相关操作</a></li>
+            <li><a href="#3列表的循环遍历">3、列表的循环遍历</a></li>
+            <li><a href="#4列表的嵌套">4、列表的嵌套</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="python数据序列-列表">python数据序列-列表</h1>
+<h2 id="一列表及其应用场景">一、列表及其应用场景</h2>
+<blockquote>
+<p>在Python中，我们把存储数据序列的数据类型称之为列表。但是在其他的编程语言中，如Java、PHP、Go等等中其被称之为数组。</p>
+</blockquote>
+<h3 id="1列表的定义">1、列表的定义</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">列表序列名称</span> <span class="o">=</span> <span class="p">[</span><span class="n">列表中的元素1</span><span class="p">,</span> <span class="n">列表中的元素2</span><span class="p">,</span> <span class="n">列表中的元素3</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>案例演示：定义一个列表，用于保存苹果、香蕉以及菠萝</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="s1">&#39;pineapple&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># list列表类型支持直接打印</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">list1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 打印列表的数据类型</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">list1</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>注意：列表可以一次存储多个数据且可以为<strong>不同的数据类型</strong></p>
+</blockquote>
+<h3 id="2列表的相关操作">2、列表的相关操作</h3>
+<p>列表的作用是一次性存储多个数据，程序员可以对这些数据进行的操作有：</p>
+<p><strong>增、删、改、查</strong>。</p>
+<h4 id="-查操作">☆ 查操作</h4>
+<p>列表在计算机中的底层存储形式，列表和字符串一样，在计算机内存中都占用一段连续的内存地址，我们访问列表中的每个元素，都可以通过&quot;索引下标&quot;的方式进行获取。</p>
+<p><img src="/img/hugo/05-python_list/image-20210310170752234.png" alt="image-20210310170752234"></p>
+<p>如果我们想获取列表中的某个元素，非常简单，直接使用索引下标：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="s1">&#39;pineapple&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 获取列表中的banana</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">list1</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>查操作的相关方法：</p>
+<table>
+<thead>
+<tr>
+<th><strong>编号</strong></th>
+<th><strong>函数</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>index()</td>
+<td>指定数据所在位置的下标</td>
+</tr>
+<tr>
+<td>2</td>
+<td>count()</td>
+<td>统计指定数据在当前列表中出现的次数</td>
+</tr>
+<tr>
+<td>3</td>
+<td>in</td>
+<td>判断指定数据在某个列表序列，如果在返回True，否则返回False</td>
+</tr>
+<tr>
+<td>4</td>
+<td>not in</td>
+<td>判断指定数据不在某个列表序列，如果不在返回True，否则返回False</td>
+</tr>
+</tbody>
+</table>
+<p>举个栗子：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 1、查找某个元素在列表中出现的位置（索引下标）</span>
+</span></span><span class="line"><span class="cl"><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="s1">&#39;pineapple&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">list1</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">))</span>  <span class="c1"># 0</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># print(list1.index(&#39;peach&#39;))  # 报错</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2、count()方法：统计元素在列表中出现的次数</span>
+</span></span><span class="line"><span class="cl"><span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;刘备&#39;</span><span class="p">,</span> <span class="s1">&#39;关羽&#39;</span><span class="p">,</span> <span class="s1">&#39;张飞&#39;</span><span class="p">,</span> <span class="s1">&#39;关羽&#39;</span><span class="p">,</span> <span class="s1">&#39;赵云&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 统计一下关羽这个元素在列表中出现的次数</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">list2</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;关羽&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3、in方法和not in方法（黑名单系统）</span>
+</span></span><span class="line"><span class="cl"><span class="n">list3</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;192.168.1.15&#39;</span><span class="p">,</span> <span class="s1">&#39;10.1.1.100&#39;</span><span class="p">,</span> <span class="s1">&#39;172.35.46.128&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="s1">&#39;10.1.1.100&#39;</span> <span class="ow">in</span> <span class="n">list3</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;黑名单IP，禁止访问&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;正常IP，访问站点信息&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="-增操作">☆ 增操作</h4>
+<table>
+<thead>
+<tr>
+<th><strong>编号</strong></th>
+<th><strong>函数</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>append()</td>
+<td>增加指定数据到列表中</td>
+</tr>
+<tr>
+<td>2</td>
+<td>extend()</td>
+<td>列表结尾追加数据，如果数据是一个序列，则将这个序列的数据逐一添加到列表</td>
+</tr>
+<tr>
+<td>3</td>
+<td>insert()</td>
+<td>指定位置新增数据</td>
+</tr>
+</tbody>
+</table>
+<h5 id="-append">☆ append()</h5>
+<p>append() ：在列表的尾部追加元素</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;孙悟空&#39;</span><span class="p">,</span> <span class="s1">&#39;唐僧&#39;</span><span class="p">,</span> <span class="s1">&#39;猪八戒&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 在列表的尾部追加一个元素&#34;沙僧&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;沙僧&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 打印列表</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>注意：列表追加数据的时候，直接在原列表里面追加了指定数据，即修改了原列表，故列表为可变类型数据。</p>
+</blockquote>
+<h5 id="-extend方法">☆ extend()方法</h5>
+<p>列表结尾追加数据，如果数据是一个序列，则将这个序列的数据逐一添加到列表</p>
+<p>案例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Tom&#39;</span><span class="p">,</span> <span class="s1">&#39;Rose&#39;</span><span class="p">,</span> <span class="s1">&#39;Jack&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 1、使用extend方法追加元素&#34;Jennify&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># list1.extend(&#34;Jennify&#34;)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># print(list1)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2、建议：使用extend方法两个列表进行合并</span>
+</span></span><span class="line"><span class="cl"><span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Hack&#39;</span><span class="p">,</span> <span class="s1">&#39;Jennify&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">list1</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">list2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">list1</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>总结：extend方法比较适合于两个列表进行元素的合并操作</p>
+</blockquote>
+<h5 id="-insert方法">☆ insert()方法</h5>
+<p>作用：在指定的位置增加元素</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;薛宝钗&#39;</span><span class="p">,</span> <span class="s1">&#39;林黛玉&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 在薛宝钗和林黛玉之间，插入一个新元素&#34;贾宝玉&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">names</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;贾宝玉&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="-删操作">☆ 删操作</h4>
+<table>
+<thead>
+<tr>
+<th><strong>编号</strong></th>
+<th><strong>函数</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>del 列表[索引]</td>
+<td>删除列表中的某个元素</td>
+</tr>
+<tr>
+<td>2</td>
+<td>pop()</td>
+<td>删除指定下标的数据(默认为最后一个)，并返回该数据</td>
+</tr>
+<tr>
+<td>3</td>
+<td>remove()</td>
+<td>移除列表中某个数据的第一个匹配项。</td>
+</tr>
+<tr>
+<td>4</td>
+<td>clear()</td>
+<td>清空列表，删除列表中的所有元素，返回空列表。</td>
+</tr>
+</tbody>
+</table>
+<h5 id="-del删除指定的列表元素">☆ del删除指定的列表元素</h5>
+<p>基本语法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Tom&#39;</span><span class="p">,</span> <span class="s1">&#39;Rose&#39;</span><span class="p">,</span> <span class="s1">&#39;Jack&#39;</span><span class="p">,</span> <span class="s1">&#39;Jennify&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 删除Rose</span>
+</span></span><span class="line"><span class="cl"><span class="k">del</span> <span class="n">names</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 打印列表</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="-pop方法">☆ pop()方法</h5>
+<p>作用：删除指定下标的元素，如果不填写下标，默认删除最后一个。其返回结果：就是删除的这个元素</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;貂蝉&#39;</span><span class="p">,</span> <span class="s1">&#39;吕布&#39;</span><span class="p">,</span> <span class="s1">&#39;董卓&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">del_name</span> <span class="o">=</span> <span class="n">names</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 或</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># del_name = names.pop(1)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">del_name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="-remove方法">☆ remove()方法</h5>
+<p>作用：删除匹配的元素</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fruit</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="s1">&#39;pineapple&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">fruit</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;banana&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">fruit</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="-clear方法">☆ clear()方法</h5>
+<p>清空列表</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;貂蝉&#39;</span><span class="p">,</span> <span class="s1">&#39;吕布&#39;</span><span class="p">,</span> <span class="s1">&#39;董卓&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 随着故事的发展，人物都game over</span>
+</span></span><span class="line"><span class="cl"><span class="n">names</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 打印列表</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="-改操作">☆ 改操作</h4>
+<table>
+<thead>
+<tr>
+<th><strong>编号</strong></th>
+<th><strong>函数</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>列表[索引] = 修改后的值</td>
+<td>修改列表中的某个元素</td>
+</tr>
+<tr>
+<td>2</td>
+<td>reverse()</td>
+<td>将数据序列进行倒叙排列</td>
+</tr>
+<tr>
+<td>3</td>
+<td>sort()</td>
+<td>对列表序列进行排序</td>
+</tr>
+<tr>
+<td>4</td>
+<td>copy()</td>
+<td>对列表序列进行拷贝</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;貂蝉&#39;</span><span class="p">,</span> <span class="s1">&#39;大乔&#39;</span><span class="p">,</span> <span class="s1">&#39;小乔&#39;</span><span class="p">,</span> <span class="s1">&#39;八戒&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 修改列表中的元素</span>
+</span></span><span class="line"><span class="cl"><span class="n">list1</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;周瑜&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">list1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">list2</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">list2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">list3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">list3</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>  <span class="c1"># 升序(从小到大)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 或</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># list3.sort(reverse=True)  # 降序(从大到小)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">list3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">list4</span> <span class="o">=</span> <span class="n">list3</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">list4</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="3列表的循环遍历">3、列表的循环遍历</h3>
+<p>什么是循环遍历？答：循环遍历就是使用while或for循环对列表中的每个数据进行打印输出</p>
+<p>while循环：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;貂蝉&#39;</span><span class="p">,</span> <span class="s1">&#39;大乔&#39;</span><span class="p">,</span> <span class="s1">&#39;小乔&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 定义计数器</span>
+</span></span><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 编写循环条件</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">list1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">list1</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 更新计数器</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>for循环（<strong>比较推荐</strong>）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;貂蝉&#39;</span><span class="p">,</span> <span class="s1">&#39;大乔&#39;</span><span class="p">,</span> <span class="s1">&#39;小乔&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">list1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="4列表的嵌套">4、列表的嵌套</h3>
+<p>列表的嵌套：列表中又有一个列表，这种情况就称之为<strong>列表嵌套</strong></p>
+<blockquote>
+<p>在其他编程语言中，称之为叫做二维数组或多维数组</p>
+</blockquote>
+<p>应用场景：要存储班级一、二、三  =&gt; 三个班级学生姓名，且每个班级的学生姓名在一个列表。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">classes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;第一个班级&#39;</span><span class="p">,</span><span class="s1">&#39;第二个班级&#39;</span><span class="p">,</span><span class="s1">&#39;第三个班级&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">一班</span><span class="err">：</span><span class="p">[</span><span class="s1">&#39;张三&#39;</span><span class="p">,</span> <span class="s1">&#39;李四&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">二班</span><span class="err">：</span><span class="p">[</span><span class="s1">&#39;王五&#39;</span><span class="p">,</span> <span class="s1">&#39;赵六&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">三班</span><span class="err">：</span><span class="p">[</span><span class="s1">&#39;田七&#39;</span><span class="p">,</span> <span class="s1">&#39;孙八&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">把班级和学员信息合并在一起</span><span class="err">，</span><span class="n">组成一个嵌套列表</span>
+</span></span><span class="line"><span class="cl"><span class="n">students</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;张三&#39;</span><span class="p">,</span> <span class="s1">&#39;李四&#39;</span><span class="p">],[</span><span class="s1">&#39;王五&#39;</span><span class="p">,</span> <span class="s1">&#39;赵六&#39;</span><span class="p">],[</span><span class="s1">&#39;田七&#39;</span><span class="p">,</span> <span class="s1">&#39;孙八&#39;</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">students</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">students</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;张三&#39;</span><span class="p">,</span> <span class="s1">&#39;李四&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">students</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>嵌套后的列表访问</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 访问李四</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">students</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 嵌套列表进行遍历，获取每个班级的学员信息</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">students</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="c1"># 列表可以直接输出</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">墨初</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-08-24
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">区间合并</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/%E5%89%8D%E7%BC%80%E5%92%8C%E5%B7%AE%E5%88%86/">
+            <span class="next-text nav-default">前缀和&amp;差分</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/longhe-lh" class="iconfont icon-github" title="github"></a>
+  <a href="http://helong0102.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2022 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>Long He</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
