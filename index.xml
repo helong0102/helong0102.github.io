@@ -17,12 +17,12 @@
     </item>
     
     <item>
-      <title>测试20240905</title>
-      <link>http://helong0102.github.io/post/%E6%B5%8B%E8%AF%9520240905/</link>
+      <title>GitHub: Permission denied (publickey)</title>
+      <link>http://helong0102.github.io/post/github-permission-denied-publickey/</link>
       <pubDate>Thu, 05 Sep 2024 01:37:56 +1300</pubDate>
       
-      <guid>http://helong0102.github.io/post/%E6%B5%8B%E8%AF%9520240905/</guid>
-      <description>测试20240905 测试</description>
+      <guid>http://helong0102.github.io/post/github-permission-denied-publickey/</guid>
+      <description>GitHub: Permission denied (publickey) 错误 在使用git命令 git push -u origin master , 出现如下报错： 1 2 3 4 git@github.com: Permission denied (publickey). fatal: Could not read from remote repository. Please make sure you have the correct access rights and the repository exists. 解决步骤 Permission denied (publickey) 没有权限的pub</description>
     </item>
     
     <item>
