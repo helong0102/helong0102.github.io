@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/</link>
+    <description>Recent content in Categories on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Sep 2024 01:37:56 +1300</lastBuildDate><atom:link href="http://helong0102.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>测试20240905</title>
+      <link>http://helong0102.github.io/categories/%E6%B5%8B%E8%AF%9520240905/</link>
+      <pubDate>Thu, 05 Sep 2024 01:37:56 +1300</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/%E6%B5%8B%E8%AF%9520240905/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>http://helong0102.github.io/categories/linux/</link>
+      <pubDate>Sat, 06 Jan 2024 01:37:56 +1716</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>http://helong0102.github.io/categories/docker/</link>
+      <pubDate>Wed, 17 May 2023 01:37:56 +2200</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anaconda</title>
+      <link>http://helong0102.github.io/categories/anaconda/</link>
+      <pubDate>Fri, 12 May 2023 01:37:56 +1300</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/anaconda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pyenv</title>
+      <link>http://helong0102.github.io/categories/pyenv/</link>
+      <pubDate>Wed, 19 Apr 2023 01:37:56 +1300</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/pyenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>http://helong0102.github.io/categories/python/</link>
+      <pubDate>Tue, 13 Sep 2022 01:37:56 +0900</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>souffle</title>
+      <link>http://helong0102.github.io/categories/souffle/</link>
+      <pubDate>Tue, 06 Sep 2022 01:37:56 +1900</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/souffle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>algorithm</title>
+      <link>http://helong0102.github.io/categories/algorithm/</link>
+      <pubDate>Sat, 03 Sep 2022 01:37:56 +2000</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stl</title>
+      <link>http://helong0102.github.io/categories/stl/</link>
+      <pubDate>Fri, 02 Sep 2022 01:37:56 +0900</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/stl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ethereum</title>
+      <link>http://helong0102.github.io/categories/ethereum/</link>
+      <pubDate>Tue, 30 Aug 2022 01:37:56 +2000</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/ethereum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>oyente</title>
+      <link>http://helong0102.github.io/categories/oyente/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +0800</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/oyente/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>http://helong0102.github.io/categories/vim/</link>
+      <pubDate>Mon, 15 Aug 2022 01:37:56 +1000</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vandal</title>
+      <link>http://helong0102.github.io/categories/vandal/</link>
+      <pubDate>Sun, 14 Aug 2022 01:37:56 +0940</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/vandal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>http://helong0102.github.io/categories/shell/</link>
+      <pubDate>Sun, 14 Aug 2022 01:37:56 +1456</pubDate>
+      
+      <guid>http://helong0102.github.io/categories/shell/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>python数据类型转换&amp;运算符与if结构 - 墨初博客！</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="墨初" /><meta name="description" content="python数据类型转换&amp;amp;运算符与if结构 一、Python数据类型转换 1、Python数据类型的转换方法 函数 说明 int(x [,base ]) 将x转换为一个" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.101.0 with theme even" />
+
+
+<link rel="canonical" href="http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8Eif%E7%BB%93%E6%9E%84/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="python数据类型转换&amp;运算符与if结构" />
+<meta property="og:description" content="python数据类型转换&amp;运算符与if结构 一、Python数据类型转换 1、Python数据类型的转换方法 函数 说明 int(x [,base ]) 将x转换为一个" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8Eif%E7%BB%93%E6%9E%84/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-08-27T01:37:56+14:00" />
+<meta property="article:modified_time" content="2022-08-27T01:37:56+15:00" />
+
+<meta itemprop="name" content="python数据类型转换&amp;运算符与if结构">
+<meta itemprop="description" content="python数据类型转换&amp;运算符与if结构 一、Python数据类型转换 1、Python数据类型的转换方法 函数 说明 int(x [,base ]) 将x转换为一个"><meta itemprop="datePublished" content="2022-08-27T01:37:56+14:00" />
+<meta itemprop="dateModified" content="2022-08-27T01:37:56+15:00" />
+<meta itemprop="wordCount" content="2392">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="python数据类型转换&amp;运算符与if结构"/>
+<meta name="twitter:description" content="python数据类型转换&amp;运算符与if结构 一、Python数据类型转换 1、Python数据类型的转换方法 函数 说明 int(x [,base ]) 将x转换为一个"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Long He&#39;s blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">时间轴</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Long He&#39;s blog</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">时间轴</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">python数据类型转换&amp;运算符与if结构</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-08-27 </span>
+        <div class="post-category">
+            <a href="/categories/python/"> python </a>
+            </div>
+          <span class="more-meta"> 约 2392 字 </span>
+          <span class="more-meta"> 预计阅读 5 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#python数据类型转换运算符与if结构">python数据类型转换&amp;运算符与if结构</a>
+      <ul>
+        <li><a href="#一python数据类型转换">一、Python数据类型转换</a>
+          <ul>
+            <li><a href="#1python数据类型的转换方法">1、Python数据类型的转换方法</a></li>
+            <li><a href="#2总结">2、总结</a></li>
+          </ul>
+        </li>
+        <li><a href="#二python运算符">二、Python运算符</a>
+          <ul>
+            <li><a href="#1算术运算符">1、算术运算符</a></li>
+            <li><a href="#2赋值运算符">2、赋值运算符</a></li>
+            <li><a href="#3复合赋值运算符">3、复合赋值运算符</a></li>
+            <li><a href="#4比较运算符">4、比较运算符</a></li>
+            <li><a href="#5逻辑运算符与或非">5、逻辑运算符（与或非）</a></li>
+            <li><a href="#6扩展短路运算">6、扩展：短路运算</a></li>
+            <li><a href="#7运算符的优先级">7、运算符的优先级</a></li>
+          </ul>
+        </li>
+        <li><a href="#三if选择判断结构">三、if选择判断结构</a>
+          <ul>
+            <li><a href="#1if选择判断结构的基本语法">1、if选择判断结构的基本语法</a></li>
+            <li><a href="#2if选择结构">2、if选择结构</a></li>
+            <li><a href="#3ifelse结构">3、if&hellip;else&hellip;结构</a></li>
+            <li><a href="#4ifelifelse多条件判断结构">4、if&hellip;elif&hellip;else多条件判断结构</a></li>
+            <li><a href="#5if嵌套结构">5、if嵌套结构</a></li>
+          </ul>
+        </li>
+        <li><a href="#四三目运算符">四、三目运算符</a>
+          <ul>
+            <li><a href="#1三目运算符">1、三目运算符</a></li>
+            <li><a href="#2基本语法">2、基本语法</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="python数据类型转换运算符与if结构">python数据类型转换&amp;运算符与if结构</h1>
+<h2 id="一python数据类型转换">一、Python数据类型转换</h2>
+<h3 id="1python数据类型的转换方法">1、Python数据类型的转换方法</h3>
+<table>
+<thead>
+<tr>
+<th><strong>函数</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>int(x [,base ])</strong></td>
+<td>将x转换为一个整数</td>
+</tr>
+<tr>
+<td><strong>float(x)</strong></td>
+<td>将x转换为一个浮点数</td>
+</tr>
+<tr>
+<td>complex(real  [,imag  ])</td>
+<td>创建一个复数，real为实部，imag为虚部</td>
+</tr>
+<tr>
+<td><strong>str(x)</strong></td>
+<td>将对象 x  转换为字符串</td>
+</tr>
+<tr>
+<td>repr(x)</td>
+<td>将对象  x  转换为表达式字符串</td>
+</tr>
+<tr>
+<td><strong>eval(str)</strong></td>
+<td>用来计算在字符串中的有效Python表达式,并返回一个对象</td>
+</tr>
+<tr>
+<td>tuple(s)</td>
+<td>将序列 s  转换为一个元组</td>
+</tr>
+<tr>
+<td>list(s)</td>
+<td>将序列 s  转换为一个列表</td>
+</tr>
+<tr>
+<td>chr(x)</td>
+<td>将一个整数转换为一个Unicode字符</td>
+</tr>
+<tr>
+<td>ord(x)</td>
+<td>将一个字符转换为它的ASCII整数值</td>
+</tr>
+<tr>
+<td>hex(x)</td>
+<td>将一个整数转换为一个十六进制字符串</td>
+</tr>
+<tr>
+<td>oct(x)</td>
+<td>将一个整数转换为一个八进制字符串</td>
+</tr>
+<tr>
+<td>bin(x)</td>
+<td>将一个整数转换为一个二进制字符串</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2总结">2、总结</h3>
+<p>数据类型转换方法一共学了4个方法：</p>
+<p>int() ：转整型</p>
+<p>float() ：转浮点类型</p>
+<p>str() ：转字符串类型</p>
+<p>eval() ：把字符串转换为原数据类型</p>
+<p>但是要特别注意：当float浮点类型转换为int整型时，其小数点后面的数据会丢失，一定要记住这个特性。</p>
+<h2 id="二python运算符">二、Python运算符</h2>
+<h3 id="1算术运算符">1、算术运算符</h3>
+<p>所谓的算数运算符就是我们日常生活中的加减乘除等待。</p>
+<table>
+<thead>
+<tr>
+<th><strong>运算符</strong></th>
+<th><strong>描述</strong></th>
+<th><strong>实例</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>加</td>
+<td>1 +  1 输出结果为  2</td>
+</tr>
+<tr>
+<td>-</td>
+<td>减</td>
+<td>1 -  1 输出结果为  0</td>
+</tr>
+<tr>
+<td>*</td>
+<td>乘</td>
+<td>2 *  2 输出结果为  4</td>
+</tr>
+<tr>
+<td>/</td>
+<td>除</td>
+<td>10  / 2 输出结果为  5</td>
+</tr>
+<tr>
+<td>//</td>
+<td>整除</td>
+<td>9  // 4 输出结果为 2</td>
+</tr>
+<tr>
+<td>%</td>
+<td>取余（取模）</td>
+<td>9 %  4 输出结果为  1</td>
+</tr>
+<tr>
+<td>**</td>
+<td>幂指数</td>
+<td>2  ** 4 输出结果为  16，即2的4次方，2  * 2 * 2 * 2</td>
+</tr>
+<tr>
+<td>()</td>
+<td>小括号</td>
+<td>小括号用来提高运算优先级，即  (1  + 2) * 3 输出结果为  9</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2赋值运算符">2、赋值运算符</h3>
+<table>
+<thead>
+<tr>
+<th><strong>运算符</strong></th>
+<th><strong>描述</strong></th>
+<th><strong>实例</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>赋值</td>
+<td>将=右侧的结果赋值给等号左侧的变量</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3复合赋值运算符">3、复合赋值运算符</h3>
+<blockquote>
+<p>复合赋值运算符的计算顺序 = 先执行算术运算符，执行完毕后，把结果在赋值给左边的变量。</p>
+</blockquote>
+<p>案例：综合案例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 相加并赋值，先加1，然后把结果赋值给左边的变量</span>
+</span></span><span class="line"><span class="cl"><span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;更新后，i的值为：</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">num1</span> <span class="o">=</span> <span class="mi">9</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 取模并赋值，先求余数，然后在把结果赋值给左边的变量</span>
+</span></span><span class="line"><span class="cl"><span class="n">num1</span> <span class="o">%=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;更新后，num1的值为：</span><span class="si">{</span><span class="n">num1</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">num2</span> <span class="o">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 幂指数并赋值，先求幂指数，然后把结果赋值给左边的变量</span>
+</span></span><span class="line"><span class="cl"><span class="n">num2</span> <span class="o">**=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;更新后，num2的值为：</span><span class="si">{</span><span class="n">num2</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="4比较运算符">4、比较运算符</h3>
+<blockquote>
+<p>特别注意：当我们使用比较运算符对两个变量进行比较时，其返回一个布尔类型的值。</p>
+</blockquote>
+<p>案例：两个数大小的比较</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">num1</span> <span class="o">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl"><span class="n">num2</span> <span class="o">=</span> <span class="mi">20</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">&gt;</span> <span class="n">num2</span><span class="p">)</span>  <span class="c1"># False</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">&lt;</span> <span class="n">num2</span><span class="p">)</span>  <span class="c1"># True</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">&gt;=</span> <span class="n">num2</span><span class="p">)</span> <span class="c1"># False</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">&lt;=</span> <span class="n">num2</span><span class="p">)</span> <span class="c1"># True</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">==</span> <span class="n">num2</span><span class="p">)</span> <span class="c1"># False</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">!=</span> <span class="n">num2</span><span class="p">)</span> <span class="c1"># True</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="5逻辑运算符与或非">5、逻辑运算符（与或非）</h3>
+<p><img src="/img/hugo/13/image-20210307144233542.png" alt="image-20210307144233542"></p>
+<blockquote>
+<p>not就是取反，只有一个表达式<code>not 表达式</code>，如果表达式为True，则not以后就返回False。反之，则返回True。 = 1</p>
+</blockquote>
+<h3 id="6扩展短路运算">6、扩展：短路运算</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="ow">and</span> <span class="mi">4</span> <span class="ow">and</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># 5</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="ow">and</span> <span class="mi">6</span> <span class="ow">or</span> <span class="mi">7</span><span class="p">)</span>   <span class="c1"># 6</span>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">3</span> <span class="ow">and</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello world&#39;</span><span class="p">)</span>  <span class="c1"># 输出hello world</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在逻辑运算中，不一定逻辑运算符的两边都是纯表达式。也可以是数值类型的数据。</p>
+<p><strong>Python把0、空字符串和None看成 False，其他数值和非空字符串都看成 True</strong>，所以：</p>
+<p>① 在计算 a and b 时，如果 a 是 False，则根据与运算法则，整个结果必定为 False，因此返回 a；如果 a 是 True，则整个计算结果必定取决与 b，因此返回 b。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="ow">and</span> <span class="mi">4</span><span class="p">)</span>  <span class="c1"># 4</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="mi">0</span> <span class="ow">and</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># 0</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>② 在计算 a or b 时，如果 a 是 True，则根据或运算法则，整个计算结果必定为 True，因此返回 a；如果 a 是 False，则整个计算结果必定取决于 b，因此返回 b。 所以Python解释器在做布尔运算时，只要能提前确定计算结果，它就不会往后算了，直接返回结果。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="mi">6</span> <span class="ow">or</span> <span class="mi">7</span><span class="p">)</span>  <span class="c1"># 6</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="mi">6</span> <span class="ow">and</span> <span class="mi">7</span> <span class="ow">or</span> <span class="mi">8</span><span class="p">)</span>  <span class="c1"># 7</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="7运算符的优先级">7、运算符的优先级</h3>
+<p>什么是运算符的优先级？其实我们小学就已经接触过了，就是在一个表达式中，我们先算谁的问题。</p>
+<blockquote>
+<p>先算乘除，后算加减，有括号的先算括号里面的。</p>
+</blockquote>
+<p><img src="/img/hugo/13/image-20210307153001187.png" alt="image-20210307153001187"></p>
+<p>建议：</p>
+<blockquote>
+<p>① 不要把一个表达式写得过于复杂，如果一个表达式过于复杂，尝试把它拆分来书写</p>
+</blockquote>
+<blockquote>
+<p>② 不要过于依赖运算符的优先级来控制表达式的执行顺序，这样可读性太差，应尽量使用( )来控制表达式的执行顺序</p>
+</blockquote>
+<h2 id="三if选择判断结构">三、if选择判断结构</h2>
+<h3 id="1if选择判断结构的基本语法">1、if选择判断结构的基本语法</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">if</span> <span class="n">条件判断</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">则执行某段代码</span><span class="o">...</span> 
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="2if选择结构">2、if选择结构</h3>
+<p><img src="/img/hugo/13/image-20210307161204181.png" alt="image-20210307161204181"></p>
+<h3 id="3ifelse结构">3、if&hellip;else&hellip;结构</h3>
+<p>基本语法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">if</span> <span class="n">条件判断</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">当条件判断为True时</span><span class="err">，</span><span class="n">则执行这个语句段</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">当条件判断为False时</span><span class="err">，</span><span class="n">则执行这个语句段</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>if&hellip;else&hellip;结构原理图：</p>
+<p><img src="/img/hugo/13/image-20210307162555060.png" alt="image-20210307162555060"></p>
+<h3 id="4ifelifelse多条件判断结构">4、if&hellip;elif&hellip;else多条件判断结构</h3>
+<p>如果条件1成立，则执行语句段1</p>
+<p>如果条件2成立，则执行语句段2</p>
+<p>&hellip;</p>
+<p>当所有条件都不成立时，则执行else语句段中的内容</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">if</span> <span class="n">条件判断1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">如果此条件为True</span><span class="err">，</span><span class="n">则执行这个语句段</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="n">条件判断2</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">如果此条件为True</span><span class="err">，</span><span class="n">则执行这个语句段</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="o">...</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">如果以上所有条件判断都不满足时</span><span class="err">，</span><span class="n">则执行这个语句段</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>简写形式：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 定义一个变量，接收用户输入的年龄</span>
+</span></span><span class="line"><span class="cl"><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的年龄：&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;你还是一个童工，回去好好学习&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="mi">18</span> <span class="o">&lt;=</span> <span class="n">age</span> <span class="o">&lt;=</span> <span class="mi">60</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;合法工龄，可以正常工作&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;您已经达到了退休年龄，回家好好休息&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;信息输入有误，请重新输入&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>if多重条件判断原理图：</p>
+<p><img src="/img/hugo/13/image-20210307165907589.png" alt="image-20210307165907589"></p>
+<h3 id="5if嵌套结构">5、if嵌套结构</h3>
+<p>基本语法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">if</span> <span class="n">外层条件判断</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 如果条件为True，则执行以下语句段</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">内层条件判断</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># 如果内层条件为True，则执行以下语句段</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 如果条件为False，则执行以下语句段</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>嵌套结构看起来异常复杂，但是我们在编写时要遵循一个原则：<strong>先编写外层判断，所有语句编写完成后，在编写内层条件判断结构。</strong></p>
+<h2 id="四三目运算符">四、三目运算符</h2>
+<h3 id="1三目运算符">1、三目运算符</h3>
+<p>在Python中三目运算符也叫三元运算符，其主要作用：就是用于简化if&hellip;else&hellip;语句。</p>
+<h3 id="2基本语法">2、基本语法</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">if</span> <span class="n">条件判断</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 语句段1</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 语句段2</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>转换为三目运算符：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">语句段1</span> <span class="k">if</span> <span class="n">条件判断</span> <span class="k">else</span> <span class="n">语句段2</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">墨初</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-08-27
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%85%AC%E7%94%A8%E6%96%B9%E6%B3%95/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">python数据序列-公共方法</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/python%E6%B3%A8%E9%87%8A%E5%8F%98%E9%87%8F%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/">
+            <span class="next-text nav-default">python注释&amp;变量&amp;数据类型&amp;输入输出</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/longhe-lh" class="iconfont icon-github" title="github"></a>
+  <a href="http://helong0102.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2022 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>Long He</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

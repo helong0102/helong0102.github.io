@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stl on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/stl/</link>
+    <description>Recent content in stl on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Sep 2022 01:37:56 +0900</lastBuildDate><atom:link href="http://helong0102.github.io/categories/stl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43; STL</title>
+      <link>http://helong0102.github.io/post/c&#43;&#43;stl/</link>
+      <pubDate>Fri, 02 Sep 2022 01:37:56 +0900</pubDate>
+      
+      <guid>http://helong0102.github.io/post/c&#43;&#43;stl/</guid>
+      <description>STL vector, 变长数组，倍增的思想 1 2 3 4 5 6 7 8 size() 返回元素个数 empty() 返回是否为空 clear() 清空 front()/back() 返回第一个数/最后一个数 push_back() / pop_back() 向vector插入一个数/ 把vec</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>oyente on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/oyente/</link>
+    <description>Recent content in oyente on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Aug 2022 01:37:56 +0800</lastBuildDate><atom:link href="http://helong0102.github.io/categories/oyente/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>oyente工具安装</title>
+      <link>http://helong0102.github.io/post/oyente%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +0800</pubDate>
+      
+      <guid>http://helong0102.github.io/post/oyente%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/</guid>
+      <description>oyente工具安装 注意 ① python 的版本要大于 3.5，如果同时有 python2 和 python3，所有命令使用 python3 和 pip3。 ② Oyente 目前只支持 0.4.19 以下的 solidity 版本，最好的</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>python中的循环结构 - 墨初博客！</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="墨初" /><meta name="description" content="python中的循环结构 一、Python中循环 1、循环的种类 在Python中，循环一共分为两大类：while循环与for循环 思考问题：whi" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.101.0 with theme even" />
+
+
+<link rel="canonical" href="http://helong0102.github.io/post/python%E4%B8%AD%E7%9A%84%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="python中的循环结构" />
+<meta property="og:description" content="python中的循环结构 一、Python中循环 1、循环的种类 在Python中，循环一共分为两大类：while循环与for循环 思考问题：whi" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://helong0102.github.io/post/python%E4%B8%AD%E7%9A%84%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-08-27T01:37:56+15:00" />
+<meta property="article:modified_time" content="2022-08-27T01:37:56+15:09" />
+
+<meta itemprop="name" content="python中的循环结构">
+<meta itemprop="description" content="python中的循环结构 一、Python中循环 1、循环的种类 在Python中，循环一共分为两大类：while循环与for循环 思考问题：whi"><meta itemprop="datePublished" content="2022-08-27T01:37:56+15:00" />
+<meta itemprop="dateModified" content="2022-08-27T01:37:56+15:09" />
+<meta itemprop="wordCount" content="3013">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="python中的循环结构"/>
+<meta name="twitter:description" content="python中的循环结构 一、Python中循环 1、循环的种类 在Python中，循环一共分为两大类：while循环与for循环 思考问题：whi"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Long He&#39;s blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">时间轴</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Long He&#39;s blog</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">时间轴</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">python中的循环结构</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-08-27 </span>
+        <div class="post-category">
+            <a href="/categories/python/"> python </a>
+            </div>
+          <span class="more-meta"> 约 3013 字 </span>
+          <span class="more-meta"> 预计阅读 7 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#python中的循环结构">python中的循环结构</a>
+      <ul>
+        <li><a href="#一python中循环">一、Python中循环</a>
+          <ul>
+            <li><a href="#1循环的种类">1、循环的种类</a></li>
+          </ul>
+        </li>
+        <li><a href="#二while循环基本语法">二、while循环基本语法</a>
+          <ul>
+            <li><a href="#1while循环的基本语法">1、while循环的基本语法</a></li>
+            <li><a href="#2while循环的执行流程">2、while循环的执行流程</a></li>
+            <li><a href="#3编写循环式常见问题">3、编写循环式常见问题</a></li>
+          </ul>
+        </li>
+        <li><a href="#三循环中的两大关键词">三、循环中的两大关键词</a>
+          <ul>
+            <li><a href="#1两大关键词">1、两大关键词</a></li>
+            <li><a href="#2死循环概念">2、死循环概念</a></li>
+          </ul>
+        </li>
+        <li><a href="#四while循环嵌套">四、while循环嵌套</a>
+          <ul>
+            <li><a href="#1循环嵌套的基本语法">1、循环嵌套的基本语法</a></li>
+            <li><a href="#2循环嵌套的执行流程">2、循环嵌套的执行流程</a></li>
+          </ul>
+        </li>
+        <li><a href="#五for循环基本语法">五、for循环基本语法</a>
+          <ul>
+            <li><a href="#1for循环基本语法">1、for循环基本语法</a></li>
+            <li><a href="#2range方法函数">2、range方法（函数）</a></li>
+            <li><a href="#3循环中的两大关键字">3、循环中的两大关键字</a></li>
+            <li><a href="#4for循环嵌套">4、for循环嵌套</a></li>
+          </ul>
+        </li>
+        <li><a href="#六while循环与for循环中的else结构">六、while循环与for循环中的else结构</a>
+          <ul>
+            <li><a href="#1为什么需要在while循环中添加else结构">1、为什么需要在while循环中添加else结构</a></li>
+            <li><a href="#2while循环中else的基本语法">2、while循环中else的基本语法</a></li>
+            <li><a href="#3break关键字对whileelse结构的影响">3、break关键字对while&hellip;else结构的影响</a></li>
+            <li><a href="#4continue关键字对whileelse结构的影响">4、continue关键字对while&hellip;else结构的影响</a></li>
+            <li><a href="#5for循环结构中的else结构">5、for循环结构中的else结构</a></li>
+            <li><a href="#6break关键字对forelse结构的影响">6、break关键字对for&hellip;else结构的影响</a></li>
+            <li><a href="#7continue关键字对forelse结构的影响">7、continue关键字对for&hellip;else结构的影响</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="python中的循环结构">python中的循环结构</h1>
+<h2 id="一python中循环">一、Python中循环</h2>
+<h3 id="1循环的种类">1、循环的种类</h3>
+<p>在Python中，循环一共分为两大类：while循环与for循环</p>
+<p>思考问题：while循环和for循环如何选择呢？</p>
+<p><strong>① 对于循环次数已知的情况，建议使用while循环</strong></p>
+<p><strong>② 对于循环次数未知的情况，建议使用for循环</strong></p>
+<h2 id="二while循环基本语法">二、while循环基本语法</h2>
+<h3 id="1while循环的基本语法">1、while循环的基本语法</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-3" data-lang="3"><span class="line"><span class="cl"># ① 定义一个计数器（初始化一个计数器）
+</span></span><span class="line"><span class="cl">i = 0或1
+</span></span><span class="line"><span class="cl"># ② 编写while循环结构
+</span></span><span class="line"><span class="cl">while 循环条件(判断 计数器 是否达到了目标位置):
+</span></span><span class="line"><span class="cl">	循环体1
+</span></span><span class="line"><span class="cl">	循环体2
+</span></span><span class="line"><span class="cl">	...
+</span></span><span class="line"><span class="cl">	# ③ 在循环内部更新计数器
+</span></span><span class="line"><span class="cl">	i = i + 1 或 i += 1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>总结：while循环三步走</p>
+<p><strong>① 初始化计数器</strong></p>
+<p><strong>② 编写循环条件（判断计数器是否达到了目标位置）</strong></p>
+<p><strong>③ 在循环内部更新计数器</strong></p>
+<h3 id="2while循环的执行流程">2、while循环的执行流程</h3>
+<p>while循环流程图：</p>
+<p><img src="/img/hugo/14/image-20210309103649130.png" alt="image-20210309103649130"></p>
+<h3 id="3编写循环式常见问题">3、编写循环式常见问题</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">result</span> <span class="o">+=</span> <span class="n">i</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;1~100之间所有偶数的和：</span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>问题的原因：在于i += 1缩进了2次，导致其和if形成了一个整体。while循环中计数器无法更新，最终导致以上代码出现了死循环。</p>
+<h2 id="三循环中的两大关键词">三、循环中的两大关键词</h2>
+<h3 id="1两大关键词">1、两大关键词</h3>
+<p>在Python循环中，经常会遇到两个常见的关键词：break 与 continue</p>
+<p>break：代表终止整个循环结构</p>
+<p>continue：代表中止当前本次循环，继续下一次循环</p>
+<h4 id="break关键字">break关键字</h4>
+<p>情况一：如果吃的过程中，吃完第三个吃饱了，则不需要再吃第4个和第5个苹果，即是吃苹果的动作停止，这里就是break控制循环流程，即终止此循环。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 初始化计数器</span>
+</span></span><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 编写循环条件</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 当变量i == 4的时候，终止循环</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;我已经吃饱了，实在吃不下了...&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">    <span class="c1"># 正在吃第几个苹果</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;正在吃第</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">个苹果&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1"># 更新计数器</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="continue关键字">continue关键字</h4>
+<p>情况二：如果吃的过程中，吃到第三个吃出一个大虫子&hellip;,是不是这个苹果就不吃了，开始吃第四个苹果，这里就是continue控制循环流程，即退出当前一次循环继而执行下一次循环代码。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 初始化计数器</span>
+</span></span><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 编写循环条件</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 当变量i == 3的时候，中止当前循环，继续下一次循环</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># 手工更新计数器(非常重要)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;吃到了一只大虫子，这个苹果不吃了...&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;正在吃第</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">个苹果&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 更新计数器</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="2死循环概念">2、死循环概念</h3>
+<p>在编程中一个靠自身控制无法终止的程序称为“死循环”。</p>
+<p>在Python中，我们也可以使用while True来模拟死循环：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;你是风儿我是沙，缠缠绵绵到天涯&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="四while循环嵌套">四、while循环嵌套</h2>
+<h3 id="1循环嵌套的基本语法">1、循环嵌套的基本语法</h3>
+<p>编写一个简单的while循环结构</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 初始化计数器</span>
+</span></span><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="n">或</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 编写循环条件</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">边界值</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">循环体代码</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 更新计数器</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>所谓的while嵌套循环就是在while循环的基础上，把循环体代码更换为一层while循环，就组成了while嵌套循环。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 第一步：初始化外层循环计数器</span>
+</span></span><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 第二步：编写外层循环的条件</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 第四步：初始化内层循环计数器</span>
+</span></span><span class="line"><span class="cl">    <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 第五步：编写内层循环的条件</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">循环体代码</span>
+</span></span><span class="line"><span class="cl">    	<span class="c1"># 第六步：更新内层循环计数器</span>
+</span></span><span class="line"><span class="cl">    	<span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 第三步：更新外层循环计数器</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>结构如下：</p>
+<p><img src="/img/hugo/14/image-20210309144900348.png" alt="image-20210309144900348"></p>
+<h3 id="2循环嵌套的执行流程">2、循环嵌套的执行流程</h3>
+<p>while循环嵌套执行流程口诀：在while循环嵌套的执行过程中，<strong>外层循环1次，内层循环N次。</strong>（时钟 =&gt; 分针和秒针，分针就相当于外层循环，秒针就相当于内层循环）</p>
+<p>想具体了解while嵌套循环的执行流程，建议使用Debug调试。</p>
+<p>循环嵌套的总次数 = 外层循环次数 * 内层循环次数</p>
+<h2 id="五for循环基本语法">五、for循环基本语法</h2>
+<h3 id="1for循环基本语法">1、for循环基本语法</h3>
+<p>for循环结构主要用于（序列 =&gt; 字符串、列表、元组、集合以及字典）类型数据的遍历（循环）操作。</p>
+<p>另外当循环次数未知的情况，建议使用for循环。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">临时变量</span> <span class="ow">in</span> <span class="n">序列</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">重复执行的代码1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">重复执行的代码2</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="2range方法函数">2、range方法（函数）</h3>
+<p>Python2 range() 函数返回的是列表，而在Python3中 range() 函数返回的是一个可迭代对象（类型是对象），而不是列表类型， 所以打印的时候不会打印列表。</p>
+<p>主要作用：用于生成一段连续的内容，从0到9</p>
+<p>基本语法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">range</span><span class="p">(</span><span class="n">stop</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="p">[,</span> <span class="n">step</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">start</span><span class="p">:</span> <span class="n">计数从</span> <span class="n">start</span> <span class="n">开始</span><span class="err">。</span><span class="n">默认是从</span> <span class="mi">0</span> <span class="n">开始</span><span class="err">。</span><span class="n">例如range</span><span class="err">（</span><span class="mi">5</span><span class="err">）</span><span class="n">等价于range</span><span class="err">（</span><span class="mi">0</span><span class="err">，</span> <span class="mi">5</span><span class="err">）</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">stop</span><span class="p">:</span> <span class="n">计数到</span> <span class="n">stop</span> <span class="n">结束</span><span class="err">，</span><span class="n">但不包括</span> <span class="n">stop</span><span class="err">。</span><span class="n">例如</span><span class="err">：</span><span class="nb">range</span><span class="err">（</span><span class="mi">0</span><span class="err">，</span><span class="mi">5</span><span class="err">）</span> <span class="n">是</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span> <span class="n">没有</span> <span class="mi">5</span>
+</span></span><span class="line"><span class="cl"><span class="n">step</span><span class="err">：</span><span class="n">步长</span><span class="err">，</span><span class="n">默认为1</span><span class="err">。</span><span class="n">例如</span><span class="err">：</span><span class="nb">range</span><span class="err">（</span><span class="mi">0</span><span class="err">，</span><span class="mi">5</span><span class="err">）</span> <span class="n">等价于</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>range有一个口诀：顾头不顾尾，包含头部信息，但是不包含尾部信息，如range(10)，则返回0~9之间的序列，又比如range(0, 5)代表返回0 ~ 4之间的序列。</p>
+</blockquote>
+<p>案例：for循环与range方法，使用for循环，循环5次</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="3循环中的两大关键字">3、循环中的两大关键字</h3>
+<p>在循环结构中存在两个关键字：break和continue</p>
+<p>break：主要功能是终止整个循环</p>
+<p>continue：主要功能是中止当前循环，继续下一次循环</p>
+<h3 id="4for循环嵌套">4、for循环嵌套</h3>
+<p>所谓for循环嵌套，就是一个for循环里面嵌套另外一个for循环的写法。</p>
+<p>当循环结构相互嵌套时，位于外层的循环结构常简称为外层循环或外循环，位于内层的循环结构常简称为内层循环或内循环。</p>
+<p>基本语法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 外层循环</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">序列1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 内层循环</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">序列2</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">循环体</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="六while循环与for循环中的else结构">六、while循环与for循环中的else结构</h2>
+<h3 id="1为什么需要在while循环中添加else结构">1、为什么需要在while循环中添加else结构</h3>
+<p>循环可以和else配合使用，else下方缩进的代码指的是<strong>当循环正常结束之后要执行的代码。</strong></p>
+<p><strong>强调</strong>：&lsquo;正常结束&rsquo;，非正常结束，其else中的代码时不会执行的。（如遇到break的情况）</p>
+<h3 id="2while循环中else的基本语法">2、while循环中else的基本语法</h3>
+<p>需求：女朋友生气了，要惩罚：连续说5遍“老婆大人，我错了”，如果道歉正常完毕后女朋友就原谅我了，这个程序怎么写？</p>
+<p>答：使用while&hellip;else结构</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 初始化计数器</span>
+</span></span><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 编写循环条件</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;老婆大人，我错了&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># 更新计数器</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 循环结束后，女朋友就原谅我了</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;好开森，女朋友原谅我了...&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="3break关键字对whileelse结构的影响">3、break关键字对while&hellip;else结构的影响</h3>
+<p>如果我们在while循环中，使用了break，一旦break语句执行了，则else语句则不会输出。</p>
+<h3 id="4continue关键字对whileelse结构的影响">4、continue关键字对while&hellip;else结构的影响</h3>
+<p>基本无影响，不会跳到else位置执行。</p>
+<h3 id="5for循环结构中的else结构">5、for循环结构中的else结构</h3>
+<p>基本语法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">临时变量</span> <span class="ow">in</span> <span class="n">序列</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">循环体</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">当for循环正常结束后</span><span class="err">，</span><span class="n">返回的代码</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="6break关键字对forelse结构的影响">6、break关键字对for&hellip;else结构的影响</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;itheima&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">str1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;遇e不打印&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;循环正常结束之后执行的代码&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="7continue关键字对forelse结构的影响">7、continue关键字对for&hellip;else结构的影响</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;itheima&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">str1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;遇e不打印&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;循环正常结束之后执行的代码&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">墨初</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-08-27
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/python%E6%B3%A8%E9%87%8A%E5%8F%98%E9%87%8F%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">python注释&amp;变量&amp;数据类型&amp;输入输出</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/python%E4%B8%AD%E7%9A%84%E5%87%BD%E6%95%B0/">
+            <span class="next-text nav-default">python中的函数</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/longhe-lh" class="iconfont icon-github" title="github"></a>
+  <a href="http://helong0102.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2022 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>Long He</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

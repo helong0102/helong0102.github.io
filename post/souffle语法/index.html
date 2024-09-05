@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>souffle 语法 - 墨初博客！</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="墨初" /><meta name="description" content="souffle 语法 概述: souffle 中的主要语言元素是关系声明（relations）、事实(facts)、规则（rurle）、指令(instruction)。 关系" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.101.0 with theme even" />
+
+
+<link rel="canonical" href="http://helong0102.github.io/post/souffle%E8%AF%AD%E6%B3%95/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="souffle 语法" />
+<meta property="og:description" content="souffle 语法 概述: souffle 中的主要语言元素是关系声明（relations）、事实(facts)、规则（rurle）、指令(instruction)。 关系" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://helong0102.github.io/post/souffle%E8%AF%AD%E6%B3%95/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-09-06T01:37:56+19:00" />
+<meta property="article:modified_time" content="2022-09-06T01:37:56+19:01" />
+
+<meta itemprop="name" content="souffle 语法">
+<meta itemprop="description" content="souffle 语法 概述: souffle 中的主要语言元素是关系声明（relations）、事实(facts)、规则（rurle）、指令(instruction)。 关系"><meta itemprop="datePublished" content="2022-09-06T01:37:56+19:00" />
+<meta itemprop="dateModified" content="2022-09-06T01:37:56+19:01" />
+<meta itemprop="wordCount" content="709">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="souffle 语法"/>
+<meta name="twitter:description" content="souffle 语法 概述: souffle 中的主要语言元素是关系声明（relations）、事实(facts)、规则（rurle）、指令(instruction)。 关系"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Long He&#39;s blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">时间轴</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Long He&#39;s blog</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">时间轴</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">souffle 语法</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-09-06 </span>
+        <div class="post-category">
+            <a href="/categories/souffle/"> souffle </a>
+            </div>
+          <span class="more-meta"> 约 709 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#souffle-语法">souffle 语法</a>
+      <ul>
+        <li><a href="#概述">概述:</a></li>
+        <li><a href="#关系relations">关系（relations）：</a></li>
+        <li><a href="#类型types">类型（types）:</a></li>
+        <li><a href="#事件facts">事件（facts）:</a></li>
+        <li><a href="#规则rules">规则（rules）:</a></li>
+        <li><a href="#示例">示例</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="souffle-语法">souffle 语法</h1>
+<h2 id="概述">概述:</h2>
+<p>souffle 中的主要语言元素是关系声明（relations）、事实(facts)、规则（rurle）、指令(instruction)。</p>
+<h2 id="关系relations">关系（relations）：</h2>
+<p>关系是一组有序元组（x1,&hellip;Xk）,其中每个元素xi是由属性类型表示的数据域的成员。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">.decl A(x:number, y:number)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>上式定义了A包含数对的关系。第一个属性被命名为<code>x</code>, 第二个属性被命名为<code>y</code>。属性具有由标识符指定的类型，标识符跟在属性后面的冒号后。在上式中，<code>x</code>和<code>y</code>都是number类型。souflfle的类型检查器将会使用关系的属性来推断变量的类型。</p>
+<h2 id="类型types">类型（types）:</h2>
+<p>Souffle 包含四种原始类型：</p>
+<ul>
+<li>符号类型：<code>symbol</code></li>
+<li>数字类型：<code>number</code></li>
+<li>无符号类型：<code>unsigned</code></li>
+<li>浮点数类型：<code>float</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">.decl Name(n: symbol)
+</span></span><span class="line"><span class="cl">Name(&#34;Hans&#34;).
+</span></span><span class="line"><span class="cl">Name(&#34;Gretl&#34;).
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">.decl Translate(n: symbol , o: number)
+</span></span><span class="line"><span class="cl">.output Translate
+</span></span><span class="line"><span class="cl">Translate(x,ord(x)) :- Name(x).
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">.decl Magic(x:number, y:unsigned, z:float)
+</span></span><span class="line"><span class="cl">Magic(-1,1,2.718).
+</span></span><span class="line"><span class="cl">.output Magic
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="事件facts">事件（facts）:</h2>
+<p>事件是无条件成立的条款；它们是有规则头，但是没有规则体。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-zed" data-lang="zed"><span class="line"><span class="cl"><span class="p">.</span><span class="n">decl</span><span class="w"> </span><span class="n">A</span><span class="p">(</span><span class="n">x</span><span class="o">:</span><span class="n">number</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">:</span><span class="n">number</span><span class="p">)</span><span class="w">  </span><span class="c1">// declaration of relation A
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">A</span><span class="p">(</span><span class="err">1</span><span class="p">,</span><span class="err">2</span><span class="p">).</span><span class="w">                      </span><span class="c1">// facts of relation A
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">A</span><span class="p">(</span><span class="err">2</span><span class="p">,</span><span class="err">3</span><span class="p">).</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">.</span><span class="n">output</span><span class="w"> </span><span class="n">A</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>关系<code>A</code>有两个事件：<code>A(1,2).</code> 和 <code>A(2,3).</code></p>
+<blockquote>
+<p>注：事件可以使用输入指令（.input）进行加载。</p>
+</blockquote>
+<h2 id="规则rules">规则（rules）:</h2>
+<p>规则是一个子句，它有一个谓词作为头部，一个或者多个文字在主体中。文字可以是谓词，否定谓词或约束。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">.decl edge(x:number, y:number)
+</span></span><span class="line"><span class="cl">edge(1,2).
+</span></span><span class="line"><span class="cl">edge(2,3).
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">.decl path(x:number, y:number)
+</span></span><span class="line"><span class="cl">.output path
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">path(x, y) :- edge(x, y). // 规则（约束）
+</span></span><span class="line"><span class="cl">path(x, y) :- path(x, z), edge(z, y).
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="示例">示例</h2>
+<p><strong>代码示例</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">.decl edge(x:number, y:number)
+</span></span><span class="line"><span class="cl">edge(1,2).
+</span></span><span class="line"><span class="cl">edge(2,3).
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">.decl path(x:number, y:number)
+</span></span><span class="line"><span class="cl">.output path
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">path(x, y) :- edge(x, y).
+</span></span><span class="line"><span class="cl">path(x, y) :- path(x, z), edge(z, y).
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>以上的规则为：如果存在表x,y 即 edge(x,y) ,则可以推导出path(x,y) ; 如果存在边edge(z, y)和路径path(x, z) 那么就存在路径path(x,y).</p>
+<p><strong>输出结果</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1       2
+</span></span><span class="line"><span class="cl">1       3
+</span></span><span class="line"><span class="cl">2       3
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>解析</strong></p>
+<ol>
+<li>A(1, 2)  =&gt; B(1, 2); A(2, 3) =&gt; B(2, 3)</li>
+<li>A(1, 2) , B(2, 3) =&gt; B(1, 3)</li>
+</ol>
+<p>综上可得：B(1, 2) B(2, 3) B(1, 3)</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">墨初</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-09-06
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/python%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">python 单例模式</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%B8%80/">
+            <span class="next-text nav-default">动态规划（一）</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/longhe-lh" class="iconfont icon-github" title="github"></a>
+  <a href="http://helong0102.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2022 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>Long He</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

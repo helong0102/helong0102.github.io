@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linux常用操作记录 - 墨初博客！</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="墨初" /><meta name="description" content="Linux常用操作记录 用户相关 id - 显示用户的详细信息（uid、gid 和 group） last - 列出有关最近登录的信息，包括时间、用户名、IP地址和会" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.101.0 with theme even" />
+
+
+<link rel="canonical" href="http://helong0102.github.io/post/linux%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Linux常用操作记录" />
+<meta property="og:description" content="Linux常用操作记录 用户相关 id - 显示用户的详细信息（uid、gid 和 group） last - 列出有关最近登录的信息，包括时间、用户名、IP地址和会" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://helong0102.github.io/post/linux%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-01-06T01:37:56+17:16" />
+<meta property="article:modified_time" content="2024-01-20T01:37:56+20:00" />
+
+<meta itemprop="name" content="Linux常用操作记录">
+<meta itemprop="description" content="Linux常用操作记录 用户相关 id - 显示用户的详细信息（uid、gid 和 group） last - 列出有关最近登录的信息，包括时间、用户名、IP地址和会"><meta itemprop="datePublished" content="2024-01-06T01:37:56+17:16" />
+<meta itemprop="dateModified" content="2024-01-20T01:37:56+20:00" />
+<meta itemprop="wordCount" content="2461">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux常用操作记录"/>
+<meta name="twitter:description" content="Linux常用操作记录 用户相关 id - 显示用户的详细信息（uid、gid 和 group） last - 列出有关最近登录的信息，包括时间、用户名、IP地址和会"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Long He&#39;s blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">时间轴</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Long He&#39;s blog</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">时间轴</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Linux常用操作记录</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2024-01-06 </span>
+        <div class="post-category">
+            <a href="/categories/linux/"> linux </a>
+            </div>
+          <span class="more-meta"> 约 2461 字 </span>
+          <span class="more-meta"> 预计阅读 5 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#linux常用操作记录">Linux常用操作记录</a>
+      <ul>
+        <li><a href="#用户相关">用户相关</a></li>
+        <li><a href="#目录导航相关">目录导航相关</a></li>
+        <li><a href="#文件操作相关">文件操作相关</a></li>
+        <li><a href="#文件目录权限相关">文件/目录权限相关</a></li>
+        <li><a href="#搜索">搜索</a></li>
+        <li><a href="#解压相关">解压相关</a></li>
+        <li><a href="#软件包安装相关">软件包安装相关</a></li>
+        <li><a href="#进程相关">进程相关</a></li>
+        <li><a href="#系统相关">系统相关</a></li>
+        <li><a href="#硬件相关">硬件相关</a></li>
+        <li><a href="#磁盘相关">磁盘相关</a></li>
+        <li><a href="#网络相关">网络相关</a></li>
+        <li><a href="#远程连接相关">远程连接相关</a></li>
+        <li><a href="#linux其他相关操作">Linux其他相关操作</a>
+          <ul>
+            <li><a href="#管道环境变量常用命令">管道&amp;环境变量&amp;常用命令</a></li>
+            <li><a href="#vim-教程">VIM 教程</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="linux常用操作记录">Linux常用操作记录</h1>
+<h2 id="用户相关">用户相关</h2>
+<ul>
+<li><code>id</code> - 显示用户的详细信息（uid、gid 和 group）</li>
+<li><code>last</code> - 列出有关最近登录的信息，包括时间、用户名、IP地址和会话持续时间</li>
+<li><code>who</code> - 显示已授权的用户</li>
+<li><code>groupadd &quot;testgroup&quot;</code> - 创建名为&quot;testgroup&quot;的组</li>
+<li><code>adduser NewUser</code> - 添加名为&quot;NewUser&quot;的组</li>
+<li><code>userdel NewUser</code> - 删除名为&quot;NewUser&quot;的用户</li>
+<li><code>usermod NewUser</code> - 修改有关用户&quot;NewUser&quot;的信息</li>
+</ul>
+<h2 id="目录导航相关">目录导航相关</h2>
+<ul>
+<li><code>cd  /</code>  - 进入根目录</li>
+<li><code>cd -</code> - 进入主目录</li>
+<li><code>cd /root</code> - 进入/root目录</li>
+<li><code>cd ..</code> - 向上移动一级</li>
+<li><code>cd  /root/.ssh</code> - 进入隐藏文件夹 .ssh</li>
+</ul>
+<h2 id="文件操作相关">文件操作相关</h2>
+<ul>
+<li><code>ls -al</code> – 显示当前文件夹中的文件和目录</li>
+<li><code>pwd</code> – 显示当前工作目录</li>
+<li><code>mkdir NewFolder</code> – 创建名为 NewFolder的新目录</li>
+<li><code>rm NewFile</code> – 删除名为NewFile 的文件</li>
+<li><code>rm -f NewFile</code> – 强制删除名为NewFile 的文件</li>
+<li><code>rm -r NewFolder</code> – 递归删除名为 NewFolder 的目录</li>
+<li><code>rm -rf NewFolder</code> – 强制递归删除名为 NewFolder 的目录</li>
+<li><code>cp oldfile1 newfile2</code> – 复制 oldfile1 的内容到 newfile2</li>
+<li><code>cp -r olddir1 newdir2</code> – 递归复制目录 olddir1 到 newdir2。如果不存在，将创建 Dir2</li>
+<li><code>mv oldfile1 newfile2</code> – 将 oldfile1 重命名为 newfile2</li>
+<li><code>ln -s /etc/log/file logfile</code> – 创建指向文件的符号链接</li>
+<li><code>touch newfile</code> – 创建名为 newfile 的空文件</li>
+<li><code>cat &gt; newfile</code> – 将标准输入放入 newfile</li>
+<li><code>more newfile</code> – 逐屏输出 newfile 的内容</li>
+<li><code>head newfile</code> – 输出文件 newfile 的前10行</li>
+<li><code>tail newfile</code> – 输出文件 newfile 的最后10行</li>
+<li><code>gpg -c newfile</code> – 使用密码以gpg格式加密 newfile 并保存在相同目录中</li>
+<li><code>gpg newfile.gpg</code> – 解密gpg文件</li>
+<li><code>wc newfile</code> – 显示新文件中的字节数、单词数和行数</li>
+</ul>
+<h2 id="文件目录权限相关">文件/目录权限相关</h2>
+<ul>
+<li><code>chmod 777 /root/ssh</code> – 为所有有权访问服务器的人（所有者、组、其他人）设置读、写和执行权限</li>
+<li><code>chmod 755 /root/ssh</code> – 为所有者设置rwx权限，为组和其他人设置r_x权限</li>
+<li><code>chmod 766 /root/ssh</code> – 为所有者设置rwx权限，为组和其他人设置rw权限</li>
+<li><code>chown newuser newfile</code> – 将newfile的所有者更改为newuser</li>
+<li><code>chown newuser:newgroup newfile</code> – 将newfile的所有者和组所有者都更改为newuser和newgroup</li>
+<li><code>chown newuser:newgroup newfolder</code> – 将目录newfolder的所有者和组所有者都更改为newuser和newgroup</li>
+<li><code>stat -c &quot;%U %G&quot; newfile</code> – 显示newfile的用户和组所有者</li>
+</ul>
+<h2 id="搜索">搜索</h2>
+<ul>
+<li><code>grep searchargument newfile</code> – 在newfile中搜索searchargument</li>
+<li><code>grep -r searchargument newfolder</code> – 在newfolder中递归搜索searchargument</li>
+<li><code>locate newfile</code> – 显示newfile的所有位置</li>
+<li><code>find /etc/ -name searchargument</code>– 在 /etc 目录中找到以 searchargument 开头的文件</li>
+<li><code>find /etc/ -size +50000k</code>– 在 /etc 目录中找到大于 50000k 的文件</li>
+</ul>
+<h2 id="解压相关">解压相关</h2>
+<ul>
+<li><code>tar -cf archive.tar newfile</code>件 ‘newfile’ 创建一个压缩 ‘archive.tar’</li>
+<li><code>tar -xf archive.tar</code>– 解压文件 ‘archive.tar’ 的内容</li>
+<li><code>tar -zcvf archive.tar.gz /var/log/</code>– 从 /var/log/ 目录创建一个tar压缩，并使用gzip进行压缩</li>
+<li><code>gzip newfile</code>– 压缩新文件（将具有 .gz 扩展名）</li>
+</ul>
+<h2 id="软件包安装相关">软件包安装相关</h2>
+<ul>
+<li><code>rpm -i pkg_program.rpm</code>– 在CentOS、RHEL等上安装RPM软件包</li>
+<li><code>rpm -e pkg_name</code>– 在CentOS、RHEL等上删除RPM软件包</li>
+<li><code>dnf install pkg_name</code>– 在CentOS、RHEL等上使用DNF从仓库安装软件包。YUM曾经是使用的工具，但最近已被DNF取代</li>
+<li><code>dpkg -i pkg_name</code>– 在Debian、Ubuntu、Mint等上安装DEB软件包</li>
+<li><code>dpkg -r pkg_name</code>– 在Debian、Ubuntu、Mint等上删除DEB软件包</li>
+<li><code>apt install pkg_name</code>– 在Debian、Ubuntu、Mint等上从仓库安装软件包</li>
+<li><code>apt remove pkg_name</code>– 在Debian、Ubuntu、Mint等上删除软件包</li>
+<li><code>apt upgrade &amp;&amp; apt update</code>– 更新系统（Debian、Ubuntu、Mint等）中的软件包并更新仓库</li>
+</ul>
+<h2 id="进程相关">进程相关</h2>
+<ul>
+<li><code>ps</code> – 显示当前正在运行的进程</li>
+<li><code>ps aux | grep ‘bash’</code> – 查找 ‘bash’ 的进程ID（PID）</li>
+<li><code>pmap -x 11</code> – 在进程内存中映射具有PID 11的进程</li>
+<li><code>top</code> – 显示所有正在运行的进程</li>
+<li><code>kill pid</code> – 通过PID终止一个进程</li>
+<li><code>killall process</code> – 终止所有名称为 ‘process’的进程</li>
+<li><code>pkill process-name</code> – 通过名称向一个进程发送信号</li>
+<li><code>bg</code> – 将一个暂停的进程发送到后台</li>
+<li><code>fg</code> – 将一个运行中的进程带到前台</li>
+<li><code>fg process</code> – 将名为 ‘process‘ 的进程带到前台</li>
+<li><code>lsof</code> – 列出被进程打开的文件</li>
+<li><code>renice 19 PID</code> – 为一个进程设置最低优先级</li>
+<li><code>pgrep bash</code> – 查找 ‘bash’ 的进程ID</li>
+<li><code>pstree</code> – 显示进程的树状表示</li>
+</ul>
+<h2 id="系统相关">系统相关</h2>
+<ul>
+<li><code>uname</code> – 显示系统信息</li>
+<li><code>uname -r</code> – 显示有关Linux内核的信息</li>
+<li><code>uptime</code> – 显示系统运行时间和平均负载</li>
+<li><code>hostname</code> – 显示主机名</li>
+<li><code>hostname -i</code> – 显示主机的IP地址</li>
+<li><code>last reboot</code> – 显示重启历史</li>
+<li><code>date</code> – 显示日期和时间</li>
+<li><code>timedatectl</code> – 输出并修改日期和时间设置</li>
+<li><code>cal</code> – 显示日历</li>
+<li><code>w</code> – 显示当前登录的用户</li>
+<li><code>whoami</code> – 显示你的用户名</li>
+<li><code>finger root</code> – 显示有关root用户的信息（需要使用 “apt-get install finger” 进行安装）</li>
+</ul>
+<h2 id="硬件相关">硬件相关</h2>
+<ul>
+<li><code>dmesg</code> – 在启动期间显示系统消息</li>
+<li><code>cat /proc/cpuinfo</code> – 显示处理器信息</li>
+<li><code>cat /proc/meminfo</code> – 显示内存信息</li>
+<li><code>lshw</code> – 显示设备的详细信息</li>
+<li><code>lsblk</code> – 显示块设备信息</li>
+<li><code>free -m</code> – 释放内存：RAM和swap（使用-M切换为MB）</li>
+<li><code>lspci -tv</code> – 以树状视图显示PCI设备信息</li>
+<li><code>lsusb -tv</code> – 以树状视图显示USB设备</li>
+<li><code>dmidecode</code> – 显示有关BIOS设备的信息</li>
+<li><code>hdparm -i /dev/xda</code> – 显示有关磁盘的信息</li>
+<li><code>hdparm -tT /dev/xda</code> – 显示xda的读写速度</li>
+<li><code>badblocks -s /dev/xda</code> – 执行坏块测试</li>
+</ul>
+<h2 id="磁盘相关">磁盘相关</h2>
+<ul>
+<li><code>df -h</code> – 显示挂载分区上的可用空间（以字节为单位）</li>
+<li><code>df -i</code> – 显示文件系统中的空闲inode</li>
+<li><code>fdisk -l</code> – 提供关于磁盘、分区和文件系统的信息</li>
+<li><code>du -sh</code> – 以MB、GB、TB显示挂载分区上的未分配空间</li>
+<li><code>findmnt</code> – 显示所有挂载点</li>
+<li><code>mount /dev/sdb1 /mnt</code> – 将sdb磁盘的分区1挂载到 /mnt 目录</li>
+</ul>
+<h2 id="网络相关">网络相关</h2>
+<ul>
+<li><code>ip addr show</code> – 显示所有可用网络接口的IP地址</li>
+<li><code>ip address add 192.168.0.1/24 dev eth0</code> – 为eth0接口分配地址192.168.0.1</li>
+<li><code>ifconfig</code> – 显示所有可用网络接口的IP地址</li>
+<li><code>ping 192.168.0.1</code> – 发送ICMP协议请求以连接到192.168.0.1节点</li>
+<li><code>whois domain</code> – 显示有关域名的信息</li>
+<li><code>dig domain</code> – 检索有关域的DNS信息</li>
+<li><code>dig -x 192.168.0.1</code> – 执行反向DNS解析</li>
+<li><code>host serverspace.us</code>– 解析主机地址</li>
+<li><code>hostname -I</code> – 显示本地地址</li>
+<li><code>wget file_name(link to file)</code> – 下载文件</li>
+<li><code>netstat -pnltu</code> – 显示主机上所有正在监听的端口（需要 “apt-get install net-tools” 进行安装）</li>
+</ul>
+<h2 id="远程连接相关">远程连接相关</h2>
+<ul>
+<li><code>ssh root@host</code> – 以root用户身份通过ssh连接到远程主机</li>
+<li><code>ssh -p port_number user@host</code> – 使用非默认ssh端口连接到远程主机，指定用户</li>
+<li><code>ssh host</code> – 使用当前用户使用默认连接</li>
+<li><code>telnet host</code> – 使用telnet连接（端口23）</li>
+</ul>
+<h2 id="linux其他相关操作">Linux其他相关操作</h2>
+<h3 id="管道环境变量常用命令">管道&amp;环境变量&amp;常用命令</h3>
+<p><a href="https://helong0102.github.io/post/%E7%AE%A1%E9%81%93%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">https://helong0102.github.io/post/%E7%AE%A1%E9%81%93%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</a></p>
+<h3 id="vim-教程">VIM 教程</h3>
+<p><a href="https://helong0102.github.io/post/vim%E6%95%99%E7%A8%8B/">https://helong0102.github.io/post/vim%E6%95%99%E7%A8%8B/</a></p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">墨初</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2024-01-20
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E6%B5%8B%E8%AF%9520240905/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">测试20240905</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/%E4%BD%BF%E7%94%A8docker%E6%B5%8B%E8%AF%95%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/">
+            <span class="next-text nav-default">使用docker测试智能合约</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/longhe-lh" class="iconfont icon-github" title="github"></a>
+  <a href="http://helong0102.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2022 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>Long He</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

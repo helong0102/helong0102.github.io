@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>algorithm on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/algorithm/</link>
+    <description>Recent content in algorithm on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Sep 2022 01:37:56 +2000</lastBuildDate><atom:link href="http://helong0102.github.io/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>动态规划（一）</title>
+      <link>http://helong0102.github.io/post/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%B8%80/</link>
+      <pubDate>Sat, 03 Sep 2022 01:37:56 +2000</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%B8%80/</guid>
+      <description>动态规划（一） 常用模型-背包 01 背包问题 问题 ： 给N个物品和容量是V的背包，每个物品有两个属性，一个是物品的体积Vi,还有一个是物品的价值Wi。</description>
+    </item>
+    
+    <item>
+      <title>哈希表</title>
+      <link>http://helong0102.github.io/post/%E5%93%88%E5%B8%8C%E8%A1%A8/</link>
+      <pubDate>Thu, 01 Sep 2022 01:37:56 +0900</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E5%93%88%E5%B8%8C%E8%A1%A8/</guid>
+      <description>哈希表 存储结构（冲突处理方式） 开放寻址法 添加 根据hash函数就算出对应的下标位置，然后再判断是否有冲突，有则继续判断下一个位置，直到无冲突为</description>
+    </item>
+    
+    <item>
+      <title>堆</title>
+      <link>http://helong0102.github.io/post/%E5%A0%86/</link>
+      <pubDate>Tue, 30 Aug 2022 01:37:56 +0800</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E5%A0%86/</guid>
+      <description>堆 堆的作用 插入一个数 heap[ ++ size] = x; up(size); 求 集合当中的最小值。heap[1] 删除最小值。 heap[1] = heap[size]; size --; down(1); 删除任意一个元素。heap[k] = heap[size]; size --; down(k); up(k); 修改任</description>
+    </item>
+    
+    <item>
+      <title>Trie</title>
+      <link>http://helong0102.github.io/post/tire/</link>
+      <pubDate>Mon, 29 Aug 2022 01:37:56 +1000</pubDate>
+      
+      <guid>http://helong0102.github.io/post/tire/</guid>
+      <description>Trie Tire的作用 高效的存储和查找字符串集合的数据结构 存储&amp;amp;查找方式 查找的时候可以按照路径结合标记的方式进行查找 题目实例 Trie字符串</description>
+    </item>
+    
+    <item>
+      <title>并查集</title>
+      <link>http://helong0102.github.io/post/%E5%B9%B6%E6%9F%A5%E9%9B%86/</link>
+      <pubDate>Mon, 29 Aug 2022 01:37:56 +1000</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E5%B9%B6%E6%9F%A5%E9%9B%86/</guid>
+      <description>并查集 并查集的作用 将两个集合合并。 询问两个元素是否在一个集合当中。 并查集可以在近乎O(1)的时间复杂度完成这个操作。 基本原理 每个集合用一颗树</description>
+    </item>
+    
+    <item>
+      <title>链表与邻接表</title>
+      <link>http://helong0102.github.io/post/%E9%93%BE%E8%A1%A8%E4%B8%8E%E9%82%BB%E6%8E%A5%E8%A1%A8/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +2000</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E9%93%BE%E8%A1%A8%E4%B8%8E%E9%82%BB%E6%8E%A5%E8%A1%A8/</guid>
+      <description>链表与邻接表 单链表 单链表中应用最多的是邻接表，邻接表多用于存储图和树。 表示说明： e[N]:表示某个点的值是多少· ne[N]:表示某个点指针（</description>
+    </item>
+    
+    <item>
+      <title>栈与队列</title>
+      <link>http://helong0102.github.io/post/%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/</link>
+      <pubDate>Sat, 27 Aug 2022 01:37:56 +2100</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/</guid>
+      <description>栈与队列 模拟栈 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 #include &amp;lt;iostream&amp;gt; using namespace std; const int N = 100010; // stk表示栈，tt表示栈顶下标 int stk[N], tt; // 入栈（插入） stk[ ++ tt] = x; //</description>
+    </item>
+    
+    <item>
+      <title>双指针算法</title>
+      <link>http://helong0102.github.io/post/%E5%8F%8C%E6%8C%87%E9%92%88%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Thu, 25 Aug 2022 01:37:56 +1800</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E5%8F%8C%E6%8C%87%E9%92%88%E7%AE%97%E6%B3%95/</guid>
+      <description>双指针算法 基本思想 双指针算法的类型 双指针指向两个序列-类似于归并排序 双指针指向同一个序列-类似于快排 核心思想 算法模板 双指针算法的通用模板 示例</description>
+    </item>
+    
+    <item>
+      <title>位运算</title>
+      <link>http://helong0102.github.io/post/%E4%BD%8D%E8%BF%90%E7%AE%97/</link>
+      <pubDate>Thu, 25 Aug 2022 01:37:56 +1930</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E4%BD%8D%E8%BF%90%E7%AE%97/</guid>
+      <description>位运算 获取二进制的个位 1 2 3 4 5 6 7 8 9 10 11 12 13 14 // 代码示例（输出每位【10进制转二进制】） #include &amp;lt;iostream&amp;gt; using namespace std; int main() { int n = 10; // 1010 for (int k = 3; k &amp;gt;= 0; k--) printf(&amp;#34;%d&amp;#34;,n</description>
+    </item>
+    
+    <item>
+      <title>离散化</title>
+      <link>http://helong0102.github.io/post/%E7%A6%BB%E6%95%A3%E5%8C%96/</link>
+      <pubDate>Thu, 25 Aug 2022 01:37:56 +2030</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E7%A6%BB%E6%95%A3%E5%8C%96/</guid>
+      <description>离散化 的基本思想 算法模板 离散化的模板 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 vector&amp;lt;int&amp;gt; alls; // 存储所有待离散化的值 sort(alls.begin(), alls.end()); // 将所有值排序 // 其中unique(all</description>
+    </item>
+    
+    <item>
+      <title>区间合并</title>
+      <link>http://helong0102.github.io/post/%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6/</link>
+      <pubDate>Thu, 25 Aug 2022 01:37:56 +2230</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6/</guid>
+      <description>区间合并 的基本思想 示例运用 给定 n 个区间 [li,ri]，要求合并所有有交集的区间。 注意如果在端点处相交，也算有交集。 输出合并完成后的区间个数。</description>
+    </item>
+    
+    <item>
+      <title>前缀和&amp;差分</title>
+      <link>http://helong0102.github.io/post/%E5%89%8D%E7%BC%80%E5%92%8C%E5%B7%AE%E5%88%86/</link>
+      <pubDate>Wed, 24 Aug 2022 01:37:56 +1400</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E5%89%8D%E7%BC%80%E5%92%8C%E5%B7%AE%E5%88%86/</guid>
+      <description>前缀和&amp;amp;差分 前缀和 基本思想 一维前缀和 注：其中S0 = 0的目的是为了计算的统一性，例如：求区间[1, x]的和，可以将表达式写为Sx - S0</description>
+    </item>
+    
+    <item>
+      <title>二分</title>
+      <link>http://helong0102.github.io/post/%E4%BA%8C%E5%88%86/</link>
+      <pubDate>Tue, 16 Aug 2022 01:37:56 +1000</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E4%BA%8C%E5%88%86/</guid>
+      <description>二分 整数二分 基本思想 有单调性的题目一定可以二分，但是可以二分的题目不一定需要单调性。（二者没有必然联系） 单调性 二分本质 在区间里面只要能找到一</description>
+    </item>
+    
+    <item>
+      <title>高精度</title>
+      <link>http://helong0102.github.io/post/%E9%AB%98%E7%B2%BE%E5%BA%A6/</link>
+      <pubDate>Tue, 16 Aug 2022 01:37:56 +2200</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E9%AB%98%E7%B2%BE%E5%BA%A6/</guid>
+      <description>高精度 应用场景(常见) 实现思路 大整数存储方式（C++） 计算过程 加法计算过程 减法计算过程 乘法计算过程 除法计算过程 代码模板 加法模板 1 2 3 4 5 6 7</description>
+    </item>
+    
+    <item>
+      <title>快速排序</title>
+      <link>http://helong0102.github.io/post/quicksort/</link>
+      <pubDate>Mon, 15 Aug 2022 01:37:56 +2200</pubDate>
+      
+      <guid>http://helong0102.github.io/post/quicksort/</guid>
+      <description>快速排序&amp;mdash;基于分治 基本思想 l x r |------------------------------------------| 确定分界点：q[l],q[(l+r)/2],q[r],随机 调整区间： 1 2 3 ≤x ≥x l x r |--------------------|----------------------| 递归</description>
+    </item>
+    
+    <item>
+      <title>归并排序</title>
+      <link>http://helong0102.github.io/post/mergesort/</link>
+      <pubDate>Mon, 15 Aug 2022 01:37:56 +2250</pubDate>
+      
+      <guid>http://helong0102.github.io/post/mergesort/</guid>
+      <description>归并排序&amp;mdash;基于分治 基本思想 1 2 3 left mid right |---------------------------------------------|---------------------------------------------| 确定分界点 mid = ( l + r ) / 2。 递归排序left, right。 归并&amp;mdash;-把两个有</description>
+    </item>
+    
+  </channel>
+</rss>

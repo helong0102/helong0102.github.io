@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>python注释&amp;变量&amp;数据类型&amp;输入输出 - 墨初博客！</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="墨初" /><meta name="description" content="python注释&amp;amp;变量&amp;amp;数据类型&amp;amp;输入输出 一、Python注释 1、Python注释的基本语法 ☆ 单行注释 单行注释，以&amp;" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.101.0 with theme even" />
+
+
+<link rel="canonical" href="http://helong0102.github.io/post/python%E6%B3%A8%E9%87%8A%E5%8F%98%E9%87%8F%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="python注释&amp;变量&amp;数据类型&amp;输入输出" />
+<meta property="og:description" content="python注释&amp;变量&amp;数据类型&amp;输入输出 一、Python注释 1、Python注释的基本语法 ☆ 单行注释 单行注释，以&" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://helong0102.github.io/post/python%E6%B3%A8%E9%87%8A%E5%8F%98%E9%87%8F%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-08-27T01:37:56+14:00" />
+<meta property="article:modified_time" content="2022-08-27T01:37:56+14:27" />
+
+<meta itemprop="name" content="python注释&amp;变量&amp;数据类型&amp;输入输出">
+<meta itemprop="description" content="python注释&amp;变量&amp;数据类型&amp;输入输出 一、Python注释 1、Python注释的基本语法 ☆ 单行注释 单行注释，以&"><meta itemprop="datePublished" content="2022-08-27T01:37:56+14:00" />
+<meta itemprop="dateModified" content="2022-08-27T01:37:56+14:27" />
+<meta itemprop="wordCount" content="3631">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="python注释&amp;变量&amp;数据类型&amp;输入输出"/>
+<meta name="twitter:description" content="python注释&amp;变量&amp;数据类型&amp;输入输出 一、Python注释 1、Python注释的基本语法 ☆ 单行注释 单行注释，以&"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Long He&#39;s blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">时间轴</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Long He&#39;s blog</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">时间轴</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">python注释&amp;变量&amp;数据类型&amp;输入输出</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-08-27 </span>
+        <div class="post-category">
+            <a href="/categories/python/"> python </a>
+            </div>
+          <span class="more-meta"> 约 3631 字 </span>
+          <span class="more-meta"> 预计阅读 8 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#python注释变量数据类型输入输出">python注释&amp;变量&amp;数据类型&amp;输入输出</a></li>
+    <li><a href="#一python注释">一、Python注释</a>
+      <ul>
+        <li><a href="#1python注释的基本语法">1、Python注释的基本语法</a>
+          <ul>
+            <li><a href="#-单行注释">☆ 单行注释</a></li>
+            <li><a href="#-多行注释">☆ 多行注释</a></li>
+            <li><a href="#-pycharm注释小技巧快捷键">☆ PyCharm注释小技巧（快捷键）</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#二python中的变量重点">二、Python中的变量（重点）</a>
+      <ul>
+        <li><a href="#1引入变量的概念">1、引入变量的概念</a></li>
+        <li><a href="#2变量的定义">2、变量的定义</a></li>
+        <li><a href="#3变量的命令规则">3、变量的命令规则</a></li>
+        <li><a href="#5推荐变量的命名规则">5、推荐变量的命名规则</a></li>
+        <li><a href="#6变量的定义与调用">6、变量的定义与调用</a></li>
+        <li><a href="#7变量的定义与使用常见问题">7、变量的定义与使用常见问题</a></li>
+      </ul>
+    </li>
+    <li><a href="#三python中变量的数据类型">三、Python中变量的数据类型</a>
+      <ul>
+        <li><a href="#1数据类型">1、数据类型</a></li>
+        <li><a href="#2数值类型">2、数值类型</a></li>
+        <li><a href="#3布尔类型">3、布尔类型</a></li>
+        <li><a href="#4字符串类型">4、字符串类型</a></li>
+        <li><a href="#5其他类型">5、其他类型</a></li>
+      </ul>
+    </li>
+    <li><a href="#四python中的格式化输出">四、Python中的格式化输出</a>
+      <ul>
+        <li><a href="#1格式化输出">1、格式化输出</a></li>
+        <li><a href="#2百分号格式化输出">2、百分号格式化输出</a></li>
+        <li><a href="#3format方法格式化输出">3、format方法格式化输出</a></li>
+        <li><a href="#4format方法简写形式格式化输出推荐">4、format方法简写形式格式化输出（推荐）</a></li>
+        <li><a href="#5格式化输出中的转义符号">5、格式化输出中的转义符号</a></li>
+      </ul>
+    </li>
+    <li><a href="#五python中的标准输入">五、Python中的标准输入</a>
+      <ul>
+        <li><a href="#1input输入方法">1、input()输入方法</a></li>
+        <li><a href="#2input方法重要事项">2、input()方法重要事项</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="python注释变量数据类型输入输出">python注释&amp;变量&amp;数据类型&amp;输入输出</h1>
+<h1 id="一python注释">一、Python注释</h1>
+<h2 id="1python注释的基本语法">1、Python注释的基本语法</h2>
+<h3 id="-单行注释">☆ 单行注释</h3>
+<p>单行注释，以&quot;#&quot;(Shift + 3)号开头，只能注释一行内容</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 注释内容</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>示例代码：</p>
+<p>第一种：代码行的上面</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 输出Hello World字符串</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello World&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>第二种：放在代码的后面(代码后面保留2个空格)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello World&#39;</span><span class="p">)</span>  <span class="c1"># 输出Hello World字符串</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="-多行注释">☆ 多行注释</h3>
+<p>多行注释：可以同时注释多行代码或程序，常用于代码块的注释</p>
+<p>基本语法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">注释内容
+</span></span></span><span class="line"><span class="cl"><span class="s2">第一行
+</span></span></span><span class="line"><span class="cl"><span class="s2">第二行
+</span></span></span><span class="line"><span class="cl"><span class="s2">第三行
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>或</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#39;&#39;&#39;
+</span></span><span class="line"><span class="cl">注释内容
+</span></span><span class="line"><span class="cl">第一行
+</span></span><span class="line"><span class="cl">第二行
+</span></span><span class="line"><span class="cl">第三行
+</span></span><span class="line"><span class="cl">&#39;&#39;&#39;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>示例代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">Hi, 大家好
+</span></span></span><span class="line"><span class="cl"><span class="s2">我是黑马程序员的小伙伴
+</span></span></span><span class="line"><span class="cl"><span class="s2">从今天开始，我们将一起学习Python这门语言
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">Hi, 大家好
+</span></span></span><span class="line"><span class="cl"><span class="s1">我是黑马程序员的小伙伴
+</span></span></span><span class="line"><span class="cl"><span class="s1">从今天开始，我们将一起学习Python这门语言
+</span></span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hi, 大家好&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;我是黑马程序员的小伙伴&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;从今天开始，我们将一起学习Python这门语言&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="-pycharm注释小技巧快捷键">☆ PyCharm注释小技巧（快捷键）</h3>
+<p>在PyCharm中，我们可以使用<code>Ctrl + /斜杠</code>来对代码或程序进行快速注释。</p>
+<h1 id="二python中的变量重点">二、Python中的变量（重点）</h1>
+<h2 id="1引入变量的概念">1、引入变量的概念</h2>
+<p>量：量是程序中的最小单元。</p>
+<p>变量：</p>
+<p><strong>① 变量是存储数据的容器</strong></p>
+<p><strong>② 变量在程序运行过程中是可以发生改变的量</strong></p>
+<p><strong>③ 变量存储的数据是临时的</strong></p>
+<h2 id="2变量的定义">2、变量的定义</h2>
+<p>基本语法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">变量名称</span> <span class="o">=</span> <span class="n">变量的值</span>
+</span></span><span class="line"><span class="cl"><span class="n">注</span><span class="err">：</span><span class="n">等号的两边都要保留一个空格</span><span class="err">，</span><span class="n">其实Python中建议符号的两边尽量都要保留一个空格</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>说明：在Python程序中，这个等号和日常生活中的等号不太一样，其有一个专业名词：赋值运算符，其读法：要从右向左读，把变量的值通过 = 赋值给左边的变量。</p>
+</blockquote>
+<h2 id="3变量的命令规则">3、变量的命令规则</h2>
+<p>标识符命名规则是Python中定义变量名称时一种命名规范，具体如下：</p>
+<p><strong>① 由数字、字母、下划线(_)组成</strong></p>
+<p><strong>② 不能数字开头</strong></p>
+<p><strong>③ 严格区分⼤小写</strong></p>
+<p><strong>④ 不能使⽤内置关键字作为变量名称</strong></p>
+<p><img src="/img/hugo/12/image-20210306155908564.png" alt="image-20210306155908564"></p>
+<blockquote>
+<p>下划线 =&gt; Shift + -减号</p>
+</blockquote>
+<p>举个栗子：</p>
+<p>① abc、abc123、_abc、hello（合理）</p>
+<p>② 123abc、@abc、abc-123（不合理）</p>
+<p>③ _（下划线） =&gt; 请问这可以是一个变量名称么？答：可以</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="o">...</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>④ 变量abc和变量ABC是同一个变量么？答：不一样，这是两个完全不同的变量</p>
+<p>⑤ 记不住33个关键字怎么办？答：借助于help()方法</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">help</span><span class="p">(</span><span class="s1">&#39;keywords&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="5推荐变量的命名规则">5、推荐变量的命名规则</h2>
+<p>① 变量命名一定要做到见名知义。</p>
+<p>② 大驼峰：即每个单词首字母都大写，例如： MyName 。</p>
+<p>③ 小驼峰：第二个（含）以后的单词首字母大写，例例如： myName 。</p>
+<p>④ 下划线：例如： my_name 。</p>
+<h2 id="6变量的定义与调用">6、变量的定义与调用</h2>
+<p>在Python中，记住：变量一定要先定义，后使用，否则会报错。</p>
+<p>定义：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;itheima&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">address</span> <span class="o">=</span> <span class="s1">&#39;北京市顺义区京顺路99号&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>调用：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">address</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">或</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">address</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="7变量的定义与使用常见问题">7、变量的定义与使用常见问题</h2>
+<p>① 变量与字符串如何区别：</p>
+<p><strong>在Python中，如果要赋值的内容添加了单引号或者双引号，其就是Python中的一种数据类型：叫做字符串（日常生活中的文本信息）</strong></p>
+<p>② print打印变量时，喜欢为其添加引号</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>  <span class="c1"># 输出变量name对应的值</span>
+</span></span><span class="line"><span class="cl"><span class="n">与</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">)</span>  <span class="c1"># 输出&#39;name&#39;这个字符串</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="三python中变量的数据类型">三、Python中变量的数据类型</h1>
+<h2 id="1数据类型">1、数据类型</h2>
+<p>为了应对不同的业务需求，也会把数据分为不同的类型，如下图所示：</p>
+<p><img src="/img/hugo/12/image-20210306162601034.png" alt="image-20210306162601034"></p>
+<p><strong>面试题</strong>：请写出Python中的7种数据类型？</p>
+<p>答：数值类型、布尔类型、字符串类型、列表类型、元组类型、集合类型、字典类型</p>
+<p>问题：如何判断一个变量到底是什么类型？</p>
+<p>答：① 使用type(变量名称)方法，返回变量的数据类型 ② isinstance(变量名称,数据类型)，只能返回True或False（真的还是假的）</p>
+<h2 id="2数值类型">2、数值类型</h2>
+<p>数值类型就是我们日常生活中的数字，数字又分为两种形式：整数 与 小数（带小数点）</p>
+<p>整数类型：int类型</p>
+<p>小数类型：float类型</p>
+<p>案例1：定义一个人的信息，姓名：Tom、年龄18岁</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Tom&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">age</span> <span class="o">=</span> <span class="mi">18</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>案例2：定义一个超市收银系统，写入一个名称：大白菜，价格：3.5</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;大白菜&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">price</span> <span class="o">=</span> <span class="mf">3.5</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">price</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="3布尔类型">3、布尔类型</h2>
+<p>布尔类型是与逻辑相关一种数据类型，只有两个值：True（真）与False（假）</p>
+<p>案例1：手工定义一个flag变量，其值为True</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">flag</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>其实在Python中，很多程序的返回结果也可以是True或False，比如isinstance()</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">num</span> <span class="o">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="nb">int</span><span class="p">))</span>  <span class="c1"># True</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="nb">bool</span><span class="p">))</span>  <span class="c1"># False</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="4字符串类型">4、字符串类型</h2>
+<p>在Python变量定义中，如果其赋值的内容是通过单引号或双引号引起来的内容就是字符串str类型。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;这家伙很懒，什么都没有留下...&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="5其他类型">5、其他类型</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 1、list列表类型</span>
+</span></span><span class="line"><span class="cl"><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">list1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2、tuple元组类型</span>
+</span></span><span class="line"><span class="cl"><span class="n">tuple1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">tuple1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3、set集合类型：去重</span>
+</span></span><span class="line"><span class="cl"><span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">set1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 4、dict字典类型：查询、搜索</span>
+</span></span><span class="line"><span class="cl"><span class="n">dict1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span><span class="s1">&#39;itheima&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">18</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">dict1</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="四python中的格式化输出">四、Python中的格式化输出</h1>
+<h2 id="1格式化输出">1、格式化输出</h2>
+<p>目前为止，我们所有的输出都是直接通过print(变量名称)形式直接打印的。实际工作中，我们可能需要对变量的输出进行格式化操作（按照一定格式进行输出）。</p>
+<h2 id="2百分号格式化输出">2、百分号格式化输出</h2>
+<p>基本语法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">变量名称</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;字符串%格式&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">变量名称</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;字符串%格式 %格式 %格式&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">变量名称1</span><span class="p">,</span> <span class="n">变量名称2</span><span class="p">,</span> <span class="n">变量名称3</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>%格式常见形式如下：</p>
+<table>
+<thead>
+<tr>
+<th><strong>格式符号</strong></th>
+<th><strong>转换</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>%s</strong></td>
+<td>字符串</td>
+</tr>
+<tr>
+<td><strong>%d</strong></td>
+<td>有符号的十进制整数</td>
+</tr>
+<tr>
+<td><strong>%f</strong></td>
+<td>浮点数</td>
+</tr>
+<tr>
+<td>%c</td>
+<td>字符</td>
+</tr>
+<tr>
+<td>%u</td>
+<td>无符号十进制整数</td>
+</tr>
+<tr>
+<td>%o</td>
+<td>八进制整数</td>
+</tr>
+<tr>
+<td>%x</td>
+<td>十六进制整数（小写ox）</td>
+</tr>
+<tr>
+<td>%X</td>
+<td>十六进制整数（大写OX）</td>
+</tr>
+<tr>
+<td>%e</td>
+<td>科学计数法（小写&rsquo;e&rsquo;）</td>
+</tr>
+<tr>
+<td>%E</td>
+<td>科学计数法（大写&rsquo;E&rsquo;）</td>
+</tr>
+<tr>
+<td>%g</td>
+<td>%f和%e的简写</td>
+</tr>
+<tr>
+<td>%G</td>
+<td>%f和%E的简写</td>
+</tr>
+</tbody>
+</table>
+<p>案例：定义两个变量name=&lsquo;itheima&rsquo;, age=18，按照如下格式进行输出：我的名字是itheima，今年18岁了。</p>
+<p><img src="/img/hugo/12/image-20210306175326815.png" alt="image-20210306175326815"></p>
+<p>案例：定义两个变量title=&lsquo;大白菜&rsquo;，price=3.5，按照如下格式进行输出：今天蔬菜特价了，大白菜只要3.5元/斤。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;大白菜&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">price</span> <span class="o">=</span> <span class="mf">3.5</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 格式化输出“今天蔬菜特价了，大白菜只要3.5元/斤。&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;今天蔬菜特价了，</span><span class="si">%s</span><span class="s2">只要</span><span class="si">%.2f</span><span class="s2">元/斤。&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">price</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>其实除了%f可以设置小数点位数以外，%d也可以填充序号。</p>
+<p>案例：定义两个变量id=1，name=&lsquo;itheima&rsquo;，按照如下格式进行输出：姓名itheima，学号000001</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">id</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;itheima&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;姓名</span><span class="si">%s</span><span class="s2">，学号</span><span class="si">%06d</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="nb">id</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="3format方法格式化输出">3、format方法格式化输出</h2>
+<p>基本语法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;字符串</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">变量名称1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">字符串</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">变量名称1</span><span class="p">,</span> <span class="n">变量名称2</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>案例：定义两个变量，name=&lsquo;孙悟空&rsquo;，mobile=&lsquo;18878569090&rsquo;，按照以下格式进行输出&quot;姓名：孙悟空，联系方式：18878569090&quot;</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;孙悟空&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">mobile</span> <span class="o">=</span> <span class="s1">&#39;18878569090&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;姓名：</span><span class="si">{}</span><span class="s2">，联系方式：</span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">mobile</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="4format方法简写形式格式化输出推荐">4、format方法简写形式格式化输出（推荐）</h2>
+<p>在Python3.6以后版本，为了简化format输出操作，引入了一个简写形式：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;孙悟空&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">mobile</span> <span class="o">=</span> <span class="s1">&#39;18878569090&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;姓名：</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">，联系方式：</span><span class="si">{</span><span class="n">mobile</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="5格式化输出中的转义符号">5、格式化输出中的转义符号</h2>
+<p>在字符串中，如果出现了\t和\n，其代表的含义就是两个转义字符</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">\<span class="n">t</span> <span class="err">：</span><span class="n">制表符</span><span class="err">，</span><span class="n">一个tab键</span><span class="err">（</span><span class="mi">4</span><span class="n">个空格</span><span class="err">）</span><span class="n">的距离</span>
+</span></span><span class="line"><span class="cl">\<span class="n">n</span> <span class="err">：</span><span class="n">换行符</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>案例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*</span><span class="se">\t</span><span class="s1">*</span><span class="se">\t</span><span class="s1">*&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello</span><span class="se">\n</span><span class="s1">world&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>特别说明：<strong>默认情况下，每个print()方法执行完毕后，都会输出一个\n换行符。如果不想让print()方法换行，可以添加一个end参数</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="五python中的标准输入">五、Python中的标准输入</h1>
+<h2 id="1input输入方法">1、input()输入方法</h2>
+<p>在Python中，如果想让Python程序接受用户的输入信息，可以使用input()方法</p>
+<p>基本语法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">input</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>但是往往只有input()方法，其意义不大，我们还应该使用一个变量来临时接受用户的输入，已方便后期的操作。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">变量名称</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;提示信息：&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>案例：银行系统中的，输入密码的过程</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的银行卡密码：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;您输入的银行卡密码为：</span><span class="si">{</span><span class="n">password</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="2input方法重要事项">2、input()方法重要事项</h2>
+<p>记住：所有由input()方法获取的数据都是**“字符串”**类型</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的姓名：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的年龄：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>  <span class="c1"># &lt;class &#39;str&#39;&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>  <span class="c1"># &lt;class &#39;str&#39;&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">墨初</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-08-27
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8Eif%E7%BB%93%E6%9E%84/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">python数据类型转换&amp;运算符与if结构</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/python%E4%B8%AD%E7%9A%84%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/">
+            <span class="next-text nav-default">python中的循环结构</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/longhe-lh" class="iconfont icon-github" title="github"></a>
+  <a href="http://helong0102.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2022 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>Long He</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

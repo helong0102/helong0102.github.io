@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/docker/</link>
+    <description>Recent content in docker on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 May 2023 01:37:56 +2200</lastBuildDate><atom:link href="http://helong0102.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用docker测试智能合约</title>
+      <link>http://helong0102.github.io/post/%E4%BD%BF%E7%94%A8docker%E6%B5%8B%E8%AF%95%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/</link>
+      <pubDate>Wed, 17 May 2023 01:37:56 +2200</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E4%BD%BF%E7%94%A8docker%E6%B5%8B%E8%AF%95%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/</guid>
+      <description>使用docker测试智能合约 docker使用说明 运行镜像指令 1 docker run -it --privileged=true -v /home/helong/oyente/tmp:/oyente/contract --name oyente luongnguyen/oyente 退出容器 1 ctrl + p + q 查看正在运行的容器 1 docker ps 重新进入后台运行</description>
+    </item>
+    
+    <item>
+      <title>docker中使用oyente批量测试脚本</title>
+      <link>http://helong0102.github.io/post/docker%E4%B8%AD%E4%BD%BF%E7%94%A8oyente%E6%89%B9%E9%87%8F%E6%B5%8B%E8%AF%95%E8%84%9A%E6%9C%AC/</link>
+      <pubDate>Sun, 14 Aug 2022 01:37:56 +1150</pubDate>
+      
+      <guid>http://helong0102.github.io/post/docker%E4%B8%AD%E4%BD%BF%E7%94%A8oyente%E6%89%B9%E9%87%8F%E6%B5%8B%E8%AF%95%E8%84%9A%E6%9C%AC/</guid>
+      <description>自动化脚本的使用 docker命令介绍 attach Attach to a running container # 当前 shell 下 attach 连接指定运行镜像 build Build an image from a Dockerfile # 通过 Dockerfile 定制镜像 commit Create a new image from a container changes # 提交当前容器为</description>
+    </item>
+    
+  </channel>
+</rss>

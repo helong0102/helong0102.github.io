@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>python数据序列-字符串 - 墨初博客！</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="墨初" /><meta name="description" content="python数据序列-字符串 一、字符串 1、字符串的定义 字符串是 Python 中最常用的数据类型, 一般使用引号来创建字符串。创建字符串只要为变量分配一个值" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.101.0 with theme even" />
+
+
+<link rel="canonical" href="http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%AD%97%E7%AC%A6%E4%B8%B2/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="python数据序列-字符串" />
+<meta property="og:description" content="python数据序列-字符串 一、字符串 1、字符串的定义 字符串是 Python 中最常用的数据类型, 一般使用引号来创建字符串。创建字符串只要为变量分配一个值" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://helong0102.github.io/post/python%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97-%E5%AD%97%E7%AC%A6%E4%B8%B2/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-08-17T01:37:56+11:00" />
+<meta property="article:modified_time" content="2022-08-17T01:37:56+11:40" />
+
+<meta itemprop="name" content="python数据序列-字符串">
+<meta itemprop="description" content="python数据序列-字符串 一、字符串 1、字符串的定义 字符串是 Python 中最常用的数据类型, 一般使用引号来创建字符串。创建字符串只要为变量分配一个值"><meta itemprop="datePublished" content="2022-08-17T01:37:56+11:00" />
+<meta itemprop="dateModified" content="2022-08-17T01:37:56+11:40" />
+<meta itemprop="wordCount" content="5255">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="python数据序列-字符串"/>
+<meta name="twitter:description" content="python数据序列-字符串 一、字符串 1、字符串的定义 字符串是 Python 中最常用的数据类型, 一般使用引号来创建字符串。创建字符串只要为变量分配一个值"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Long He&#39;s blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">时间轴</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Long He&#39;s blog</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">时间轴</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">python数据序列-字符串</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-08-17 </span>
+        <div class="post-category">
+            <a href="/categories/python/"> python </a>
+            </div>
+          <span class="more-meta"> 约 5255 字 </span>
+          <span class="more-meta"> 预计阅读 11 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#python数据序列-字符串">python数据序列-字符串</a>
+      <ul>
+        <li><a href="#一字符串">一、字符串</a>
+          <ul>
+            <li><a href="#1字符串的定义">1、字符串的定义</a></li>
+            <li><a href="#2字符串输入">2、字符串输入</a></li>
+            <li><a href="#3字符串的输出">3、字符串的输出</a></li>
+            <li><a href="#4字符串在计算机底层的存储形式">4、字符串在计算机底层的存储形式</a></li>
+          </ul>
+        </li>
+        <li><a href="#二字符串切片">二、字符串切片</a>
+          <ul>
+            <li><a href="#1什么是字符串切片">1、什么是字符串切片</a></li>
+            <li><a href="#2字符串切片基本语法">2、字符串切片基本语法</a></li>
+            <li><a href="#3字符串切片小口诀">3、字符串切片小口诀</a></li>
+            <li><a href="#4字符串切片栗子">4、字符串切片栗子</a></li>
+          </ul>
+        </li>
+        <li><a href="#三字符串的操作方法内置">三、字符串的操作方法（内置）</a>
+          <ul>
+            <li><a href="#1字符串中的查找方法">1、字符串中的查找方法</a></li>
+            <li><a href="#2字符串的修改方法">2、字符串的修改方法</a></li>
+            <li><a href="#3字符串的判断方法">3、字符串的判断方法</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="python数据序列-字符串">python数据序列-字符串</h1>
+<h2 id="一字符串">一、字符串</h2>
+<h3 id="1字符串的定义">1、字符串的定义</h3>
+<p>字符串是 Python 中最常用的数据类型, 一般使用引号来创建字符串。创建字符串只要为变量分配一个值即可。</p>
+<h4 id="使用单引号或双引号定义字符串变量">使用单引号或双引号定义字符串变量</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;abcdefg&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">str2</span> <span class="o">=</span> <span class="s2">&#34;hello world&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">str1</span><span class="p">))</span>  <span class="c1"># &lt;class &#39;str&#39;&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">str2</span><span class="p">))</span>  <span class="c1"># &lt;class &#39;str&#39;&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="使用3个引号定义字符串变量">使用3个引号定义字符串变量</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name1</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;I am Tom, Nice to meet you!&#39;&#39;&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">name1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">name1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;-&#39;</span> <span class="o">*</span> <span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">name2</span> <span class="o">=</span> <span class="s2">&#34;&#34;&#34;I am Jennify,
+</span></span></span><span class="line"><span class="cl"><span class="s2">           Nice to meet you!&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">name2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">name2</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>注意：三引号形式的字符串支持换行操作</p>
+</blockquote>
+<h4 id="使用转义字符显示单引号和双引号">使用转义字符显示单引号和双引号</h4>
+<p><strong>使用单引号情况</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;I&#39;</span><span class="n">m</span> <span class="n">Tom</span><span class="s1">&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行结果：</p>
+<p><img src="/img/hugo/04-python_string/image-20210310101123953.png" alt="image-20210310101123953"></p>
+<p>出现以上问题的主要原因在于，以上字符串的定义代码出现了(syntax)语法错误。==单引号在字符串定义中必须成对出现，而且Python解析器在解析代码时，会自动认为第一个单引号和最近的一个单引号是一对！==</p>
+<p>如果一定要在单引号中在放入一个单引号，必须使用==反斜杠==进行转义。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;I</span><span class="se">\&#39;</span><span class="s1">am Tom&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>使用双引号情况</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str2</span> <span class="o">=</span> <span class="s2">&#34;I&#39;m Tom&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>注：在Python中，如果存在多个引号，建议① 单引号放在双引号中 ② 双引号放在单引号中。</p>
+</blockquote>
+<h3 id="2字符串输入">2、字符串输入</h3>
+<p>在Python代码中，使用<code>input()</code>方法来接收用户的输入信息。</p>
+<blockquote>
+<p>注：在Python中，input()方法返回的结果是一个<code>字符串类型</code>的数据。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的姓名：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的年龄：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">address</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的住址：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">address</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="3字符串的输出">3、字符串的输出</h3>
+<h4 id="-普通输出">☆ 普通输出</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">变量名称</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">变量名称1</span><span class="p">,</span> <span class="n">变量名称2</span><span class="p">,</span> <span class="n">变量名称3</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="-格式化输出">☆ 格式化输出</h4>
+<p>① 百分号（Python2和Python3）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的姓名：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的年龄：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">address</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的住址：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;我的名字是</span><span class="si">%s</span><span class="s1">，今年</span><span class="si">%d</span><span class="s1">岁了，家里住在</span><span class="si">%s</span><span class="s1">...&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">address</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>② format方法（Python3）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的姓名：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的年龄：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">address</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的住址：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;我的名字是</span><span class="si">{}</span><span class="s1">，今年</span><span class="si">{}</span><span class="s1">岁了，家里住在</span><span class="si">{}</span><span class="s1">...&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">address</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>③ f形式（Python3）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的姓名：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的年龄：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">address</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的住址：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;我的名字是</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">，今年</span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s1">岁了，家里住在</span><span class="si">{</span><span class="n">address</span><span class="si">}</span><span class="s1">...&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>延伸：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您购买商品的名称：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">price</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您购买商品的价格：&#39;</span><span class="p">))</span>  <span class="c1"># 18.5</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;购买商品名称：</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">，商品价格：</span><span class="si">{</span><span class="n">price</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="4字符串在计算机底层的存储形式">4、字符串在计算机底层的存储形式</h3>
+<p>在计算机中，Python中的字符串属于序列结构。所以其底层存储占用一段连续的内存空间。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;itheima&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>结构原理图：</p>
+<p><img src="/img/hugo/04-python_string/image-20210310104348286.png" alt="image-20210310104348286"></p>
+<blockquote>
+<p>注意：索引下标从0开始。</p>
+</blockquote>
+<h2 id="二字符串切片">二、字符串切片</h2>
+<h3 id="1什么是字符串切片">1、什么是字符串切片</h3>
+<p>所谓的切片是指对操作的对象==截取==其中一部分的操作。字符串、列表、元组都支持切片操作。</p>
+<h3 id="2字符串切片基本语法">2、字符串切片基本语法</h3>
+<p>顾头不顾尾：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">序列名称</span><span class="p">[</span><span class="n">开始位置下标</span><span class="p">:</span><span class="n">结束位置下标</span><span class="p">:</span><span class="n">步长</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>① 不包含结束位置下标对应的数据， 正负整数均可；</p>
+<p>② 步长是选取间隔，正负整数均可，正数从左向右，负数从右向左。默认步长为1。</p>
+<p>栗子：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">numstr</span> <span class="o">=</span> <span class="s1">&#39;0123456789&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果想对numstr字符串进行切片，如下图所示：</p>
+<p><img src="/img/hugo/04-python_string/image-20210310110051093.png" alt="image-20210310110051093"></p>
+<h3 id="3字符串切片小口诀">3、字符串切片小口诀</h3>
+<p>口诀：==切片其实很简单，只顾头来尾不管，步长为正正向移，步长为负则逆向移==</p>
+<p><img src="/img/hugo/04-python_string/image-20210310111904137.png" alt="image-20210310111904137"></p>
+<h3 id="4字符串切片栗子">4、字符串切片栗子</h3>
+<p>案例1：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">numstr</span> <span class="o">=</span> <span class="s1">&#39;0123456789&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 1、从2到5开始切片，步长为1</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">numstr</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">:</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">numstr</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 2、只有结尾的字符串切片：代表从索引为0开始，截取到结尾字符-1的位置</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">numstr</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 3、只有开头的字符串切片：代表从起始位置开始，已知截取到字符串的结尾</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">numstr</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 4、获取或拷贝整个字符串</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">numstr</span><span class="p">[:])</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 5、调整步阶：类似求偶数</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">numstr</span><span class="p">[::</span><span class="mi">2</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 6、把步阶设置为负整数：类似字符串翻转</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">numstr</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 7、起始位置与结束位置都是负数（遵循一个原则：必须是从左向右截取）</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">numstr</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 8、结束字符为负数，如截取012345678</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">numstr</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>案例2：</p>
+<p><img src="/img/hugo/04-python_string/image-20210310110334889.png" alt="image-20210310110334889"></p>
+<p>案例3：给定一个图片的名称为&quot;avatar.png&quot;，使用Python方法获取这个图片的名称(avatar)以及这个图片的后缀(.png)。</p>
+<p>分析：</p>
+<p>① 建议先获取点号的位置</p>
+<p>② 从开头切片到点号位置，得到的就是文件的名称</p>
+<p>③ 从点号开始切片，一直到文件的结尾，则得到的就是文件的后缀</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;avatar.png&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 获取点号的索引下标</span>
+</span></span><span class="line"><span class="cl"><span class="n">index</span> <span class="o">=</span> <span class="mi">6</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用切片截取文件的文件</span>
+</span></span><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="n">filename</span><span class="p">[:</span><span class="n">index</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;上传文件的名称：</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用切片截取文件的后缀</span>
+</span></span><span class="line"><span class="cl"><span class="n">postfix</span> <span class="o">=</span> <span class="n">filename</span><span class="p">[</span><span class="n">index</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;上传文件的后缀：</span><span class="si">{</span><span class="n">postfix</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="三字符串的操作方法内置">三、字符串的操作方法（内置）</h2>
+<h3 id="1字符串中的查找方法">1、字符串中的查找方法</h3>
+<p>字符串查找方法即是==查找子串在字符串中的位置或出现的次数==。</p>
+<p>基本语法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">字符串</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">要查找的字符或者子串</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th><strong>编号</strong></th>
+<th><strong>函数</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>find()</td>
+<td>检测某个子串是否包含在这个字符串中，如果在返回这个子串开始的位置下标，否则则返回-1。</td>
+</tr>
+<tr>
+<td>2</td>
+<td>index()</td>
+<td>检测某个子串是否包含在这个字符串中，如果在返回这个子串开始的位置下标，否则则报异常。</td>
+</tr>
+<tr>
+<td>3</td>
+<td>rfind()</td>
+<td>和find()功能相同，但查找方向为右侧开始。</td>
+</tr>
+<tr>
+<td>4</td>
+<td>rindex()</td>
+<td>和index()功能相同，但查找方向为右侧开始。</td>
+</tr>
+<tr>
+<td>5</td>
+<td>count()</td>
+<td>返回某个子串在字符串中出现的次数</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-find方法">☆ find()方法</h4>
+<p>作用：检测某个子串是否包含在这个字符串中，如果在返回这个子串开始的位置下标，否则则返回-1。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 定义一个字符串</span>
+</span></span><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;hello world hello linux hello python&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 查找linux子串是否出现在字符串中</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;linux&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 在str1中查找不存在的子串</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;and&#39;</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>案例：使用input方法输入任意一个文件名称，求点号的索引下标</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">filename</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您要上传文件的名称：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 获取点号的索引下标</span>
+</span></span><span class="line"><span class="cl"><span class="n">index</span> <span class="o">=</span> <span class="n">filename</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 求文件名称</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">filename</span><span class="p">[:</span><span class="n">index</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 求文件后缀</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">filename</span><span class="p">[</span><span class="n">index</span><span class="p">:])</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="-index方法">☆ index()方法</h4>
+<p>index()方法其功能与find()方法完全一致，唯一的区别在于当要查找的子串没有出现在字符串中时，find()方法返回-1，而index()方法则直接报错。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;apple, banana, orange&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 判断apple是否出现在字符串str1中</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;pineapple&#39;</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行结果：</p>
+<p><img src="/img/hugo/04-python_string/image-20210310120906839.png" alt="image-20210310120906839"></p>
+<h4 id="-rfind与rindex方法">☆ rfind()与rindex()方法</h4>
+<p>r = right，代表从右开始查找</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">字符串序列</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="n">子串</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">字符串序列</span><span class="o">.</span><span class="n">rindex</span><span class="p">(</span><span class="n">子串</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>强调</strong>：rfind()方法与rindex()方法适合于查找子串在字符串中出现了多次的情况</p>
+<p>案例：有一个文件名称叫20210310axvu.avatar.png，其中点号出现了2次，这个时候，获取文件的后缀.png。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;20210310axvu.avatar.png&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 求出点号在字符串中第一次出现的位置</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># index = filename.find(&#39;.&#39;)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># print(index)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 求出点号在字符串中最后一次出现的位置</span>
+</span></span><span class="line"><span class="cl"><span class="n">index</span> <span class="o">=</span> <span class="n">filename</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>rfind()方法和rindex()方法语法上完全一致，唯一的区别就是对子串没有出现在字符串的中的情况，rfind()返回-1，rindex()返回错误。</p>
+<h4 id="-count方法">☆ count()方法</h4>
+<p>主要功能：求子串在字符串中出现的次数</p>
+<p>基本语法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">字符串</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;子串&#39;</span><span class="p">,</span> <span class="n">开始位置下标</span><span class="p">,</span> <span class="n">结束位置下标</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>案例：获取字符串中and关键字出现的次数</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;hello world and hello linux and hello python&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 不限定字符串长度</span>
+</span></span><span class="line"><span class="cl"><span class="n">ands</span> <span class="o">=</span> <span class="n">str1</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;and&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 限定开始查找的位置和结束位置</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ands = str1.count(&#39;and&#39;, 10, 30)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;and字符串出现的次数为：</span><span class="si">{</span><span class="n">ands</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="2字符串的修改方法">2、字符串的修改方法</h3>
+<p>所谓修改字符串，指的就是通过函数（方法）的形式修改字符串中的数据。</p>
+<table>
+<thead>
+<tr>
+<th><strong>编号</strong></th>
+<th><strong>函数</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>replace()</td>
+<td>返回替换后的字符串</td>
+</tr>
+<tr>
+<td>2</td>
+<td>split()</td>
+<td>返回切割后的列表序列</td>
+</tr>
+<tr>
+<td>3</td>
+<td>capitalize()</td>
+<td>首字母大写</td>
+</tr>
+<tr>
+<td>4</td>
+<td>title()</td>
+<td>所有单词首字母大写</td>
+</tr>
+<tr>
+<td>5</td>
+<td>upper()与lower()</td>
+<td>返回全部大写或小写的字符串</td>
+</tr>
+<tr>
+<td>6</td>
+<td>lstrip()、rstrip()与strip()</td>
+<td>去除左边、右边以及两边的空白字符</td>
+</tr>
+<tr>
+<td>7</td>
+<td>ljust()、rjust()与center()</td>
+<td>返回原字符串左对齐、右对齐以及居中对齐</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-replace方法">☆ replace()方法</h4>
+<p>基本语法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">字符串</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">要替换的内容</span><span class="p">,</span> <span class="n">替换后的内容</span><span class="p">,</span> <span class="n">替换的次数</span><span class="o">-</span><span class="n">可以省略</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>案例：编写一个字符串，然后把字符串中的linux替换为python</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;hello linux and hello linux&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 把字符串中所有linux字符替换为python</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;linux&#39;</span><span class="p">,</span> <span class="s1">&#39;python&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 把字符串中的第一个linux进行替换为python</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;linux&#39;</span><span class="p">,</span> <span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 把and字符串替换为&amp;&amp;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;and&#39;</span><span class="p">,</span> <span class="s1">&#39;&amp;&amp;&#39;</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>replace主要用于实现关键字替换或过滤功能。北京 ==&gt; BJ，论坛关键字过滤，共产党 =&gt; ***</p>
+<h4 id="-split方法">☆ split()方法</h4>
+<p>作用：对字符串进行切割操作，返回一个list()列表类型的数据</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;apple-banana-orange&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="-capitalize-方法">☆ capitalize() 方法</h4>
+<p>作用：把字符串的首字母大写，其他字符全部小写</p>
+<h4 id="-title方法">☆ title()方法</h4>
+<p>作用：把字符串中的所有单词的首字母大写，组成大驼峰</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;myName&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 把str1变成首字母大写字符串</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">str2</span> <span class="o">=</span> <span class="s1">&#39;student_manager&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 把str2变成大驼峰</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str2</span><span class="o">.</span><span class="n">title</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="-upper与lower-方法">☆ upper()与lower() 方法</h4>
+<p>upper()：把字符串全部转换为大写形式</p>
+<p>lower()：把字符串全部转换为小写形式</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 用户名以及密码验证案例</span>
+</span></span><span class="line"><span class="cl"><span class="n">username</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的账号：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的密码：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 把username和password全部转换为大写或小写</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">username</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">password</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="-lstriprstrip与strip">☆ lstrip()、rstrip()与strip()</h4>
+<p>strip() 方法主要作用：删除字符串两边的空白字符（如空格）</p>
+<p>lstrip() 方法 == left + strip，作用：只删除字符串左边的空白字符</p>
+<p>rstrip() 方法，作用：只删除字符串右边的空白字符</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 用户名验证案例</span>
+</span></span><span class="line"><span class="cl"><span class="n">username</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的账号：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 去除username两边的空白字符</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">username</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">username</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">username</span><span class="o">.</span><span class="n">strip</span><span class="p">()))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="-ljustrjustcenter">☆ ljust()、rjust()、center()</h4>
+<p>作用：返回原字符串左对齐、右对齐以及居中对齐</p>
+<p>基本语法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">字符串序列</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="n">长度</span><span class="p">,</span> <span class="n">填充字符</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>案例：定义一个字符串，要求返回长度为10个字符，不足的使用.点号进行填充</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;python&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 左对齐</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 右对齐</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;#&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 居中对齐</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;@&#39;</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="3字符串的判断方法">3、字符串的判断方法</h3>
+<p>所谓判断即是判断真假，返回的结果是布尔型数据类型：True 或 False。</p>
+<table>
+<thead>
+<tr>
+<th><strong>编号</strong></th>
+<th><strong>函数</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>startswith()</td>
+<td>检查字符串是否是以指定子串开头，是则返回 True，否则返回 False。如果设置开始和结束位置下标，则在指定范围内检查。</td>
+</tr>
+<tr>
+<td>2</td>
+<td>endswith()</td>
+<td>检查字符串是否是以指定子串结尾，是则返回 True，否则返回 False。如果设置开始和结束位置下标，则在指定范围内检查。</td>
+</tr>
+<tr>
+<td>3</td>
+<td>isalpha()</td>
+<td>如果字符串所有字符(至少有一个字符)都是字母则返回 True, 否则返回 False。</td>
+</tr>
+<tr>
+<td>4</td>
+<td>isdigit()</td>
+<td>如果字符串只包含数字则返回 True 否则返回 False。</td>
+</tr>
+<tr>
+<td>5</td>
+<td>isalnum()</td>
+<td>Python isalnum() 方法检测字符串是否由字母和数字组成。如果字符串所有字符(至少有一个字符)都是字母或数字则返 回 True,否则返回 False。</td>
+</tr>
+<tr>
+<td>6</td>
+<td>isspace()</td>
+<td>如果字符串中只包含空白，则返回 True，否则返回 False</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-startswith">☆ startswith()</h4>
+<p>作用：检查字符串是否是以指定子串开头，是则返回 True，否则返回 False。如果设置开始和结束位置下标，则在指定范围内检查。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;python program&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;python&#39;</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="-endswith">☆ endswith()</h4>
+<p>作用：检查字符串是否是以指定子串结尾，是则返回 True，否则返回 False。如果设置开始和结束位置下标，则在指定范围内检查。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str2</span> <span class="o">=</span> <span class="s1">&#39;avatar.png&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str2</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.png&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">str2</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.png&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">str2</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.jpg&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">str2</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.gif&#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;是一张图片格式的图片&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;您上传的文件格式异常&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="-isalpha">☆ isalpha()</h4>
+<p>作用：如果字符串所有字符(至少有一个字符)都是==字母==则返回 True, 否则返回 False。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;admin&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">str2</span> <span class="o">=</span> <span class="s1">&#39;admin123&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="o">.</span><span class="n">isalpha</span><span class="p">())</span>  <span class="c1"># True</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str2</span><span class="o">.</span><span class="n">isalpha</span><span class="p">())</span>  <span class="c1"># False</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="-isdigit">☆ isdigit()</h4>
+<p>作用：如果字符串只包含==数字==则返回 True 否则返回 False。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入您的银行卡密码：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">password</span><span class="p">)</span> <span class="o">==</span> <span class="mi">6</span> <span class="ow">and</span> <span class="n">password</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;输入密码成功，正在验证...&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;密码输入错误，请重新输入&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="-isalnum">☆ isalnum()</h4>
+<p>作用：Python isalnum() 方法检测字符串是否由==字母和数字==组成。如果字符串所有字符(至少有一个字符)都是字母或数字则返 回 True,否则返回 False。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">username</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入的您的用户名（只能为字母+数字形式）：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">username</span><span class="o">.</span><span class="n">isalnum</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;合理的用户名，正在录入系统...&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;输入的用户名有误，请重新输入...&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="-isspace">☆ isspace()</h4>
+<p>作用：如果字符串中只包含空白，则返回 True，否则返回 False（逆向思维）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span>  <span class="c1"># 最少要包含一个空白字符</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="o">.</span><span class="n">isspace</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">username</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;请输入的您的用户名：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">username</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">username</span><span class="o">.</span><span class="n">isspace</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;您没有输入任何字符...&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;您的输入的字符</span><span class="si">{</span><span class="n">username</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>    
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">墨初</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-08-17
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E5%89%8D%E7%BC%80%E5%92%8C%E5%B7%AE%E5%88%86/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">前缀和&amp;差分</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/%E4%BA%8C%E5%88%86/">
+            <span class="next-text nav-default">二分</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/longhe-lh" class="iconfont icon-github" title="github"></a>
+  <a href="http://helong0102.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2022 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>Long He</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

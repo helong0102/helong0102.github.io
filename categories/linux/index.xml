@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/linux/</link>
+    <description>Recent content in linux on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Jan 2024 01:37:56 +1716</lastBuildDate><atom:link href="http://helong0102.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux常用操作记录</title>
+      <link>http://helong0102.github.io/post/linux%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sat, 06 Jan 2024 01:37:56 +1716</pubDate>
+      
+      <guid>http://helong0102.github.io/post/linux%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/</guid>
+      <description>Linux常用操作记录 用户相关 id - 显示用户的详细信息（uid、gid 和 group） last - 列出有关最近登录的信息，包括时间、用户名、IP地址和会</description>
+    </item>
+    
+    <item>
+      <title>管道&amp;环境变量&amp;常用命令</title>
+      <link>http://helong0102.github.io/post/%E7%AE%A1%E9%81%93%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 14 Aug 2022 01:37:56 +2200</pubDate>
+      
+      <guid>http://helong0102.github.io/post/%E7%AE%A1%E9%81%93%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>管道&amp;amp;环境变量&amp;amp;常用命令 管道 概念 管道类似于文件重定向，可以将前一个命令的 stdout 重定向到下一个命令的 stdin。 要点 管道命令仅处理</description>
+    </item>
+    
+  </channel>
+</rss>

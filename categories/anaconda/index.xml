@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anaconda on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/anaconda/</link>
+    <description>Recent content in Anaconda on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 May 2023 01:37:56 +1300</lastBuildDate><atom:link href="http://helong0102.github.io/categories/anaconda/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anaconda的安装及使用</title>
+      <link>http://helong0102.github.io/post/anaconda%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Fri, 12 May 2023 01:37:56 +1300</pubDate>
+      
+      <guid>http://helong0102.github.io/post/anaconda%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</guid>
+      <description>Anaconda的安装及使用 下载 前往官方下载页面下载； 或者前往清华大学开源软件镜像站下载。 安装 可以直接把下载的安装包（例如 “Anaconda</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>souffle on 墨初博客！</title>
+    <link>http://helong0102.github.io/categories/souffle/</link>
+    <description>Recent content in souffle on 墨初博客！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Sep 2022 01:37:56 +1900</lastBuildDate><atom:link href="http://helong0102.github.io/categories/souffle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>souffle 语法</title>
+      <link>http://helong0102.github.io/post/souffle%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Tue, 06 Sep 2022 01:37:56 +1900</pubDate>
+      
+      <guid>http://helong0102.github.io/post/souffle%E8%AF%AD%E6%B3%95/</guid>
+      <description>souffle 语法 概述: souffle 中的主要语言元素是关系声明（relations）、事实(facts)、规则（rurle）、指令(instruction)。 关系</description>
+    </item>
+    
+  </channel>
+</rss>
