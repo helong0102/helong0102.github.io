@@ -8,9 +8,18 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 05 Sep 2024 01:37:56 +1300</lastBuildDate><atom:link href="http://helong0102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>SSH connect to host github.com port 22 - Connection refused</title>
+      <link>http://helong0102.github.io/post/ssh-connet-to-host-github.com-port-22-connection-refused/</link>
+      <pubDate>Thu, 05 Sep 2024 01:37:56 +1300</pubDate>
+      
+      <guid>http://helong0102.github.io/post/ssh-connet-to-host-github.com-port-22-connection-refused/</guid>
+      <description>SSH connect to host github.com port 22 - Connection refused 问题 Windows系统，在个人电脑上使用Git命令操作GitHub上的仓库，突然提示错误：ssh: connect to host github.com port 22: Connection refu</description>
+    </item>
+    
+    <item>
       <title>GitHub: Permission denied (publickey)</title>
       <link>http://helong0102.github.io/post/github-permission-denied-publickey/</link>
-      <pubDate>Thu, 05 Sep 2024 01:37:56 +1300</pubDate>
+      <pubDate>Thu, 05 Sep 2024 01:37:56 +1400</pubDate>
       
       <guid>http://helong0102.github.io/post/github-permission-denied-publickey/</guid>
       <description>GitHub: Permission denied (publickey) 错误 在使用git命令 git push -u origin master , 出现如下报错： 1 2 3 4 git@github.com: Permission denied (publickey). fatal: Could not read from remote repository. Please make sure you have the correct access rights and the repository exists. 解决步骤 Permission denied (publickey) 没有权限的pub</description>
