@@ -16,5 +16,14 @@
       <description>Ubuntu中解决网络仅显示VPN问题 问题描述 因不明原因设置里面的网络设置变成了下图所示，仅显示VPN，没有正常的WiFi或者有线设置： 解决</description>
     </item>
     
+    <item>
+      <title>Ubuntu修改主机名和用户名</title>
+      <link>http://helong0102.github.io/post/ubuntu%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9C%BA%E5%90%8D%E5%92%8C%E7%94%A8%E6%88%B7%E5%90%8D/</link>
+      <pubDate>Wed, 18 Sep 2024 01:37:56 +1300</pubDate>
+      
+      <guid>http://helong0102.github.io/post/ubuntu%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9C%BA%E5%90%8D%E5%92%8C%E7%94%A8%E6%88%B7%E5%90%8D/</guid>
+      <description>Ubuntu修改主机名和用户名 首先切换到root用户 1 2 3 su # 或者使用以下命令 sudo su root 修改主机名（host_name） 1.修改hostname</description>
+    </item>
+    
   </channel>
 </rss>

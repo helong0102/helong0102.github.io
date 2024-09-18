@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>Ubuntu修改主机名和用户名</title>
+      <link>http://helong0102.github.io/post/ubuntu%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9C%BA%E5%90%8D%E5%92%8C%E7%94%A8%E6%88%B7%E5%90%8D/</link>
+      <pubDate>Wed, 18 Sep 2024 01:37:56 +1300</pubDate>
+      
+      <guid>http://helong0102.github.io/post/ubuntu%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9C%BA%E5%90%8D%E5%92%8C%E7%94%A8%E6%88%B7%E5%90%8D/</guid>
+      <description>Ubuntu修改主机名和用户名 首先切换到root用户 1 2 3 su # 或者使用以下命令 sudo su root 修改主机名（host_name） 1.修改hostname</description>
+    </item>
+    
+    <item>
       <title>SSH connect to host github.com port 22 - Connection refused</title>
       <link>http://helong0102.github.io/post/ssh-connet-to-host-github.com-port-22-connection-refused/</link>
       <pubDate>Thu, 05 Sep 2024 01:37:56 +1300</pubDate>
