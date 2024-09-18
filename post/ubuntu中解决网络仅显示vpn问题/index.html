@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>✦ 个人记录 ✧ 𝑳𝒐𝒏𝒈 𝑯𝒆 ✦</title>
+  <title>Ubuntu中解决网络仅显示VPN问题 - ✦ 个人记录 ✧ 𝑳𝒐𝒏𝒈 𝑯𝒆 ✦</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Long He" />
+<meta name="author" content="Long He" /><meta name="description" content="Ubuntu中解决网络仅显示VPN问题 问题描述 因不明原因设置里面的网络设置变成了下图所示，仅显示VPN，没有正常的WiFi或者有线设置： 解决" />
 
 
 
@@ -26,9 +26,7 @@
 <meta name="generator" content="Hugo 0.101.0 with theme even" />
 
 
-<link rel="canonical" href="http://helong0102.github.io/" />
-  <link href="http://helong0102.github.io/index.xml" rel="alternate" type="application/rss+xml" title="✦ 个人记录 ✧ 𝑳𝒐𝒏𝒈 𝑯𝒆 ✦" />
-  <link href="http://helong0102.github.io/index.xml" rel="feed" type="application/rss+xml" title="✦ 个人记录 ✧ 𝑳𝒐𝒏𝒈 𝑯𝒆 ✦" />
+<link rel="canonical" href="http://helong0102.github.io/post/ubuntu%E4%B8%AD%E8%A7%A3%E5%86%B3%E7%BD%91%E7%BB%9C%E4%BB%85%E6%98%BE%E7%A4%BAvpn%E9%97%AE%E9%A2%98/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,15 +39,20 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="✦ 个人记录 ✧ 𝑳𝒐𝒏𝒈 𝑯𝒆 ✦" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://helong0102.github.io/" />
+<meta property="og:title" content="Ubuntu中解决网络仅显示VPN问题" />
+<meta property="og:description" content="Ubuntu中解决网络仅显示VPN问题 问题描述 因不明原因设置里面的网络设置变成了下图所示，仅显示VPN，没有正常的WiFi或者有线设置： 解决" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://helong0102.github.io/post/ubuntu%E4%B8%AD%E8%A7%A3%E5%86%B3%E7%BD%91%E7%BB%9C%E4%BB%85%E6%98%BE%E7%A4%BAvpn%E9%97%AE%E9%A2%98/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-09-18T01:37:56+11:50" />
+<meta property="article:modified_time" content="2024-09-18T01:37:56+11:50" />
 
-<meta itemprop="name" content="✦ 个人记录 ✧ 𝑳𝒐𝒏𝒈 𝑯𝒆 ✦">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="✦ 个人记录 ✧ 𝑳𝒐𝒏𝒈 𝑯𝒆 ✦"/>
-<meta name="twitter:description" content=""/>
+<meta itemprop="name" content="Ubuntu中解决网络仅显示VPN问题">
+<meta itemprop="description" content="Ubuntu中解决网络仅显示VPN问题 问题描述 因不明原因设置里面的网络设置变成了下图所示，仅显示VPN，没有正常的WiFi或者有线设置： 解决"><meta itemprop="datePublished" content="2024-09-18T01:37:56+11:50" />
+<meta itemprop="dateModified" content="2024-09-18T01:37:56+11:50" />
+<meta itemprop="wordCount" content="109">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ubuntu中解决网络仅显示VPN问题"/>
+<meta name="twitter:description" content="Ubuntu中解决网络仅显示VPN问题 问题描述 因不明原因设置里面的网络设置变成了下图所示，仅显示VPN，没有正常的WiFi或者有线设置： 解决"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -119,60 +122,95 @@
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
-          <section id="posts" class="posts">
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/shell%E8%AF%AD%E6%B3%95/">shell语法</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-08-14 </span>
-      <div class="post-category">
-          <a href="/categories/shell/"> shell </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      shell 语法 概论 shell 是一个用C语言编写的程序，它是用户使用Linux的桥梁。 shell既是一种命令语言，又是一种程序设计语言。 shell是指一种应用
-    </div>
-    <div class="read-more">
-      <a href="/post/shell%E8%AF%AD%E6%B3%95/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E7%AE%A1%E9%81%93%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">管道&amp;环境变量&amp;常用命令</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-08-14 </span>
-      <div class="post-category">
-          <a href="/categories/linux/"> linux </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      管道&amp;环境变量&amp;常用命令 管道 概念 管道类似于文件重定向，可以将前一个命令的 stdout 重定向到下一个命令的 stdin。 要点 管道命令仅处理
-    </div>
-    <div class="read-more">
-      <a href="/post/%E7%AE%A1%E9%81%93%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    </section>
-  
-  <nav class="pagination">
-    <a class="prev" href="/page/9/">
-        <i class="iconfont icon-left"></i>
-        <span class="prev-text">上一页</span>
-      </a>
+          <article class="post">
     
-  </nav>
+    <header class="post-header">
+      <h1 class="post-title">Ubuntu中解决网络仅显示VPN问题</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2024-09-18 </span>
+        <div class="post-category">
+            <a href="/categories/ubuntu/"> Ubuntu </a>
+            </div>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ubuntu中解决网络仅显示vpn问题">Ubuntu中解决网络仅显示VPN问题</a>
+      <ul>
+        <li><a href="#问题描述">问题描述</a></li>
+        <li><a href="#解决方法">解决方法</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="ubuntu中解决网络仅显示vpn问题">Ubuntu中解决网络仅显示VPN问题</h1>
+<h2 id="问题描述">问题描述</h2>
+<p>因不明原因设置里面的网络设置变成了下图所示，仅显示VPN，没有正常的WiFi或者有线设置：
+<img src="/img/hugo/202409181230/fig.1.png" alt="问题描述"></p>
+<h2 id="解决方法">解决方法</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 重启网络管理工具</span>
+</span></span><span class="line"><span class="cl">sudo systemctl restart NetworkManager
+</span></span><span class="line"><span class="cl"><span class="c1"># 禁用网络</span>
+</span></span><span class="line"><span class="cl">sudo nmcli networking off
+</span></span><span class="line"><span class="cl"><span class="c1"># 启用网络</span>
+</span></span><span class="line"><span class="cl">sudo nmcli networking on
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Long He</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2024-09-18
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/ssh-connet-to-host-github.com-port-22-connection-refused/">
+            <span class="next-text nav-default">SSH connect to host github.com port 22 - Connection refused</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
         </div>
         
+
+  
+
+  
 
       </div>
     </main>

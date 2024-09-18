@@ -6,7 +6,16 @@
     <description>Recent content in Posts on ✦ 个人记录 ✧ 𝑳𝒐𝒏𝒈 𝑯𝒆 ✦</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Sep 2024 01:37:56 +1300</lastBuildDate><atom:link href="http://helong0102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Sep 2024 01:37:56 +1150</lastBuildDate><atom:link href="http://helong0102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ubuntu中解决网络仅显示VPN问题</title>
+      <link>http://helong0102.github.io/post/ubuntu%E4%B8%AD%E8%A7%A3%E5%86%B3%E7%BD%91%E7%BB%9C%E4%BB%85%E6%98%BE%E7%A4%BAvpn%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Wed, 18 Sep 2024 01:37:56 +1150</pubDate>
+      
+      <guid>http://helong0102.github.io/post/ubuntu%E4%B8%AD%E8%A7%A3%E5%86%B3%E7%BD%91%E7%BB%9C%E4%BB%85%E6%98%BE%E7%A4%BAvpn%E9%97%AE%E9%A2%98/</guid>
+      <description>Ubuntu中解决网络仅显示VPN问题 问题描述 因不明原因设置里面的网络设置变成了下图所示，仅显示VPN，没有正常的WiFi或者有线设置： 解决</description>
+    </item>
+    
     <item>
       <title>SSH connect to host github.com port 22 - Connection refused</title>
       <link>http://helong0102.github.io/post/ssh-connet-to-host-github.com-port-22-connection-refused/</link>
