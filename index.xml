@@ -6,7 +6,7 @@
     <description>Recent content on ✦ 个人记录 ✧ 𝑳𝒐𝒏𝒈 𝑯𝒆 ✦</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Sep 2024 01:37:56 +1150</lastBuildDate><atom:link href="http://helong0102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Dec 2024 01:37:56 +1300</lastBuildDate><atom:link href="http://helong0102.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于</title>
       <link>http://helong0102.github.io/about/</link>
@@ -14,6 +14,15 @@
       
       <guid>http://helong0102.github.io/about/</guid>
       <description>关于 本博客主要用于记录学习与科研心得， 分享区块链领域研究进展与个人思考。</description>
+    </item>
+    
+    <item>
+      <title>Python中pip 常用命令</title>
+      <link>http://helong0102.github.io/post/python%E4%B8%ADpip-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Fri, 27 Dec 2024 01:37:56 +1300</pubDate>
+      
+      <guid>http://helong0102.github.io/post/python%E4%B8%ADpip-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>Python 中 pip 常用命令 安装包相关命令 安装包 pip install 是最基本的命令, 用于从官方 PyPI（Python Package Index）仓库安装指定的包. 1 pip install 包名 常用选项： -i:</description>
     </item>
     
     <item>
